@@ -9,7 +9,7 @@ const featureList = [
     title: 'Support To Find Investment',
     icon: <Icon />,
     description: `
-    Navigating the landscape of investments can be daunting. At Jhub, we provide dedicated support to 
+    Navigating the landscape of investments can be daunting. At JHUB, we provide dedicated support to 
     help you find the right investments for your digital initiatives. Our team of financial experts and 
     advisors guide you through the process, connecting you with opportunities that align with your goals. 
     Whether you're a small-scale farmer, trader, or enterprise, we're committed to securing the financial 
@@ -20,7 +20,7 @@ const featureList = [
     title: 'Digital Innovation Hub',
     icon: <Icon />,
     description: `
-    Jhub is your ultimate Digital Innovation Hub, where ideas flourish and innovation thrives. 
+    JHUB is your ultimate Digital Innovation Hub, where ideas flourish and innovation thrives. 
     Our platform provides a collaborative space for visionaries, entrepreneurs, and businesses to ideate, 
     incubate, and implement digital solutions. From concept to execution, we support every stage of the innovation 
     journey, fostering a vibrant community committed to driving positive societal impact through digital transformation.
@@ -30,7 +30,7 @@ const featureList = [
     title: 'Skills and Training',
     icon: <Icon />,
     description: `
-    Empowering individuals with the right skills is at the core of what we do. Jhub offers comprehensive skills 
+    Empowering individuals with the right skills is at the core of what we do. JHUB offers comprehensive skills 
     development and training programs designed to enhance digital literacy and proficiency. From farmers looking 
     to optimize agricultural practices to traders seeking to navigate digital markets, our tailored training initiatives 
     ensure that you are well-equipped for the digital age.
@@ -40,7 +40,7 @@ const featureList = [
     title: 'Facilitating Technology Transfer',
     icon: <Icon />,
     description: `
-    Jhub serves as a catalyst for technology transfer, facilitating the seamless exchange of knowledge and innovation. 
+    JHUB serves as a catalyst for technology transfer, facilitating the seamless exchange of knowledge and innovation. 
     Our platform connects innovators, industry experts, and businesses, fostering collaborations that lead to the swift 
     and effective transfer of technology. By breaking down barriers and fostering a dynamic ecosystem, we empower individuals 
     and organizations to leverage the power of transformative technologies.
@@ -50,10 +50,10 @@ const featureList = [
     title: 'Test Before Invest',
     icon: <Icon />,
     description: `
-    At Jhub, we believe in the principle of "Test Before Invest," a guiding philosophy that underscores our commitment to your 
+    At JHUB, we believe in the principle of "Test Before Invest," a guiding philosophy that underscores our commitment to your 
     success. Before you make significant investments, we offer a comprehensive testing framework to evaluate the viability and 
     impact of digital solutions. Our meticulous testing processes ensure that every innovation undergoes rigorous examination, 
-    allowing you to make informed decisions about your investments. With Jhub, you can confidently navigate the digital landscape, 
+    allowing you to make informed decisions about your investments. With JHUB, you can confidently navigate the digital landscape, 
     secure in the knowledge that your investments are well-founded and poised for success.
 
 
@@ -63,7 +63,7 @@ const featureList = [
     title: 'Diffusion of new Technologies',
     icon: <Icon />,
     description: `
-    At Jhub, we specialize in the seamless diffusion of cutting-edge technologies. Our experts work tirelessly to 
+    At JHUB, we specialize in the seamless diffusion of cutting-edge technologies. Our experts work tirelessly to 
     bridge the gap between innovation and implementation, ensuring that the latest technologies become accessible 
     and beneficial for small and medium-scale farmers, traders, and enterprises. We believe in democratizing technology 
     for the greater good, driving positive change through widespread adoption.
@@ -82,12 +82,9 @@ export default function FeatureList() {
             JHUB Services | Built To Meet Innovation
           </h2>
           <p className="text-white sm:text-xl dark:text-gray-400">
-          At Jhub, we are dedicated to fostering innovation and transforming digital landscapes. 
-          Our suite of Cloud-first Tech Solutions is meticulously designed with innovation in mind. From GIS-inclusive Analytics, 
-          Resource Management, Marketplaces, to Consultancy/ Compliance, our services are crafted to elevate your productivity and 
-          boost sales. Experience the power of technology-driven solutions with Jhub, where every service is tailored to meet the 
+          At JHUB, we are dedicated to fostering innovation and transforming digital landscapes. 
+          Experience the power of technology-driven solutions with JHUB, where every service is tailored to meet the 
           dynamic needs of a rapidly evolving digital era.
-
           </p>
         </div>
         <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">

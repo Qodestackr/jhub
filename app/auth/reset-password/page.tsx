@@ -210,7 +210,7 @@ const ResetPassword: React.FC = () => {
                   <input
                     type="submit"
                     value="Reset Password"
-                    className="w-full cursor-pointer rounded-lg border border-primary bg-primary p-4 text-white transition hover:bg-opacity-90"
+                    className="w-full cursor-pointer rounded-lg border border-white bg-[bg-[#357c20]] p-4 text-white transition hover:bg-opacity-90"
                   />
                 </div>
 
@@ -218,7 +218,7 @@ const ResetPassword: React.FC = () => {
                   {/*  */}
                   <p>
                     Not so Sure?{' '}
-                    <Link href="/auth/signin" className="text-primary">
+                    <Link href="/auth/signin" className="text-[bg-[#357c20]]">
                       Back to Signin
                     </Link>
                   </p>

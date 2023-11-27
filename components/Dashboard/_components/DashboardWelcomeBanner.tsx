@@ -1,7 +1,7 @@
 import React from 'react';
 
 function DashboardWelcomeBanner({
-  accountName = 'Wanjogu Farm',
+  accountName = 'Wilson',
   bannerText = 'Here is Your Crop Management & Analytics Portal'
 }: any) {
   // TODO, Pass down Account Name From Auth Instance

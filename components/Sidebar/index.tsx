@@ -92,21 +92,21 @@ const Tour: React.FC = () => {
 const dashboardItems = [
   {
     id: 2,
-    label: 'Farmex Marketplace',
+    label: 'JHUB Trade Manager',
     icon: <ShoppingBagIcon className="w-6 h-6 text-blue-500" />,
-    href: '/dashboard/farmex-marketplace'
+    href: '/dashboard/jhub-trade-manager'
   },
   {
     id: 4,
-    label: 'Farm Guard',
+    label: 'JHUB Farm Guard',
     icon: <FarmGuardIcon />,
-    href: '/dashboard/farm-guard'
+    href: '/dashboard/jhub-farm-guard'
   },
   {
     id: 4,
-    label: 'Farmex Manager',
+    label: 'JHUBFarm Manager',
     icon: <WorkflowIcon />,
-    href: '/dashboard/farmex-manager'
+    href: '/dashboard/jhub-farm-manager'
   },
   {
     id: 5,
@@ -130,7 +130,7 @@ const dashboardItems = [
     id: 8,
     label: 'Workflows & Integrations',
     icon: <WorkflowIcon />,
-    href: '/dashboard/farmex-workflows'
+    href: '/dashboard/jhub-workflows'
   }
 ];
 
@@ -200,8 +200,11 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
             alt="Logo"
           /> */}
           <h1 className="text-white text-2xl font-bold">
-            <Image src={'/images/logo/jhub-logo1.png'} alt={''}            
-            />
+            {/* <Image src={'/images/logo/jhub-logo1.png'} alt={''}  
+            width={276}
+            height={320}          
+            /> */}
+            JHUB
           </h1>
         </Link>
 

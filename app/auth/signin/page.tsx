@@ -237,7 +237,7 @@ const SignIn: React.FC = () => {
                   <input
                     type="submit"
                     value="Sign In"
-                    className="w-full cursor-pointer rounded-lg border border-primary bg-primary p-4 text-white transition hover:bg-opacity-90"
+                    className="w-full cursor-pointer rounded-lg border border-white bg-[#357c20] p-4 text-white transition hover:bg-opacity-90"
                   />
                 </div>
 
@@ -282,7 +282,7 @@ const SignIn: React.FC = () => {
                   {/*  */}
                   <p>
                     Forgot Password?{' '}
-                    <Link href="/auth/reset-password" className="text-primary">
+                    <Link href="/auth/reset-password" className="text-[#357c20]">
                       Reset Password
                     </Link>
                   </p>
@@ -290,7 +290,7 @@ const SignIn: React.FC = () => {
                   <h3>OR</h3>
                   <p>
                     Don’t have any account?{' '}
-                    <Link href="/auth/signup" className="text-primary">
+                    <Link href="/auth/signup" className="text-[#357c20]">
                       Sign Up
                     </Link>
                   </p>

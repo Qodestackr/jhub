@@ -165,7 +165,7 @@ const RequestConsultation = () => {
                   ></textarea>
                 </div>
 
-                <button className="flex w-full justify-center rounded bg-primary p-3 font-medium text-gray">
+                <button className="flex w-full justify-center rounded bg-[#0e2557] p-3 font-medium text-gray">
                   Request Consultancy
                 </button>
               </div>
