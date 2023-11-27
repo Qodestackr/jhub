@@ -1,5 +1,6 @@
-farmex_client Development Setup
-Welcome to the development setup guide for farmex_client. This guide will walk you through the process of setting up your development environment and introduce the tools used in the project.
+## jhub_client Development Setup
+
+Welcome to the development setup guide for jhub_client. This guide will walk you through the process of setting up your development environment and introduce the tools used in the project.
 
 Prerequisites
 Make sure you have the following software installed on your machine:
@@ -8,13 +9,13 @@ Node.js (LTS version recommended)
 Git
 Getting Started
 
-Clone the farmex_client repository:
+Clone the jhub_client repository:
 
-git clone https://github.com/your-username/farmex_client.git
+git clone https://github.com/your-username/jhub_client.git
 
 Change into the project directory:
 
-cd farmex_client
+cd jhub_client
 npm install
 
 Build Tools and Configuration

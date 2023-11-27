@@ -14,30 +14,27 @@ const SignIn: React.FC = () => {
           <div className="hidden w-full xl:block xl:w-1/2">
             <div className="py-17.5 px-26 text-center">
               <Link className="mb-5.5 inline-block" href="/">
-                {/* <Image
+                <Image
                   className="hidden dark:block"
-                  src={"/images/logo/logo.svg"}
+                  src={"/images/logo/jhub-logo1.png"}
+                  alt="Logo"
+                  width={276}
+                  height={320}
+                />
+                
+                <Image
+                  className="dark:hidden"
+                  src={'/images/logo/jhub-logo1.png'}
                   alt="Logo"
                   width={176}
                   height={32}
                 />
-                <Image
-                  className="dark:hidden"
-                  src={"/images/logo/logo-dark.svg"}
-                  alt="Logo"
-                  width={176}
-                  height={32}
-                /> */}
-                <h1 className="text-white text-2xl font-bold mb-4">
+                <h1 className="text-2xl font-bold mb-4">
                   JHUB Africa
                 </h1>
               </Link>
-
-              <p className="2xl:px-20">
-               Login to JHUB
-              </p>
-
-              <span className="mt-15 inline-block">
+      
+              {/* <span className="mt-15 inline-block">
                 <svg
                   width="350"
                   height="350"
@@ -158,7 +155,7 @@ const SignIn: React.FC = () => {
                     fill="#1C2434"
                   />
                 </svg>
-              </span>
+              </span> */}
             </div>
           </div>
 

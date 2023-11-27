@@ -1,1 +1,1 @@
-# Farmex Cloud Suite
+# JHUB Innovation Suite

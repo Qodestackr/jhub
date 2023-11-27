@@ -1,3 +1,5 @@
+import React from "react";
+
 const RequestConsultation = () => {
   return (
     <>
@@ -5,11 +7,10 @@ const RequestConsultation = () => {
         {' '}
         {/**grid grid-cols-1 gap-9 sm:grid-cols-2 */}
         <div className="flex flex-col gap-9">
-          {/* <!-- Request Demo with Farmex Cloud Form --> */}
           <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
             <div className="border-b border-stroke py-4 px-6.5 dark:border-strokedark">
               <h3 className="font-medium text-black dark:text-white">
-                Request Consulation | Provide Details
+                JHUB- Request Consulation 
               </h3>
             </div>
             <form action="#">
@@ -127,7 +128,7 @@ const RequestConsultation = () => {
                       <option value="">
                         Farm Management
                       </option>
-                      <option value="">Farmex Marketplace</option>
+                      <option value="">Training Program</option>
                       <option value="">Other</option>
                     </select>
                     <span className="absolute top-1/2 right-4 z-30 -translate-y-1/2">

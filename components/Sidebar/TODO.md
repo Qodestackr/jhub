@@ -1,4 +1,4 @@
-Todo features for Farmex Cloud Sidebar
+Todo features for jhub Cloud Sidebar
 
 - We alread have all Dashboard links
 - We need to add PROJECT and its management feature

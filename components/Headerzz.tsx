@@ -9,7 +9,7 @@ export const navTopLinks = [
   },
   {
     name: 'JHUB Projects',
-    href: '/jhub-projects'
+    href: '/'
   },
   {
     name: 'Talk to a Consultant',
@@ -59,7 +59,7 @@ export default function Headerzz() {
   };
   return (
     <>
-      <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-black-2 text-sm py-3 sm:py-0 dark:bg-slate-900">
+      <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-[#0E2557] text-whiter text-sm py-3 sm:py-0 dark:bg-slate-900">
         <nav
           className="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
           aria-label="Global"
@@ -68,7 +68,7 @@ export default function Headerzz() {
             <a
               className="flex-none text-3xl font-semibold dark:text-white"
               href="/"
-              aria-label="Farmex Suite Brand"
+              aria-label="jhub Suite Brand"
             >
               <Image 
               src={'/images/logo/jhub-logo1.png'} 
@@ -240,11 +240,11 @@ export default function Headerzz() {
         </nav>
       </header>
 
-      <nav className="w-full md:max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 flex justify-end items-end flex-1 bg-[#074c3f]  py-4">
-        <div className="relative flex flex-row justify-between items-center gap-x-8 border-t py-4 sm:py-0 dark:border-slate-700">
+      <nav className="w-full md:max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 flex justify-end items-end flex-1 bg-[#357c20]  py-4">
+        <div className="relative flex flex-row justify-between items-center gap-x-8 border-t py-4 sm:py-0 dark:border-whiter">
           <div className="flex items-center w-full sm:w-[auto]">
-            <span className="font-semibold text-success whitespace-nowrap text-xl border-e border-e-white/[.7] sm:border-transparent pe-4 me-4 sm:py-3.5 dark:text-white">
-             About JHUB
+            <span className="font-semibold text-whiter whitespace-nowrap text-xl border-white sm:border-transparent pe-4 me-4 sm:py-3.5 dark:text-white">
+             Introducing JHUB Africa
             </span>
 
             <div className="w-full sm:hidden">

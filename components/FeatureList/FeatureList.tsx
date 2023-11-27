@@ -75,13 +75,13 @@ const featureList = [
 
 export default function FeatureList() {
   return (
-    <section className="bg-black mt-20 dark:bg-gray-900">
+    <section className="bg-[#357c20] mt-20 dark:bg-gray-900 text-white">
       <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div className="max-w-screen-md mb-8 lg:mb-16">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             JHUB Services | Built To Meet Innovation
           </h2>
-          <p className="text-gray-500 sm:text-xl dark:text-gray-400">
+          <p className="text-white sm:text-xl dark:text-gray-400">
           At Jhub, we are dedicated to fostering innovation and transforming digital landscapes. 
           Our suite of Cloud-first Tech Solutions is meticulously designed with innovation in mind. From GIS-inclusive Analytics, 
           Resource Management, Marketplaces, to Consultancy/ Compliance, our services are crafted to elevate your productivity and 
