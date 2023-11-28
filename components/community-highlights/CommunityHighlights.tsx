@@ -44,7 +44,7 @@ const communityHighlights = [
 const HighlightCard = ({ imageSrc, icon, title, content, buttonText }) => {
   return (
     <div className="max-w-md mx-auto bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden mb-8 flex flex-col h-full">
-      <div className="relative h-48 w-full">
+      <div className="relative h-48 w-full dark:bg-slate-900">
         <Image
           src={imageSrc}
           alt={title}

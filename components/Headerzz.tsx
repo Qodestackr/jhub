@@ -80,7 +80,7 @@ export default function Headerzz() {
         >
           <div className="flex items-center justify-between">
             <a
-              className="flex-none text-3xl font-semibold dark:text-white"
+              className="flex-none text-3xl bg-white font-semibold dark:text-white"
               href="/"
               aria-label="jhub Suite Brand"
             >
@@ -254,7 +254,7 @@ export default function Headerzz() {
         </nav>
       </header>
 
-      <nav className="w-full md:max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 flex justify-end items-end flex-1 bg-[#357c20]  py-4">
+      <nav className="w-full md:max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 flex justify-end items-end flex-1 bg-success  py-4">
         <div className="relative flex flex-row justify-between items-center gap-x-8 border-t py-4 sm:py-0 dark:border-whiter">
           <div className="flex items-center w-full sm:w-[auto]">
             <span className="font-semibold text-whiter whitespace-nowrap text-xl border-white sm:border-transparent pe-4 me-4 sm:py-3.5 dark:text-white">

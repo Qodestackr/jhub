@@ -15,18 +15,19 @@ import Image from 'next/image';
 import Footer from '../components/footer/Footer';
 import BlogSection from '../components/blog';
 import CommunityHighlights from '../components/community-highlights/CommunityHighlights';
+import FAQ from '../components/FAQ/FAQ';
+import Team from '../components/Team/Team';
 
 export default function Home() {
   return (
     <>
       <LandingHeroSection />
       <FeatureList />
-      {/* <IndustryStats /> */}
-
       <PartnershipLogos />
+      <Team />
       <CommunityHighlights />
-      {/* <WriteAComment /> */}
       <BlogSection />
+      <FAQ />
       <SubscribeNewsletter />
     </>
   );

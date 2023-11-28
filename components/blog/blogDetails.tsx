@@ -58,21 +58,22 @@ const BlogDetails = (/**{ match } */) => {
                 <p className="text-lg text-gray-800 dark:text-gray-200">
                   Exciting News for Small-Scale Farmers! At JHUB, our commitment
                   to innovation extends to supporting the backbone of our
-                  communities. Today, we&apos;re thrilled to announce the launch of a 
-                  free plan specifically tailored for small-scale farmers.
+                  communities. Today, we&apos;re thrilled to announce the launch
+                  of a free plan specifically tailored for small-scale farmers.
                 </p>
 
                 <p className="text-lg text-gray-800 dark:text-gray-200">
-                  JHUB isn&apos;t just an innovation hub; it&apos;s your ultimate Digital
-                  Innovation Hub designed to empower small-scale farmers. Here,
-                  your ideas will flourish, and innovation will thrive. Our
-                  platform offers a collaborative space for farmers,
-                  visionaries, and entrepreneurs to ideate, incubate, and
-                  implement digital solutions tailored to the agriculture
-                  sector. From optimizing crop yields to streamlining supply
-                  chains, we support every stage of your innovation journey.
-                  Join our vibrant community at JHUB and drive positive societal
-                  impact through digital transformation in agriculture.
+                  JHUB isn&apos;t just an innovation hub; it&apos;s your
+                  ultimate Digital Innovation Hub designed to empower
+                  small-scale farmers. Here, your ideas will flourish, and
+                  innovation will thrive. Our platform offers a collaborative
+                  space for farmers, visionaries, and entrepreneurs to ideate,
+                  incubate, and implement digital solutions tailored to the
+                  agriculture sector. From optimizing crop yields to
+                  streamlining supply chains, we support every stage of your
+                  innovation journey. Join our vibrant community at JHUB and
+                  drive positive societal impact through digital transformation
+                  in agriculture.
                 </p>
 
                 <div className="text-center">
@@ -147,7 +148,8 @@ const BlogDetails = (/**{ match } */) => {
                     alt="Image Description"
                   />
                   <figcaption className="mt-3 text-sm text-center text-gray-500">
-                    A greenhouse construction site within JKUAT | JHUB innovates.
+                    A greenhouse construction site within JKUAT | JHUB
+                    innovates.
                   </figcaption>
                 </figure>
 
@@ -158,14 +160,15 @@ const BlogDetails = (/**{ match } */) => {
 
                   <p className="text-lg text-gray-800 dark:text-gray-200">
                     We recognize the profound impact of collaborative sharing,
-                    and we&apos;re excited to introduce an opportunity for everyone
-                    to experience JHUB. Now, whether you&apos;re a solo innovator or
-                    a duo of designers, you can invite an unlimited number of
-                    spectators, including project managers, management,
-                    marketing teams, and more, to join you on JHUB. Witness the
-                    transformative power of open communication and explore the
-                    design process collaboratively from the early stages. JHUB
-                    is here to elevate teamwork and innovation for all.
+                    and we&apos;re excited to introduce an opportunity for
+                    everyone to experience JHUB. Now, whether you&apos;re a solo
+                    innovator or a duo of designers, you can invite an unlimited
+                    number of spectators, including project managers,
+                    management, marketing teams, and more, to join you on JHUB.
+                    Witness the transformative power of open communication and
+                    explore the design process collaboratively from the early
+                    stages. JHUB is here to elevate teamwork and innovation for
+                    all.
                   </p>
                 </div>
 
@@ -191,10 +194,10 @@ const BlogDetails = (/**{ match } */) => {
                       className="text-blue-600 decoration-2 hover:underline font-medium"
                       href="/"
                     >
-                      Taimba 
+                      Taimba
                     </Link>
-                    , puts it, &quot;JHUB introduces a persistent way for everyone to
-                    see and absorb each other&apos;s work&quot;.
+                    , puts it, &quot;JHUB introduces a persistent way for
+                    everyone to see and absorb each other&apos;s work&quot;.
                   </li>
                 </ul>
 
@@ -488,8 +491,8 @@ const BlogDetails = (/**{ match } */) => {
                 >
                   <div className="grow">
                     <span className="text-sm font-bold text-gray-800 group-hover:text-blue-600 dark:text-gray-200 dark:group-hover:text-blue-500">
-                      Seeds of Innovation: How JHUB&apos;s Digital Innovation Hub
-                      Empowers Farmers for Sustainable Success
+                      Seeds of Innovation: How JHUB&apos;s Digital Innovation
+                      Hub Empowers Farmers for Sustainable Success
                     </span>
                   </div>
 
@@ -529,7 +532,6 @@ const BlogDetails = (/**{ match } */) => {
           </div>
         </div>
       </div>
-      
     </div>
   );
 };

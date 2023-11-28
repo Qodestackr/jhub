@@ -1,13 +1,19 @@
 'use client';
 import Link from 'next/link';
 import React from 'react';
-import { useRouter } from 'next/router';
 import { usePathname } from 'next/navigation';
+import {
+  IconBrandFacebook,
+  IconBrandLinkedin,
+  IconBrandTwitter
+} from '@tabler/icons-react';
+import DarkModeSwitcher from '../DarkModeSwitcher';
 
 export default function Footer() {
   const pathname = usePathname();
+  const isDashboardPage = pathname.startsWith('/dashboard');
 
-  return pathname === '/dashboard' ? null : (
+  return isDashboardPage ? null : (
     <footer className="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-10">
         <div className="col-span-full hidden lg:col-span-1 lg:block">
@@ -76,6 +82,14 @@ export default function Footer() {
                 href="/contact-us"
               >
                 Contact Us
+              </Link>
+            </p>
+            <p>
+              <Link
+                className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                href="/jhub-events"
+              >
+                Events
               </Link>
             </p>
             <p>
@@ -360,18 +374,19 @@ export default function Footer() {
               </p>
             </div>
 
-            <div className="space-x-4">
+            <div className="space-x-4 flex justify-center items-center">
+              <DarkModeSwitcher />
               <a href="https://twitter.com/DiscoverJKUAT" target="_blank">
-                Twitter
+                <IconBrandTwitter />{' '}
               </a>
               <a href="https://www.facebook.com/DiscoverJKUAT/" target="_blank">
-                Facebook
+                <IconBrandFacebook />
               </a>
               <a
                 href="https://www.linkedin.com/school/jkuat/?originalSubdomain=ke"
                 target="_blank"
               >
-                LinkedIn
+                <IconBrandLinkedin />
               </a>
             </div>
           </div>

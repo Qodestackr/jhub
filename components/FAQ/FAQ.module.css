@@ -1,0 +1,9 @@
+.hs-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.hs-accordion-content.block {
+  max-height: 500px; /* Set a suitable max-height */
+}
