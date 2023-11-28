@@ -64,13 +64,14 @@ export const navProductsList = [
 export default function Headerzz() {
   const [showDropdown, setShowDropdown] = useState(false);
   const pathname = usePathname();
+  const isDashboardPage = pathname.startsWith('/dashboard');
 
   const toggleDropdown = () => {
     setShowDropdown((prevDropdownState) => !prevDropdownState);
   };
 
   // TODO USE ROUTER TO
-  return pathname === '/dashboard' ? null : (
+  return isDashboardPage ? null : (
     <>
       <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-[#0E2557] text-whiter text-sm py-3 sm:py-0 dark:bg-slate-900">
         <nav
