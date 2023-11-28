@@ -45,7 +45,7 @@ Pass a prop called disableBeacon: true to the first step of the step array.
 const ECommerce: React.FC = () => {
   return (
     <>
-    {/* TODO: Wrap JOY Ride in a z-index */}
+      {/* TODO: Wrap JOY Ride in a z-index */}
       {/* <JoyRide
         steps={TOUR_STEPS}
         continuous={true}

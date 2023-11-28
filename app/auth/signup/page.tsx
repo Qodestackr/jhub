@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -181,9 +181,11 @@ const SignUp: React.FC = () => {
 
                 <div className="mb-5">
                   <button
-                  onClick={handleSignUp}
-                  className="w-full cursor-pointer rounded-lg border border-white bg-[#357c20] p-4 text-white transition hover:bg-opacity-90"
-                  >Sign Up</button>
+                    onClick={handleSignUp}
+                    className="w-full cursor-pointer rounded-lg border border-white bg-[#357c20] p-4 text-white transition hover:bg-opacity-90"
+                  >
+                    Sign Up
+                  </button>
                 </div>
 
                 <button className="flex w-full items-center justify-center gap-3.5 rounded-lg border border-stroke bg-gray p-4 hover:bg-opacity-50 dark:border-strokedark dark:bg-meta-4 dark:hover:bg-opacity-50">

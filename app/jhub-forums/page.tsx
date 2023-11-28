@@ -23,9 +23,9 @@ export default function ForumsPage() {
       </h2>
       <p className="text-lg mb-4">
         Our forums are organized into specialized categories to cater to a wide
-        range of interests. Whether you are passionate about software development, sustainable
-        agriculture, entrepreneurship, or emerging technologies, you'll find a
-        dedicated space for your discussions.
+        range of interests. Whether you are passionate about software
+        development, sustainable agriculture, entrepreneurship, or emerging
+        technologies, you&apos;ll find a dedicated space for your discussions.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -54,9 +54,10 @@ export default function ForumsPage() {
       </p>
 
       <p className="text-lg mb-4">
-        Whether you're a seasoned professional or just starting your journey,
-        everyone is welcome to be a part of the JHUB Forums. Let's build a
-        community that fosters collaboration and drives innovation forward.
+        Whether you&apos;re a seasoned professional or just starting your
+        journey, everyone is welcome to be a part of the JHUB Forums. Let&apos;s
+        build a community that fosters collaboration and drives innovation
+        forward.
       </p>
 
       <p className="text-lg mb-4">

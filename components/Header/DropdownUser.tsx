@@ -13,12 +13,9 @@ const DropdownUser = () => {
 
   // const router = useRouter();
 
-
-
-
   const handleLogout = (e: any) => {
     // router?. NAVIGATE TO "/"
-  }
+  };
 
   // close on click outside
   useEffect(() => {

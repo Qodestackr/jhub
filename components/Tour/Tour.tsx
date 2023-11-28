@@ -1,38 +1,37 @@
 import React from 'react';
 import JoyRide from 'react-joyride';
 
-
 const TOUR_STEPS = [
   {
     target: '.navbar-section',
-    content: 'Explore the Navigation, Messaging, and Notifications',
+    content: 'Explore the Navigation, Messaging, and Notifications'
     // placement: 'bottom',
   },
   {
     target: '.messages-notifications-section',
-    content: 'Check out Messages and Notifications',
+    content: 'Check out Messages and Notifications'
     // placement: 'bottom',
   },
   {
-    target: '.events-calender', 
-    content: 'Create Events and Schedules',
+    target: '.events-calender',
+    content: 'Create Events and Schedules'
     // placement: 'bottom',
   },
   {
-    target: '.settings-section', 
-    content: 'Step 3: Explore the Settings',
+    target: '.settings-section',
+    content: 'Step 3: Explore the Settings'
     // placement: 'bottom',
   },
   {
-    target: '.profile-section', 
-    content: 'Manage your Profile here',
+    target: '.profile-section',
+    content: 'Manage your Profile here'
     // placement: 'bottom',
   },
   {
     target: '.iam-section',
-    content: 'Explore & Customize IAM for custom roles and permissions',
+    content: 'Explore & Customize IAM for custom roles and permissions'
     // placement: 'bottom',
-  },
+  }
 ];
 
 const Tour: React.FC = () => {

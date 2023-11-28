@@ -20,7 +20,6 @@ export default function LearnHub() {
             subscribe
           </button>
         </div> */}
-
         LEARN HUB IS UNDER CONSTRUCTION
       </div>
     </div>
