@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const RequestConsultation = () => {
   return (
@@ -10,7 +10,7 @@ const RequestConsultation = () => {
           <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
             <div className="border-b border-stroke py-4 px-6.5 dark:border-strokedark">
               <h3 className="font-medium text-black dark:text-white">
-                JHUB- Request Consulation 
+                JHUB- Request Consulation
               </h3>
             </div>
             <form action="#">
@@ -18,8 +18,7 @@ const RequestConsultation = () => {
                 <div className="mb-4.5 flex flex-col gap-6 xl:flex-row">
                   <div className="w-full xl:w-1/2">
                     <label className="mb-2.5 block text-black dark:text-white">
-                      First name{' '}
-                      <span className="text-meta-1">*</span>
+                      First name <span className="text-meta-1">*</span>
                     </label>
                     <input
                       type="text"
@@ -30,8 +29,7 @@ const RequestConsultation = () => {
 
                   <div className="w-full xl:w-1/2">
                     <label className="mb-2.5 block text-black dark:text-white">
-                      Last name{' '}
-                      <span className="text-meta-1">*</span>
+                      Last name <span className="text-meta-1">*</span>
                     </label>
                     <input
                       type="text"
@@ -43,8 +41,7 @@ const RequestConsultation = () => {
 
                 <div className="mb-4.5">
                   <label className="mb-2.5 block text-black dark:text-white">
-                    Name Of Your Venture{' '}
-                    <span className="text-meta-1">*</span>
+                    Name Of Your Venture <span className="text-meta-1">*</span>
                   </label>
                   <input
                     type="email"
@@ -85,13 +82,9 @@ const RequestConsultation = () => {
                   <div className="relative z-20 bg-transparent dark:bg-form-input">
                     <select className="relative z-20 w-full appearance-none rounded border border-stroke bg-transparent py-3 px-5 outline-none transition focus:border-primary active:border-primary dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary">
                       <option value="">Product Suite Call</option>
-                      <option value="">
-                        Farm Management
-                      </option>
-                      
-                      <option value="">
-                      Production Yields
-                      </option>
+                      <option value="">Farm Management</option>
+
+                      <option value="">Production Yields</option>
                       <option value="">Legal Service</option>
                       <option value="">Other</option>
                     </select>
@@ -125,9 +118,7 @@ const RequestConsultation = () => {
                   <div className="relative z-20 bg-transparent dark:bg-form-input">
                     <select className="relative z-20 w-full appearance-none rounded border border-stroke bg-transparent py-3 px-5 outline-none transition focus:border-primary active:border-primary dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary">
                       <option value="">JHUB Integrations</option>
-                      <option value="">
-                        Farm Management
-                      </option>
+                      <option value="">Farm Management</option>
                       <option value="">Training Program</option>
                       <option value="">Other</option>
                     </select>

@@ -12,19 +12,19 @@ const JHUBGuardPage = () => {
         JHUB Guard - Your Farm&apos;s Protector
       </h1>
       <p className="text-lg mb-8">
-        Our unique monitoring system, JHUB Guard, provides real-time feedback and
-        acts as the brain of your farm, shielding it from adverse conditions. By
-        combining data from our trademarked FarmSpears, JHUB Guard ensures that
-        everything stays within required levels, and if not, it takes the
-        necessary actions to correct it.
+        Our unique monitoring system, JHUB Guard, provides real-time feedback
+        and acts as the brain of your farm, shielding it from adverse
+        conditions. By combining data from our trademarked FarmSpears, JHUB
+        Guard ensures that everything stays within required levels, and if not,
+        it takes the necessary actions to correct it.
       </p>
       <h2 className="text-2xl font-bold mb-4">
         Your Entire Farm at Your Fingertips
       </h2>
       <p className="text-lg mb-8">
-        With JHUB Guard™, you have the power to remotely control your farm using
-        your mobile phone or dashboard. Get real-time information on fertigation
-        and irrigation needs for your crops effortlessly.
+        With JHUB Guard™, you have the power to remotely control your farm
+        using your mobile phone or dashboard. Get real-time information on
+        fertigation and irrigation needs for your crops effortlessly.
       </p>
       <h2 className="text-2xl font-bold mb-4">Easy to Use and Convenient</h2>
       <p className="text-lg mb-8">

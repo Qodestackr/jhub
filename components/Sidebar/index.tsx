@@ -5,11 +5,6 @@ import SidebarLinkGroup from './SidebarLinkGroup';
 import Image from 'next/image';
 import JoyRide from 'react-joyride';
 
-// import dynamic from "next/dynamic";
-// const JoyRideTour = dynamic(() => import("../Tour/Tour"), {
-//   ssr: false,
-// });
-
 import {
   ShoppingBagIcon,
   AnalyticsIcon,
@@ -27,8 +22,8 @@ interface SidebarProps {
 const TOUR_STEPS = [
   // Target Classes...
   {
-    target: '.dashbboard-sidebar-marketplace',
-    content: 'Farmex Marketplace Dashboard. Access everything Store/e-commerce'
+    target: '.dashbboard-sidebar-trade',
+    content: 'JHUB Trade Dashboard. Access everything Store and Marketplace'
   },
   {
     target: '.events-x-calendar',
@@ -189,7 +184,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
         sidebarOpen ? 'translate-x-0' : '-translate-x-full'
       }`}
     >
-      <Tour />
+      {/* THIS IS THE TOUR COMPONENT */}
+      {/* <Tour /> */}
       {/* <!-- SIDEBAR HEADER --> */}
       <div className="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
         <Link href="/dashboard">

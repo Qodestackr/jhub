@@ -1,8 +1,25 @@
 import React from 'react';
 
-const Icon = ()=>(
-  <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-sphere-plus" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12c0 1.657 4.03 3 9 3c1.116 0 2.185 -.068 3.172 -.192m5.724 -2.35a1.1 1.1 0 0 0 .104 -.458" /><path d="M20.984 12.546a9 9 0 1 0 -8.442 8.438" /><path d="M16 19h6" /><path d="M19 16v6" /></svg>
-)
+const Icon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="icon icon-tabler icon-tabler-sphere-plus"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    stroke-width="2"
+    stroke="currentColor"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M3 12c0 1.657 4.03 3 9 3c1.116 0 2.185 -.068 3.172 -.192m5.724 -2.35a1.1 1.1 0 0 0 .104 -.458" />
+    <path d="M20.984 12.546a9 9 0 1 0 -8.442 8.438" />
+    <path d="M16 19h6" />
+    <path d="M19 16v6" />
+  </svg>
+);
 
 const featureList = [
   {
@@ -75,16 +92,17 @@ const featureList = [
 
 export default function FeatureList() {
   return (
-    <section className="bg-[#357c20] mt-20 dark:bg-gray-900 text-white">
+    <section className="bg-[#074b3e] mt-20 dark:bg-gray-900 text-white">
       <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div className="max-w-screen-md mb-8 lg:mb-16">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             JHUB Services | Built To Meet Innovation
           </h2>
           <p className="text-white sm:text-xl dark:text-gray-400">
-          At JHUB, we are dedicated to fostering innovation and transforming digital landscapes. 
-          Experience the power of technology-driven solutions with JHUB, where every service is tailored to meet the 
-          dynamic needs of a rapidly evolving digital era.
+            At JHUB, we are dedicated to fostering innovation and transforming
+            digital landscapes. Experience the power of technology-driven
+            solutions with JHUB, where every service is tailored to meet the
+            dynamic needs of a rapidly evolving digital era.
           </p>
         </div>
         <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">

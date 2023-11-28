@@ -7,7 +7,7 @@ import React from 'react';
  * The decision to temporarily disable the use of @react-jvectormap 
  * library is driven by the desire to explore and implement a more 
  * robust and feature-rich solution for sophisticated mapping in 
- * the Farmex Cloud Admin application.
+ * the JHUB Cloud Admin application.
  * 
  * TODO: Bring in a more advanced mapping library that better aligns 
  * with the project's evolving requirements and provides enhanced 
@@ -62,7 +62,7 @@ const MapOne = () => {
       </div>
  */}
       <p className="text-xl font-semibold text-black dark:text-white">
-        GIS POWERED SALES AND PERFORMANCE INSIGHTS
+        GIS POWERED AND PERFORMANCE INSIGHTS
       </p>
     </div>
   );

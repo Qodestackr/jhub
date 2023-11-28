@@ -147,12 +147,12 @@ const Header = (props: {
                 </li>
                 <li>Services</li>
                 <li>
-                  <Link href={'/farmex-projects'}>Farmex Projects</Link>
+                  <Link href={'/jhub-projects'}>JHUB Projects</Link>
                 </li>
               </ul>
             )}
           </ul>
-
+ 
           {props.isDashboard ? (
             <DropdownUser />
           ) : (

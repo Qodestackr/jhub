@@ -1,15 +1,10 @@
 import { Metadata } from 'next';
-import FarmexMarketplace from '../../components/Dashboard/E-commerce';
-import DashboardHelp from '../../components/Dashboard/_components/DashboardHelp';
-
+import JHUBTrade from '../../components/Dashboard/E-commerce';
 
 export default function Home() {
   return (
-    <>
-      {/* <DashboardHelp />
-      <FarmexMarketplace /> */}
-
-      Dashboard.
-    </>
+    <section className='h-scree'>
+      <JHUBTrade />
+    </section>
   );
 }

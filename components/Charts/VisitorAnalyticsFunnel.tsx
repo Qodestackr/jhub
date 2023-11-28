@@ -6,7 +6,7 @@ const ReactApexChart = dynamic(() => import('react-apexcharts'), {
   ssr: false
 });
 
-interface FarmexVisitorAnalyticsFunnelState {
+interface VisitorAnalyticsFunnelState {
   series: number[];
 }
 
@@ -52,8 +52,8 @@ const options: ApexOptions = {
   ]
 };
 
-const FarmexVisitorAnalyticsFunnel: React.FC = () => {
-  const [state, setState] = useState<FarmexVisitorAnalyticsFunnelState>({
+const VisitorAnalyticsFunnel: React.FC = () => {
+  const [state, setState] = useState<VisitorAnalyticsFunnelState>({
     series: [65, 34, 12, 56]
   });
 
@@ -101,7 +101,7 @@ const FarmexVisitorAnalyticsFunnel: React.FC = () => {
 
       <div className="mb-2">
         <div
-          id="FarmexVisitorAnalyticsFunnel"
+          id="VisitorAnalyticsFunnel"
           className="mx-auto flex justify-center"
         >
           <ReactApexChart
@@ -154,4 +154,4 @@ const FarmexVisitorAnalyticsFunnel: React.FC = () => {
   );
 };
 
-export default FarmexVisitorAnalyticsFunnel;
+export default VisitorAnalyticsFunnel;

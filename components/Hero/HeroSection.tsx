@@ -1,61 +1,62 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 function LandingHeroSection() {
   const [show, setShow] = useState(false);
   return (
-    <div className="py-0 bg-gray-100 overflow-y-hidden">
-      <div className="w-full px-6">
-        <div className="mt-0 relative rounded-lg bg-indigo-700 container mx-auto flex flex-col items-center pt-12 sm:pt-24 pb-24 sm:pb-32 md:pb-48 lg:pb-56 xl:pb-64">
-          <Image
-            className="mr-2 lg:mr-12 mt-2 lg:mt-12 absolute right-0 top-0"
-            src=""
-            alt="bg"
-            width={10}
-            height={10}
-          />
-
-          <Image
-            className="ml-2 lg:ml-12 mb-2 lg:mb-12 absolute bottom-0 left-0"
-            width={10}
-            height={10}
-            src=""
-            alt="bg"
-          />
-          <div className="w-11/12 sm:w-2/3 mb-5 sm:mb-10">
-            <h1 className="text-2xl sm:text-3xl md:text-3xl lg:text-5xl xl:text-5xl text-center text-black font-bold leading-tight">
-              Cloud-First End to End Farming Management Portal
+      <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-7 lg:gap-x-8 xl:gap-x-12 lg:items-center">
+          <div className="lg:col-span-3">
+            <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl lg:text-6xl dark:text-white">
+              Innovation for Transformation.
             </h1>
-
-            <p className='mt-5'>
-              Farmex is a suite of modern farming tools powered by Cloud, GIS,
-              Machine Learning, Professional Consultancy, and More.
+            <p className="mt-3 text-lg text-gray-800 dark:text-gray-400">
+              We are a one-stop hub offering comprehensive array of digital
+              solutions for societal needs.
             </p>
+
+            <div className="mt-5 lg:mt-8 flex flex-col items-center gap-2 sm:flex-row sm:gap-3">
+              <Link
+                className="w-full bg-success sm:w-auto py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                href="/about-jhub"
+              >
+                About JHUB
+              </Link>
+              <Link
+                className="w-full bg-success sm:w-auto py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                href="/learn-hub"
+              >
+                Learn Hub
+              </Link>
+            </div>
+
+            <div className="mt-6 lg:mt-12">
+              <span className="text-xs font-medium text-success uppercase dark:text-gray-200">
+                Investing in the digital future.
+              </span>
+
+              <div className="mt-4 flex gap-x-8">
+                JHUB develops climate smart agricultural solutions and digital
+                trade.
+              </div>
+            </div>
           </div>
-          <div className="flex justify-center items-center mb-10 sm:mb-20">
-            <button className="hover:text-success text-white hover:bg-transparent lg:text-xl hover:border-black border bg-success transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 ring-offset-indigo-700	focus:ring-black rounded text-indigo-700 px-4 sm:px-8 py-1 sm:py-3 text-sm">
-              Get Started
-            </button>
-            <button className="hover:bg-successhover:text-indigo-600 lg:text-xl hover:border-indigo-600 ml-3 sm:ml-6 bg-transparent transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 ring-offset-indigo-700 focus:ring-black hover:bg-indigo-700-800 rounded border border-black text-black px-4 sm:px-8 py-1 sm:py-3 text-sm">
-              Learn More
-            </button>
-          </div>
-        </div>
-        <div className="container mx-auto flex justify-center md:-mt-56 -mt-20 sm:-mt-40">
-          <div className="relative sm:w-2/3 w-11/12">
+
+          <div className="lg:col-span-4 mt-10 lg:mt-0">
             <Image
-              src=""
-              alt="Sample Page"
-              role="Image"
-              width={200}
-              height={300}
+              className="w-full rounded-xl"
+              src={`/images/logo/corporate-banner2x.jpg`}
+              alt="Image Description"
+              layout="responsive"
+              width={900}
+              height={700}
             />
           </div>
         </div>
-      </div>
-    </div>
+      </div> 
   );
 }
 

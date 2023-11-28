@@ -1,7 +1,6 @@
 import React from 'react';
 
 function ProgressBar() {
-
   return (
     <>
       <div className="w-11/12 lg:w-2/6 mx-auto">
@@ -91,6 +90,5 @@ function ProgressBar() {
     </>
   );
 }
-
 
 export default ProgressBar;

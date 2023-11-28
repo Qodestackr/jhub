@@ -7,29 +7,29 @@ const Error10 = () => {
       <div className="w-full lg:w-1/2">
         <Image
           className="hidden lg:block"
-          src={'/images/logo/jhub-logo1.png'} 
-          alt={'/images/logo/jhub-logo1.png'} 
+          src={'/images/logo/jhub-logo1.png'}
+          alt={'/images/logo/jhub-logo1.png'}
           width={200}
           height={300}
         />
         <Image
           className="hidden md:block lg:hidden"
-          src={'/images/logo/jhub-logo1.png'} 
-          alt={'/images/logo/jhub-logo1.png'} 
+          src={'/images/logo/jhub-logo1.png'}
+          alt={'/images/logo/jhub-logo1.png'}
           width={200}
           height={300}
         />
         <Image
           className="md:hidden"
-          src={'/images/logo/jhub-logo1.png'} 
-          alt={'/images/logo/jhub-logo1.png'} 
+          src={'/images/logo/jhub-logo1.png'}
+          alt={'/images/logo/jhub-logo1.png'}
           width={200}
           height={300}
         />
       </div>
       <div className="w-full lg:w-1/2">
         <h1 className="py-4 text-3xl lg:text-4xl font-extrabold text-gray-800">
-         404 | Page Not Found 
+          404 | Page Not Found
         </h1>
         <p className="py-4 text-base text-gray-800">
           The content you&apos;re looking for doesn&apos;t exist. Either it was

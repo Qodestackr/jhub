@@ -1,76 +1,5 @@
 import { Metadata } from 'next';
 
-export const metadata: Metadata &
-  Record<string, any> /**to include an image */ = {
-  title: 'Farmex Cloud | Farming Software and Tools',
-  description:
-    'Synnefa offers smart and comprehensive farming tools for the modern farmer. Explore our marketplace and discover top-quality farming software and products.',
-  keywords: [
-    'farming software',
-    'agricultural tools',
-    'modern farming',
-    'farm management',
-    'agtech marketplace'
-  ],
-  image: '/path/to/your/image.jpg',
-  url: 'https://www.yourfarmexcloudwebsite.com',
-  author: 'FarmexCloud Team',
-  twitterUsername: '@FarmexCloud',
-  facebookAppID: '1234567890',
-  type: 'website',
-  locale: 'en_US',
-  siteName: 'Farmex Cloud',
-  farmexGIS: {
-    description: 'Empowering Agriculture Through Geospatial Intelligence',
-    highlights: [
-      'Advanced GIS solutions tailored for the agriculture industry',
-      'Spatial analysis for optimized crop planning and yield forecasting',
-      'Precision agriculture techniques for resource-efficient farming',
-      'Integration of satellite imagery and IoT data for real-time insights',
-      'Custom mapping and visualization tools for farm management'
-    ],
-    expertise: [
-      'GIS development',
-      'Geospatial analysis',
-      'Precision agriculture',
-      'Remote sensing'
-    ],
-    caseStudies: [
-      {
-        title: 'Optimizing Crop Rotation',
-        description:
-          'Implemented GIS-based crop rotation strategies resulting in increased soil fertility and crop yield.'
-      },
-      {
-        title: 'IoT Integration for Precision Farming',
-        description:
-          'Utilized GIS and IoT technologies to enable precision agriculture, optimizing resource usage.'
-      }
-    ],
-    contact: {
-      email: 'gis@farmexcloud.com',
-      phone: '+1234567890',
-      website: 'https://www.farmexcloud.com/gis'
-    }
-  },
-
-  farmexConsultancy: {
-    description:
-      'Farmex Consultancy specializes in Geographic Information Systems (GIS) development for the agriculture sector. We provide cutting-edge solutions to optimize farming processes and enhance agricultural productivity.',
-    services: [
-      'GIS development',
-      'Spatial analysis',
-      'Precision agriculture',
-      'Farm management solutions'
-    ],
-    contact: {
-      email: 'info@farmexconsultancy.com',
-      phone: '+1234567890',
-      website: 'https://www.farmexconsultancy.com'
-    }
-  }
-};
-
 const RequestDemoForm = () => {
   return (
     <>
@@ -78,11 +7,10 @@ const RequestDemoForm = () => {
         {' '}
         {/**grid grid-cols-1 gap-9 sm:grid-cols-2 */}
         <div className="flex flex-col gap-9">
-          {/* <!-- Request Demo with Farmex Cloud Form --> */}
           <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
             <div className="border-b border-stroke py-4 px-6.5 dark:border-strokedark">
               <h3 className="font-medium text-black dark:text-white">
-                Request Demo with Farmex Cloud
+                Request Demo with JHUB Cloud
               </h3>
             </div>
             <form action="#">
@@ -155,7 +83,7 @@ const RequestDemoForm = () => {
                       <option value="">
                         Farm Management /Production Yields
                       </option>
-                      <option value="">Farmex Marketplace</option>
+                      <option value="">JHUB Trade</option>
                       <option value="">Other</option>
                     </select>
                     <span className="absolute top-1/2 right-4 z-30 -translate-y-1/2">
@@ -182,7 +110,7 @@ const RequestDemoForm = () => {
 
                 <div className="mb-6">
                   <label className="mb-2.5 block text-black dark:text-white">
-                    What are Your Interests with Farmex Cloud?
+                    What are Your Interests with JHUB ?
                   </label>
                   <textarea
                     rows={6}

@@ -5,17 +5,6 @@ export default function SubscribeNewsletter() {
   return (
     <>
       <div className="bg-[#0e2557] text-white p-6 container md:w-2/3 xl:w-auto mx-auto  flex flex-col xl:items-stretch justify-between xl:flex-row">
-        {/* <div className="xl:w-1/2 xl:mb-0 relative h-auto flex items-center justify-center">
-          <Image
-            src={'/images/logo/jhub-logo1.png'} 
-            alt="Envelope with a newsletter"
-            role="img"
-            className="h-full xl:w-full lg:w-1/2 w-full "
-            width={200}
-            height={300}
-          />
-          JHUB Logo
-        </div> */}
         <div className="w-full xl:w-1/2 xl:pl-40 xl:py-28 ">
           <h1 className="text-2xl md:text-4xl xl:text-5xl font-bold leading-10 text-gray-800 mb-4 text-center xl:text-left md:mt-0 mt-4">
             Subscribe

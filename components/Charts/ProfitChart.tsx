@@ -69,15 +69,15 @@ const options: ApexOptions = {
   }
 };
 
-interface FarmexProfitChartState {
+interface ProfitChartState {
   series: {
     name: string;
     data: number[];
   }[];
 }
 
-const FarmexProfitChart: React.FC = () => {
-  const [state, setState] = useState<FarmexProfitChartState>({
+const ProfitChart: React.FC = () => {
+  const [state, setState] = useState<ProfitChartState>({
     series: [
       {
         name: 'Sales',
@@ -142,7 +142,7 @@ const FarmexProfitChart: React.FC = () => {
       </div>
 
       <div>
-        <div id="FarmexProfitChart" className="-ml-5 -mb-9">
+        <div id="ProfitChart" className="-ml-5 -mb-9">
           <ApexCharts
             options={options}
             series={state.series}
@@ -155,4 +155,4 @@ const FarmexProfitChart: React.FC = () => {
   );
 };
 
-export default FarmexProfitChart;
+export default ProfitChart;

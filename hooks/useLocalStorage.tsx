@@ -11,9 +11,7 @@ function useLocalStorage<T>(
   // Pass  initial state function to useState so logic is only executed once
   const [storedValue, setStoredValue] = useState(() => {
     try {
-      // Get from local storage by key
       if (typeof window !== 'undefined') {
-        // browser code
         const item = window.localStorage.getItem(key);
         // Parse stored json or if none return initialValue
         return item ? JSON.parse(item) : initialValue;
@@ -39,7 +37,12 @@ function useLocalStorage<T>(
         window.localStorage.setItem(key, JSON.stringify(valueToStore));
       }
     } catch (error) {
-      // TODO: A more advanced implementation would handle the error case
+      /***
+       * A more advanced case should handle error in following manner
+       * Dispatch Error To Logging System Like Sentry
+       * Retry Fetch
+       * Throw the Error Gracefully - For The User
+       */
       console.log(error);
     }
   }, [key, storedValue]);

@@ -4,12 +4,12 @@ import React, { useState } from 'react';
 import dynamic from 'next/dynamic';
 const ApexCharts = dynamic(() => import('react-apexcharts'), { ssr: false });
 
-interface FarmexVisitorAnalyticsChartState {
+interface VisitorAnalyticsChartState {
   series: { data: number[] }[];
 }
 
-const FarmexVisitorAnalyticsChart: React.FC = () => {
-  const [state, setState] = useState<FarmexVisitorAnalyticsChartState>({
+const VisitorAnalyticsChart: React.FC = () => {
+  const [state, setState] = useState<VisitorAnalyticsChartState>({
     series: [
       {
         data: [
@@ -141,7 +141,7 @@ const FarmexVisitorAnalyticsChart: React.FC = () => {
       </div>
 
       <div className="mb-2">
-        <div id="FarmexVisitorAnalyticsChart" className="-ml-5">
+        <div id="VisitorAnalyticsChart" className="-ml-5">
           <ApexCharts
             options={options}
             series={state.series}
@@ -154,4 +154,4 @@ const FarmexVisitorAnalyticsChart: React.FC = () => {
   );
 };
 
-export default FarmexVisitorAnalyticsChart;
+export default VisitorAnalyticsChart;

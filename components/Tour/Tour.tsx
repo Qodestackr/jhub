@@ -4,8 +4,8 @@ import JoyRide from 'react-joyride';
 const TOUR_STEPS = [
   // Target Classes...
   {
-    target: '.dashbboard-sidebar-marketplace',
-    content: 'Farmex Marketplace Dashboard. Access everything Store/e-commerce'
+    target: '.dashbboard-sidebar-trade',
+    content: 'JHUB Trade Dashboard. Access everything Store/e-commerce'
   },
   {
     target: '.events-x-calendar',

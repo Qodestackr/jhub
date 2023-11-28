@@ -10,6 +10,7 @@ import Header from '../components/Header';
 import Headerzz from '../components/Headerzz';
 import Footer from '../components/footer/Footer';
 
+// Root Layout Component
 export default function RootLayout({
   children
 }: {
@@ -20,10 +21,10 @@ export default function RootLayout({
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 0); // Simulation
+    setTimeout(() => setLoading(false), 20); // Simulate AJAX Load/ Request.
   }, []);
 
-  const isAuthenticated = false;
+  // const isAuthenticated = true;
 
   return (
     <html lang="en">
@@ -34,37 +35,17 @@ export default function RootLayout({
           ) : (
             <div className="flex h-screen overflow-hidden">
               <div className="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden">
-                {/* {isAuthenticated ? (
-                  <Header
-                    sidebarOpen={sidebarOpen}
-                    setSidebarOpen={setSidebarOpen}
-                  />
-                ) : (
-                  <Header
-                    sidebarOpen={sidebarOpen}
-                    setSidebarOpen={setSidebarOpen}
-                    // isDashboard={false}
-                  />
-                )} */}
                 <Headerzz />
-
-                {/* <Header
-                    sidebarOpen={sidebarOpen}
-                    setSidebarOpen={setSidebarOpen}
-                  /> */}
-
                 <main>
                   <div className="mx-auto max-w-screen-2xl p-4 md:p-6 2xl:p-10">
                     {children}
+                    <Footer />
                   </div>
                 </main>
               </div>
             </div>
-          )}        
-          {/* <Footer /> */}
-          </div>
-                    
-
+          )}
+        </div>
       </body>
     </html>
   );

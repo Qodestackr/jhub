@@ -51,7 +51,7 @@ function PricingTab(props: PricingTabProps) {
           </a>
         </div>
         <div className="text-slate-900 dark:text-slate-200 font-medium mb-3">
-        Access Exclusive:
+          Access Exclusive:
         </div>
         <ul className="text-slate-600 dark:text-slate-400 text-sm space-y-3 grow">
           {props.features.map((feature, index) => {

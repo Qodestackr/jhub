@@ -3,24 +3,24 @@ import React from 'react';
 
 export const partnershipLogos = [
   {
-    name: '',
-    logo: ''
+    name: 'PARTNER1',
+    logo: '/images/logo/corporate-banner2x.jpg'
   },
   {
-    name: '',
-    logo: ''
+    name: 'PARTNER2',
+    logo: '/images/logo/corporate-banner2x.jpg'
   },
   {
-    name: '',
-    logo: ''
+    name: 'PARTNER3',
+    logo: '/images/logo/corporate-banner2x.jpg'
   },
   {
-    name: '',
-    logo: ''
+    name: 'PARTNER4',
+    logo: '/images/logo/corporate-banner2x.jpg'
   },
   {
-    name: '',
-    logo: ''
+    name: 'PARTNER5',
+    logo: '/images/logo/corporate-banner2x.jpg'
   }
 ];
 
@@ -32,13 +32,30 @@ function PartnershipLogos() {
           Notable Partners we Work With.
         </h1>
         <p className="text-base md:text-lg lg:text-xl text-center text-gray-600 font-normal xl:w-10/12 xl:mx-auto">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque rem illum adipisci veritatis quisquam?
+          A consortium between Jomo Kenyatta University of Agriculture (JKUAT) &
+          other partners. The Consortium is formed by JKUAT and partners,
+          established through an agreement to create a DIH to support
+          Smallholder farmers and MSEs with climate smart agriculture, health,
+          and other tech/smart solutions.
         </p>
       </div>
       <div className="xl:py-16 lg:py-16 md:py-16 sm:py-16 px-15 flex flex-wrap">
-        <div className="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-b lg:border-b xl:border-r lg:border-r :border-r border-gray-200 xl:pb-10 pb-16 items-center">
+        {/* xl:border-b lg:border-b xl:border-r lg:border-r :border-r border-gray-200  */}
+        <div className="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:pb-10 pb-16 items-center">
           {partnershipLogos.map((partner, i) => (
-            <Image key={i} src="" alt="Logo 123" width={200} height={300} />
+            // <Image key={i} src="" alt="Logo 123" width={200} height={300} />
+            <Image
+              key={i}
+              className="w-full rounded-xl"
+              src={partner?.logo}
+              alt={partner?.name}
+              layout="responsive"
+              width={900}
+              height={700}
+              style={{
+                margin: '0 10px'
+              }}
+            />
           ))}
         </div>
       </div>
