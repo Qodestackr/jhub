@@ -16,6 +16,10 @@ export const navTopLinks = [
   {
     name: 'Talk to a Consultant',
     href: '/consulatation-request'
+  },
+  {
+    name: 'GO TO JHUB Portal',
+    href: '/dashboard'
   }
 ];
 

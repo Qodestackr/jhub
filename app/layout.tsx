@@ -21,7 +21,7 @@ export default function RootLayout({
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 20); // Simulate AJAX Load/ Request.
+    setTimeout(() => setLoading(false), 10); // Simulate AJAX Load/ Request.
   }, []);
 
   // const isAuthenticated = true;
