@@ -240,8 +240,8 @@ export default function Footer() {
                   id="flag-icon-css-us1"
                   viewBox="0 0 512 512"
                 >
-                  <g fill-rule="evenodd">
-                    <g stroke-width="1pt">
+                  <g fillRule="evenodd">
+                    <g strokeWidth="1pt">
                       <path
                         fill="#bd3d44"
                         d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
@@ -274,9 +274,9 @@ export default function Footer() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
                   <path d="m18 15-6-6-6 6" />
                 </svg>
@@ -296,8 +296,8 @@ export default function Footer() {
                     id="flag-icon-css-us"
                     viewBox="0 0 512 512"
                   >
-                    <g fill-rule="evenodd">
-                      <g stroke-width="1pt">
+                    <g fillRule="evenodd">
+                      <g strokeWidth="1pt">
                         <path
                           fill="#bd3d44"
                           d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
@@ -363,9 +363,9 @@ export default function Footer() {
             </div>
 
             <div className="space-x-4">
-              <Link href="/">Twitter</Link>
-              <Link href="/">Facebook</Link>
-              <Link href="/">LinkedIn</Link>
+              <a href="https://twitter.com/DiscoverJKUAT" target="_blank">Twitter</a>
+              <a href="https://www.facebook.com/DiscoverJKUAT/" target="_blank">Facebook</a>
+              <a href="https://www.linkedin.com/school/jkuat/?originalSubdomain=ke" target="_blank">LinkedIn</a>
             </div>
           </div>
         </div>

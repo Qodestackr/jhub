@@ -3,7 +3,7 @@ import JHUBTrade from '../../components/Dashboard/E-commerce';
 
 export default function Home() {
   return (
-    <section className='h-scree'>
+    <section className='h-screen'>
       <JHUBTrade />
     </section>
   );

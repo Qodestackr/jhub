@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import SidebarLinkGroup from './SidebarLinkGroup';
 import Image from 'next/image';
-import JoyRide from 'react-joyride';
 
 import {
   ShoppingBagIcon,
@@ -18,71 +17,6 @@ interface SidebarProps {
   sidebarOpen: boolean;
   setSidebarOpen: (arg: boolean) => void;
 }
-
-const TOUR_STEPS = [
-  // Target Classes...
-  {
-    target: '.dashbboard-sidebar-trade',
-    content: 'JHUB Trade Dashboard. Access everything Store and Marketplace'
-  },
-  {
-    target: '.events-x-calendar',
-    content: 'Events and Calendar'
-  },
-  {
-    target: '.crop-x-analytics',
-    content: 'Crop Analytics'
-  }
-];
-
-const Tour: React.FC = () => {
-  return (
-    <>
-      <JoyRide
-        steps={TOUR_STEPS}
-        showSkipButton={true}
-        styles={{
-          tooltipContainer: {
-            textAlign: 'left'
-          },
-          buttonNext: {
-            backgroundColor: 'green'
-          },
-          buttonBack: {
-            marginRight: 10
-          }
-        }}
-        continuous={true}
-        debug={true}
-        disableCloseOnEsc={true}
-        disableOverlay={true}
-        disableOverlayClose={true}
-        disableScrolling={true}
-        disableScrollParentFix={true}
-        // getHelpers = {}
-        hideBackButton={true}
-        run={true}
-        // scrollOffset = {1}
-        // scrollDuration ={}
-        scrollToFirstStep={true}
-        // showSkipButton={false}
-        showProgress={true}
-        spotlightClicks={true}
-        // spotlightPadding ={}
-        // steps={never[]}
-
-        // callback: (data: CallBackProps) => void;
-        // * Keydown event listener
-        // handleKeyboard: (event: KeyboardEvent) => void;
-        // * Sync the store with the component's state
-        // syncState: (state: State) => void;
-        // setPopper: Props$1['getPopper'];
-        // scrollToStep(previousState: State): void;
-        // render(): React.JSX.Element | null;
-      />
-    </>
-  );
-};
 
 const dashboardItems = [
   {
@@ -184,8 +118,6 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
         sidebarOpen ? 'translate-x-0' : '-translate-x-full'
       }`}
     >
-      {/* THIS IS THE TOUR COMPONENT */}
-      {/* <Tour /> */}
       {/* <!-- SIDEBAR HEADER --> */}
       <div className="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
         <Link href="/dashboard">
@@ -355,7 +287,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               {/* <!-- Menu Item Dashboard --> */}
 
               {/* <!-- Menu Item Calendar --> */}
-              <li>
+              <li className='events-calender'>
                 <Link
                   href="/dashboard/calendar"
                   className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
@@ -452,7 +384,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               {/* <!-- Menu Item Tables --> */}
 
               {/* <!-- Menu Item Settings --> */}
-              <li>
+              <li className='settings-section'>
                 <Link
                   href="/dashboard/settings"
                   className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
@@ -553,9 +485,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               >
                 {(handleClick, open) => {
                   return (
-                    <React.Fragment>
+                    <div className="iam-section">
                       <Link
-                        href="#"
+                        href="jhub-aim"
                         className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
                           (pathname === '/auth' || pathname.includes('auth')) &&
                           'bg-graydark dark:bg-meta-4'
@@ -655,7 +587,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                         </ul>
                       </div>
                       {/* <!-- Dropdown Menu End --> */}
-                    </React.Fragment>
+                    </div>
                   );
                 }}
               </SidebarLinkGroup>

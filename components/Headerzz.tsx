@@ -12,7 +12,7 @@ export const navTopLinks = [
   },
   {
     name: 'JHUB Projects',
-    href: '/'
+    href: '/jhub-projects'
   },
   {
     name: 'Talk to a Consultant',
@@ -31,11 +31,11 @@ export const navBottomLinks = [
   },
   {
     name: 'Training Programs',
-    href: '/'
+    href: '/training-programs'
   },
   {
     name: 'Technology & Sustainability',
-    href: '/'
+    href: '/technology-sustainability'
   },
   {
     name: 'Objectives',
@@ -102,7 +102,7 @@ export default function Headerzz() {
                 viewBox="0 0 16 16"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
                 />
               </svg>
@@ -138,9 +138,9 @@ export default function Headerzz() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
                   <path d="m6 9 6 6 6-6" />
                 </svg>
@@ -167,9 +167,9 @@ export default function Headerzz() {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     >
                       <path d="m6 9 6 6 6-6" />
                     </svg>
@@ -235,9 +235,9 @@ export default function Headerzz() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
                 <circle cx="12" cy="7" r="4" />
@@ -274,9 +274,9 @@ export default function Headerzz() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <path d="m6 9 6 6 6-6" />
               </svg>

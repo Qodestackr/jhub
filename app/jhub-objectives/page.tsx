@@ -3,13 +3,15 @@ import ContactUs from '../contact-us/page';
 
 export default function JHUBObjectives() {
   return (
-    <div className="p-6 container md:w-2/3 xl:w-auto mx-auto  flex flex-col xl:items-stretch justify-between xl:flex-row">
-      <h1>JHUB Africa Objectives & Values</h1>
-      Develop Climate Smart Agricultural Solutions and Digital Trade To
-      Cultivate a Dynamic Innovation Ecosystem To Develop Impactful Tech
-      Solutions and spin-offs To Empower Digital Entrepreneurs To Bridge
-      Academia-Industry Divide To Drive Market Adoption To Promote Diversity and
-      Inclusion To Sustain Technological Excellence
+    <div className="container mx-auto p-8 bg-gray-100 rounded-lg shadow-lg">
+      <h1 className="text-4xl font-bold mb-6 text-center">JHUB Africa Objectives & Values</h1>
+      <p className="text-lg leading-relaxed">
+        Develop Climate Smart Agricultural Solutions and Digital Trade to Cultivate a Dynamic Innovation Ecosystem.
+        Develop impactful Tech Solutions and spin-offs to empower Digital Entrepreneurs.
+        Bridge Academia-Industry Divide and drive Market Adoption.
+        Promote Diversity and Inclusion to sustain Technological Excellence.
+      </p>
+      <ContactUs />
     </div>
   );
 }

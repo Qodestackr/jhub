@@ -1,20 +1,38 @@
 import React from 'react';
 import JoyRide from 'react-joyride';
 
+
 const TOUR_STEPS = [
-  // Target Classes...
   {
-    target: '.dashbboard-sidebar-trade',
-    content: 'JHUB Trade Dashboard. Access everything Store/e-commerce'
+    target: '.navbar-section',
+    content: 'Explore the Navigation, Messaging, and Notifications',
+    // placement: 'bottom',
   },
   {
-    target: '.events-x-calendar',
-    content: 'Events and Calendar'
+    target: '.messages-notifications-section',
+    content: 'Check out Messages and Notifications',
+    // placement: 'bottom',
   },
   {
-    target: '.crop-x-analytics',
-    content: 'Crop Analytics'
-  }
+    target: '.events-calender', 
+    content: 'Create Events and Schedules',
+    // placement: 'bottom',
+  },
+  {
+    target: '.settings-section', 
+    content: 'Step 3: Explore the Settings',
+    // placement: 'bottom',
+  },
+  {
+    target: '.profile-section', 
+    content: 'Manage your Profile here',
+    // placement: 'bottom',
+  },
+  {
+    target: '.iam-section',
+    content: 'Explore & Customize IAM for custom roles and permissions',
+    // placement: 'bottom',
+  },
 ];
 
 const Tour: React.FC = () => {

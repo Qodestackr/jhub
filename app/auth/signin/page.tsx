@@ -3,18 +3,25 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
+import { useRouter } from 'next/navigation'
+ 
+ 
 import Breadcrumb from '../../../components/Breadcrumbs/Breadcrumb';
 
 const SignIn: React.FC = () => {
+  const router = useRouter();
+
 
   const handleSignIn = (e: any) => {
     e.preventDefault()
-    alert("TODO: Handle Sign In Handler")
+    // alert("TODO: Handle Sign In Handler")
+    router.push('/dashboard');
   }
 
   const handleSignInWithGoogle = (e: any) => {
     e.preventDefault()
-    alert("TODO: Handle Sign In With Google")
+    // alert("TODO: Handle Sign In With Google")
+    router.push('/dashboard');
   }
 
   return (

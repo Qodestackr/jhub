@@ -1,10 +1,20 @@
+"use client";
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import Breadcrumb from '../../../components/Breadcrumbs/Breadcrumb';
+import { useRouter } from 'next/router';
 
 const SignUp: React.FC = () => {
+  // const router = useRouter();
+
+  const handleSignUp = (e: any) => {
+    e.preventDefault();
+    // alert("TODO: Handle Sign In Handler")
+    // router.push('/dashboard');
+  };
+
   return (
     <>
       <Breadcrumb pageName="Sign Up" isDashboard={false} />
@@ -170,11 +180,10 @@ const SignUp: React.FC = () => {
                 </div>
 
                 <div className="mb-5">
-                  <input
-                    type="submit"
-                    value="Create account"
-                    className="w-full cursor-pointer rounded-lg border border-white bg-[#357c20] p-4 text-white transition hover:bg-opacity-90"
-                  />
+                  <button
+                  onClick={handleSignUp}
+                  className="w-full cursor-pointer rounded-lg border border-white bg-[#357c20] p-4 text-white transition hover:bg-opacity-90"
+                  >Sign Up</button>
                 </div>
 
                 <button className="flex w-full items-center justify-center gap-3.5 rounded-lg border border-stroke bg-gray p-4 hover:bg-opacity-50 dark:border-strokedark dark:bg-meta-4 dark:hover:bg-opacity-50">
