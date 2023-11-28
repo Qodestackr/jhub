@@ -1,26 +1,26 @@
 import Image from 'next/image';
 import React from 'react';
-
+ 
 export const partnershipLogos = [
   {
     name: 'PARTNER1',
-    logo: '/images/logo/corporate-banner2x.jpg'
+    logo: '/images/logo/jhub-logo.png'
   },
   {
     name: 'PARTNER2',
-    logo: '/images/logo/corporate-banner2x.jpg'
+    logo: '/images/logo/jkuat-logo-160x160.jpg'
   },
   {
     name: 'PARTNER3',
-    logo: '/images/logo/corporate-banner2x.jpg'
+    logo: '/images/logo/jkuat-logo-160x160.jpg'
   },
   {
     name: 'PARTNER4',
-    logo: '/images/logo/corporate-banner2x.jpg'
+    logo: '/images/logo/taimba-logo.png'
   },
   {
     name: 'PARTNER5',
-    logo: '/images/logo/corporate-banner2x.jpg'
+    logo: '/images/logo/taimba-logo.png'
   }
 ];
 
@@ -39,7 +39,7 @@ function PartnershipLogos() {
           and other tech/smart solutions.
         </p>
       </div>
-      <div className="xl:py-16 lg:py-16 md:py-16 sm:py-16 px-15 flex flex-wrap">
+      <div className="xl:py-16 lg:py-16 md:py-16 sm:py-16 px-15 flex justify-start items-center flex-wrap">
         {/* xl:border-b lg:border-b xl:border-r lg:border-r :border-r border-gray-200  */}
         <div className="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:pb-10 pb-16 items-center">
           {partnershipLogos.map((partner, i) => (
