@@ -27,7 +27,7 @@ const communityHighlights = [
     title: 'Events',
     content:
       'We offer a variety of online events and in-person for members. Browse our current events and register below.',
-    imageSrc: `/images/community/jhub-team-012.jpg`,
+    imageSrc: `/images/community/jhub-team-013.jpg`,
     icon: <IconCalendarEvent />,
     buttonText: 'Register'
   },
