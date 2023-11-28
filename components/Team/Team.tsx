@@ -90,7 +90,7 @@ function Team() {
                   </div>
                 </div>
                 <div className="px-6 mt-16">
-                  <div className="font-bold text-3xl text-center pb-1"></div>
+                  <div className="font-bold text-3xl text-center pb-1">Catherine Muraga</div>
                   <p className="text-gray-800 text-sm text-center">
                     Managing Director, Microsoft ADC
                   </p>
