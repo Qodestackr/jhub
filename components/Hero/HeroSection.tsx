@@ -48,7 +48,7 @@ function LandingHeroSection() {
         <div className="lg:col-span-4 mt-10 lg:mt-0">
           <Image
             className="w-full rounded-xl"
-            src={`/images/logo/corporate-banner2x.jpg`}
+            src={`/images/hero-img-innovation-hub.jpg`}
             alt="Image Description"
             layout="responsive"
             width={900}

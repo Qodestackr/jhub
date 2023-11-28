@@ -14,6 +14,7 @@ import Headerzz from '../components/Headerzz';
 import Image from 'next/image';
 import Footer from '../components/footer/Footer';
 import BlogSection from '../components/blog';
+import CommunityHighlights from '../components/community-highlights/CommunityHighlights';
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       {/* <IndustryStats /> */}
 
       <PartnershipLogos />
+      <CommunityHighlights />
       {/* <WriteAComment /> */}
       <BlogSection />
       <SubscribeNewsletter />

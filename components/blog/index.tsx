@@ -22,7 +22,7 @@ export default function BlogSection() {
           <div className="aspect-w-16 aspect-h-11">
             <Image
               className="w-full object-cover rounded-xl"
-              src={'/images/logo/jhub-logo1.png'}
+              src={'/images/blogs/small-scale-farmers.avif'}
               alt="Image Description"
               width={200}
               height={200}
@@ -59,7 +59,7 @@ export default function BlogSection() {
           <div className="aspect-w-16 aspect-h-11">
             <Image
               className="w-full object-cover rounded-xl"
-              src={'/images/logo/jhub-logo1.png'}
+              src={'/images/blogs/digital-sustainability-blog.jpg'}
               alt="Image Description"
               width={200}
               height={200}
@@ -77,7 +77,7 @@ export default function BlogSection() {
           <div className="mt-auto flex items-center gap-x-3">
             <Image
               className="w-8 h-8 rounded-full"
-              src={'/images/logo/jhub-logo1.png'}
+              src={'/images/blogs/digital-sustainability-blog.jpg'}
               alt="Image Description"
               width={200}
               height={200}
