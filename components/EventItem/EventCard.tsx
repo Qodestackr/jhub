@@ -1,4 +1,5 @@
 import { IconChevronDown } from '@tabler/icons-react';
+import Link from 'next/link';
 import React from 'react';
 
 const EventItem = ({ event }) => {
@@ -22,15 +23,21 @@ const EventItem = ({ event }) => {
         </div>
 
         <div className="flex flex-col gap-4 items-center justify-center md:flex-row mt-4 space-x-2">
+          <Link href={'/event-details'}>
           <button className="bg-primary text-white py-2 md:px-4 rounded-md w-full md:w-auto">
             Attend
           </button>
+          </Link>
+          <Link href={'/event-details'}>
           <button className="bg-green-500 bg-primary text-white py-2 md:px-4 rounded-md w-full md:w-auto">
             Register as Speaker
           </button>
+          </Link>
+          <Link href={'/event-details'}>
           <button className="bg-primary text-white py-2 md:px-4 rounded-md w-full md:w-auto">
             More About This Event
           </button>
+          </Link>
         </div>
       </div>
 
