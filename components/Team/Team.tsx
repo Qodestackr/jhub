@@ -90,14 +90,21 @@ function Team() {
                   </div>
                 </div>
                 <div className="px-6 mt-16">
-                  <div className="font-bold text-3xl text-center pb-1">Catherine Muraga</div>
+                  <div className="font-bold text-3xl text-center pb-1">
+                    Catherine Muraga
+                  </div>
                   <p className="text-gray-800 text-sm text-center">
                     Managing Director, Microsoft ADC
                   </p>
                   <p className="text-center text-gray-600 text-base pt-3 font-normal">
-                    The emphasis on innovation and technology in our companies
-                    has resulted in a few of them establishing global benchmarks
-                    in product design and development.
+                    A Seasoned, purpose-driven tech executive with a passion to
+                    apply technology to create business outcomes or impact lives
+                    positively. Currently the Managing Director of Microsoft,
+                    Africa Development Centre (ADC) and the Engineering Director
+                    in Identity and Network Access group. Catherine leads a team
+                    that buils products and services used by millions of
+                    customers across the world and impacting the STEM ecosystem
+                    (Universities and High Schools) in Africa and beyond.
                   </p>
                   <div className="w-full flex justify-center pt-5 pb-5">
                     <a
@@ -142,15 +149,15 @@ function Team() {
                 </div>
                 <div className="px-6 mt-16">
                   <div className="font-bold text-3xl text-center pb-1">
-                  Dr Rehema Ndeda
+                    Dr Rehema Ndeda
                   </div>
                   <p className="text-gray-800 text-sm text-center">
-                  Automation Lead
+                    Automation Lead
                   </p>
                   <p className="text-center text-gray-600 text-base pt-3 font-normal">
-                  An Automation Lead that brings ...assessment and repair of property
-                    damage caused by water, fire, smoke, or mold. We can also be
-                    a part of the restoration.
+                    An Automation Lead that brings ...assessment and repair of
+                    property damage caused by water, fire, smoke, or mold. We
+                    can also be a part of the restoration.
                   </p>
                   <div className="w-full flex justify-center pt-5 pb-5">
                     <a
@@ -195,14 +202,15 @@ function Team() {
                 </div>
                 <div className="px-6 mt-16">
                   <div className="font-bold text-3xl text-center pb-1">
-                  Dr Mwangi Karanja
+                    Dr Mwangi Karanja
                   </div>
                   <p className="text-gray-800 text-sm text-center">
-                  Innovative Technology and Data Science Lead
+                    Innovative Technology and Data Science Lead
                   </p>
                   <p className="text-center text-gray-600 text-base pt-3 font-normal">
-                    An avid Innovative Technology and Data Science Lead who loves to be creative and
-                    inventive. I have 20 years of experience in the field.
+                    An avid Innovative Technology and Data Science Lead who
+                    loves to be creative and inventive. I have 20 years of
+                    experience in the field.
                   </p>
                   <div className="w-full flex justify-center pt-5 pb-5">
                     <a
@@ -247,15 +255,15 @@ function Team() {
                 </div>
                 <div className="px-6 mt-16">
                   <div className="font-bold text-3xl text-center pb-1">
-                  Dr William Murithi
+                    Dr William Murithi
                   </div>
                   <p className="text-gray-800 text-sm text-center">
-                  DIH Business Development/ Strategy Lead
+                    DIH Business Development/ Strategy Lead
                   </p>
                   <p className="text-center text-gray-600 text-base pt-3 font-normal">
-                    A DIH Business Development/ Strategy Lead with interests in immersive computing and
-                    XR, political ventures, and emerging technologies. Able to
-                    take ideas and give them a life.
+                    A DIH Business Development/ Strategy Lead with interests in
+                    immersive computing and XR, political ventures, and emerging
+                    technologies. Able to take ideas and give them a life.
                   </p>
                   <div className="w-full flex justify-center pt-5 pb-5">
                     <a
@@ -300,15 +308,15 @@ function Team() {
                 </div>
                 <div className="px-6 mt-16">
                   <div className="font-bold text-3xl text-center pb-1">
-                  Ms. Daisy Ondwari
+                    Ms. Daisy Ondwari
                   </div>
                   <p className="text-gray-800 text-sm text-center">
-                  Product Development Fellow
+                    Product Development Fellow
                   </p>
                   <p className="text-center text-gray-600 text-base pt-3 font-normal">
-                    A Product Development Fellow is the voice of the customer. Our job is to
-                    look beyond the business goals. We don&apos;t just
-                    experience user interface but also questions it.
+                    A Product Development Fellow is the voice of the customer.
+                    Our job is to look beyond the business goals. We don&apos;t
+                    just experience user interface but also questions it.
                   </p>
                   {/*  */}
                   <div className="w-full flex justify-center pt-5 pb-5">
