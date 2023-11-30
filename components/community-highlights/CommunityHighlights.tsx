@@ -5,6 +5,7 @@ import {
   IconUsers
 } from '@tabler/icons-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const communityHighlights = [
   {
@@ -63,9 +64,11 @@ const HighlightCard = ({ imageSrc, icon, title, content, buttonText }) => {
           </div>
           <p className="text-gray-600 dark:text-gray-300 mt-2">{content}</p>
         </div>
-        <button className="mt-4 bg-primary hover:bg-blue-600 text-white py-2 px-4 rounded-md">
-          {buttonText}
-        </button>
+        <Link href={'/jhub-events'}>
+          <button className="mt-4 bg-primary hover:bg-blue-600 text-white py-2 px-4 rounded-md">
+            {buttonText}
+          </button>
+        </Link>
       </div>
     </div>
   );

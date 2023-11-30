@@ -149,13 +149,12 @@ function Team() {
                     Dr Rehema Ndeda
                   </div>
                   <p className="text-gray-800 text-sm text-center">
-                    Automation Lead
+                    Climate Smart Agriculture/ Automation Lead/JKUAT
                   </p>
                   <p className="text-center text-gray-600 text-base pt-3 font-normal">
-                    Dr. Rehema Ndeda, as Automation Lead, applies mechatronic
-                    engineering expertise to design and implement efficient
-                    automated solutions, leading a team to achieve project
-                    goals.
+                    Mechatronics Engineer with a specialization on automation,
+                    currently focusing on development and testing of
+                    technologies related to precision agriculture
                   </p>
                   <div className="w-full flex justify-center pt-5 pb-5">
                     <a
@@ -190,7 +189,7 @@ function Team() {
                 <div className="absolute -mt-20 w-full flex justify-center">
                   <div className="h-32 w-32">
                     <Image
-                      src=""
+                      src="/images/team/dr-mwangi-karanja.jpeg"
                       alt=""
                       className="rounded-full object-cover h-full w-full shadow-md"
                       width={200}
@@ -206,11 +205,10 @@ function Team() {
                     Innovative Technology and Data Science Lead
                   </p>
                   <p className="text-center text-gray-600 text-base pt-3 font-normal">
-                    Dr. Mwangi Karanja serves as the Innovative Technology and
-                    Data Science Lead. In this role, he leads initiatives at the
-                    intersection of cutting-edge technology and data science,
-                    leveraging 20 years of experience to drive innovation and
-                    creative solutions.
+                    An Innovative technology diffusion expert with a background
+                    in computing, research and innovation management. Have
+                    trained Small scale entrepreneurs on data management and
+                    research-driven approaches to growth
                   </p>
                   <div className="w-full flex justify-center pt-5 pb-5">
                     <a
@@ -261,10 +259,11 @@ function Team() {
                     DIH Business Development/ Strategy Lead
                   </p>
                   <p className="text-center text-gray-600 text-base pt-3 font-normal">
-                    Dr. William Murithi leads business development and strategy
-                    at DIH, specializing in immersive computing, XR, political
-                    ventures, and emerging technologies. He transforms ideas
-                    into reality.
+                    An expert in business model innovation, digital
+                    entrepreneurship & innovation and design thinking. Founder
+                    and Lead consultant at EMBC, a premier management consulting
+                    firm that offers bespoke and integrated solutions for
+                    enterprises.
                   </p>
                   <div className="w-full flex justify-center pt-5 pb-5">
                     <a
