@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
@@ -62,13 +62,42 @@ export const navProductsList = [
 ];
 
 export default function Headerzz() {
+  const [showUpperDropdown, setShowUpperDropdown] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
+  const trigger = useRef<any>(null);
+  const _dropdown = useRef<any>(null);
+
   const pathname = usePathname();
   const isDashboardPage = pathname.startsWith('/dashboard');
 
   const toggleDropdown = () => {
     setShowDropdown((prevDropdownState) => !prevDropdownState);
   };
+
+  const toggleUpperDropdown = () => {
+    setShowUpperDropdown((prevUpperDropdownState) => !prevUpperDropdownState);
+  };
+
+  // close on click outside
+  useEffect(() => {
+    const clickHandler = ({ target }: MouseEvent) => {
+      if (!_dropdown.current) return;
+      if (!showDropdown || _dropdown.current.contains(target)) return;
+      setShowDropdown(false);
+    };
+    document.addEventListener('click', clickHandler);
+    return () => document.removeEventListener('click', clickHandler);
+  });
+
+  // close if the esc key is pressed
+  useEffect(() => {
+    const keyHandler = ({ keyCode }: KeyboardEvent) => {
+      if (!showDropdown || keyCode !== 27) return;
+      setShowDropdown(false);
+    };
+    document.addEventListener('keydown', keyHandler);
+    return () => document.removeEventListener('keydown', keyHandler);
+  });
 
   // TODO USE ROUTER TO
   return isDashboardPage ? null : (
@@ -96,7 +125,10 @@ export default function Headerzz() {
             <div className="sm:hidden">
               <button
                 type="button"
-                onClick={toggleDropdown}
+                ref={_dropdown}
+                onClick={toggleUpperDropdown}
+                onFocus={toggleUpperDropdown}
+                onBlur={toggleUpperDropdown}
                 className="hs-collapse-toggle w-9 h-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                 data-hs-collapse="#navbar-collapse-with-animation"
                 aria-controls="navbar-collapse-with-animation"
@@ -130,7 +162,7 @@ export default function Headerzz() {
           <div
             id="navbar-collapse-with-animation"
             className={`hs-collapse ${
-              showDropdown ? '' : 'hidden'
+              showUpperDropdown ? '' : 'hidden'
             } overflow-hidden transition-all duration-300 basis-full grow sm:block`}
           >
             <div className="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
