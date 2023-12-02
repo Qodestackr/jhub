@@ -5,31 +5,11 @@ import Link from 'next/link';
 export default function SubscribeNewsletter() {
   return (
     <>
-      {/* <div classNameName="bg-[#0e2557] text-white p-6 container md:w-2/3 xl:w-auto mx-auto  flex flex-col xl:items-stretch justify-between xl:flex-row">
-        <div classNameName="w-full xl:w-1/2 xl:pl-40 xl:py-28 ">
-          <h1 classNameName="text-2xl md:text-4xl xl:text-5xl font-bold leading-10 text-gray-800 mb-4 text-center xl:text-left md:mt-0 mt-4">
-            Subscribe
-          </h1>
-          <p classNameName="text-base leading-normal text-gray-600 text-center xl:text-left">
-            Subscribe to JHUB Newsletter.
-          </p>
-          <div classNameName="flex items-stretch mt-12">
-            <input
-              classNameName="bg-gray-100 text-black-2 rounded-lg rounded-r-none text-base leading-none text-gray-800 p-5 w-4/5 border border-transparent focus:outline-none focus:border-gray-500"
-              type="email"
-              placeholder="Your Email"
-            />
-            <button classNameName="w-32 rounded-l-none hover:bg-success bg-success rounded text-base font-medium leading-none text-white p-5 uppercase focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700">
-              subscribe
-            </button>
-          </div>
-        </div>
-      </div> */}
-      <section className="bg-[#0e2557] text-white dark:bg-gray-900">
+      <section className="bg-main text-white dark:bg-gray-900">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div className="mx-auto max-w-screen-md sm:text-center">
             <h2 className="mb-4 text-3xl tracking-tight font-extrabold sm:text-4xl dark:text-white">
-              Sign Up For JHUB newsletter
+              Stay Updated with Our Newsletter
             </h2>
             <p className="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">
               Stay up to date with the roadmap progress, announcements and
@@ -73,7 +53,8 @@ export default function SubscribeNewsletter() {
                 </div>
               </div>
               <div className="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">
-                We care about the protection of your data.
+                We care about the protection of your data. We will never spam
+                you.
                 <Link
                   href="/jhub-privacy"
                   className="font-medium text-[#357c20] dark:text-primary-500 hover:underline"

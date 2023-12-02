@@ -1,5 +1,14 @@
 import React from 'react';
 
+import {
+  IconDiscountCheckFilled,
+  IconBusinessplan,
+  IconBuildingLighthouse,
+  IconChessKnightFilled,
+  IconStarsFilled,
+  IconRocket
+} from '@tabler/icons-react';
+
 const Icon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +33,7 @@ const Icon = () => (
 const featureList = [
   {
     title: 'Support To Find Investment',
-    icon: <Icon />,
+    icon: <IconBusinessplan size={'40px'} />,
     description: `
     Navigating the landscape of investments can be daunting. At JHUB, we provide dedicated support to 
     help you find the right investments for your digital initiatives. Our team of financial experts and 
@@ -35,7 +44,7 @@ const featureList = [
   },
   {
     title: 'Digital Innovation Hub',
-    icon: <Icon />,
+    icon: <IconBuildingLighthouse size={'40px'} />,
     description: `
     JHUB is your ultimate Digital Innovation Hub, where ideas flourish and innovation thrives. 
     Our platform provides a collaborative space for visionaries, entrepreneurs, and businesses to ideate, 
@@ -45,7 +54,7 @@ const featureList = [
   },
   {
     title: 'Skills and Training',
-    icon: <Icon />,
+    icon: <IconStarsFilled size={'40px'} />,
     description: `
     Empowering individuals with the right skills is at the core of what we do. JHUB offers comprehensive skills 
     development and training programs designed to enhance digital literacy and proficiency. From farmers looking 
@@ -55,7 +64,7 @@ const featureList = [
   },
   {
     title: 'Facilitating Technology Transfer',
-    icon: <Icon />,
+    icon: <IconRocket size={'40px'} />,
     description: `
     JHUB serves as a catalyst for technology transfer, facilitating the seamless exchange of knowledge and innovation. 
     Our platform connects innovators, industry experts, and businesses, fostering collaborations that lead to the swift 
@@ -65,7 +74,7 @@ const featureList = [
   },
   {
     title: 'Test Before Invest',
-    icon: <Icon />,
+    icon: <IconDiscountCheckFilled size={'40px'} />,
     description: `
     At JHUB, we believe in the principle of "Test Before Invest," a guiding philosophy that underscores our commitment to your 
     success. Before you make significant investments, we offer a comprehensive testing framework to evaluate the viability and 
@@ -78,40 +87,38 @@ const featureList = [
   },
   {
     title: 'Diffusion of new Technologies',
-    icon: <Icon />,
+    icon: <IconChessKnightFilled size={'40px'} />,
     description: `
     At JHUB, we specialize in the seamless diffusion of cutting-edge technologies. Our experts work tirelessly to 
     bridge the gap between innovation and implementation, ensuring that the latest technologies become accessible 
     and beneficial for small and medium-scale farmers, traders, and enterprises. We believe in democratizing technology 
-    for the greater good, driving positive change through widespread adoption.
-
-
-    `
+    for the greater good, driving positive change through widespread adoption.`
   }
 ];
 
 export default function FeatureList() {
   return (
-    <section className="bg-[#074b3e] mt-20 dark:bg-gray-900 text-white">
+    <section className=" mt-20 dark:bg-gray-900 ">
+      {/* bg-[#219653] text-white*/}
       <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div className="max-w-screen-md mb-8 lg:mb-16">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             JHUB Services | Built To Meet Innovation
           </h2>
-          <p className="text-white sm:text-xl dark:text-gray-400">
+          <p className=" sm:text-xl dark:text-gray-400">
             At JHUB, we are dedicated to fostering innovation and transforming
             digital landscapes. Experience the power of technology-driven
             solutions with JHUB, where every service is tailored to meet the
             dynamic needs of a rapidly evolving digital era.
           </p>
         </div>
-        <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 space-y-8 md:space-y-0">
           {featureList.map((feature, i) => (
-            <div key={i}>
-              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+            <div key={i} className="flex flex-col items-center space-y-4">
+              <div className="flex justify-center items-center w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-primary-100 dark:bg-primary-900">
                 {feature?.icon}
               </div>
-              <h3 className="mb-2 text-xl font-bold dark:text-white">
+              <h3 className="text-xl font-bold mb-2 dark:text-white">
                 {feature?.title}
               </h3>
               <p className="text-gray-500 dark:text-gray-400">

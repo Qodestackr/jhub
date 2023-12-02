@@ -4,7 +4,9 @@ import React from 'react';
 import { usePathname } from 'next/navigation';
 import {
   IconBrandFacebook,
+  IconBrandInstagram,
   IconBrandLinkedin,
+  IconBrandTiktok,
   IconBrandTwitter
 } from '@tabler/icons-react';
 import DarkModeSwitcher from '../DarkModeSwitcher';
@@ -22,10 +24,13 @@ export default function Footer() {
             href="/"
             aria-label="Brand"
           >
-            JKIAN | JHUB
+            JHUB -{' '}
+            <span className="uppercase text-main font-medium text-sm">
+              INVESTING IN THE DIGITAL FUTURE.
+            </span>
           </Link>
           <p className="mt-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
-            © 2023 JHUB
+            © 2023 All rights reserved.
           </p>
         </div>
 
@@ -351,12 +356,6 @@ export default function Footer() {
               >
                 Privacy
               </Link>
-              <Link
-                className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                href="/jhub-status"
-              >
-                Status
-              </Link>
             </div>
           </div>
 
@@ -376,17 +375,24 @@ export default function Footer() {
 
             <div className="space-x-4 flex justify-center items-center">
               <DarkModeSwitcher />
-              <a href="https://twitter.com/DiscoverJKUAT" target="_blank">
+              <a href="https://twitter.com/JHUBAfrica" target="_blank">
                 <IconBrandTwitter />{' '}
               </a>
-              <a href="https://www.facebook.com/DiscoverJKUAT/" target="_blank">
-                <IconBrandFacebook />
-              </a>
               <a
-                href="https://www.linkedin.com/school/jkuat/?originalSubdomain=ke"
+                href="https://www.facebook.com/people/JHUB-Africa/61554202584585/"
                 target="_blank"
               >
+                <IconBrandFacebook />
+              </a>
+              <a href="https://www.linkedin.com/in/jhubafrica/" target="_blank">
                 <IconBrandLinkedin />
+              </a>
+
+              <a href="https://www.tiktok.com/@jhubafrica" target="_blank">
+                <IconBrandTiktok />
+              </a>
+              <a href="https://www.instagram.com/jhubafrica/" target="_blank">
+                <IconBrandInstagram />
               </a>
             </div>
           </div>

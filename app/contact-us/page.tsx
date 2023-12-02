@@ -87,16 +87,17 @@ function ContactUs() {
             </div>
           </div>
           <p className="text-xs leading-3 text-black mt-4 flex items-center justify-start gap-1">
-            <input type="checkbox" name="" id="" className="mx-2" />
+            {/* <input type="checkbox" name="" id="" className="mx-2" />
             By clicking submit you agree to our terms of service, privacy policy
-            and how we use data as stated
+            and how we use data as stated */}
+            We respond to all feedbacks.
           </p>
           <div className="flex items-center justify-center w-full">
             <button
               onClick={handleContactJHUB}
-              className="mt-9 text-base w-full font-semibold leading-none text-white py-4 px-10 bg-[#074b3e] rounded hover:bg-indigo-600 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:outline-none"
+              className="mt-9 text-base w-full font-semibold leading-none text-white py-4 px-10 bg-main rounded hover:bg-indigo-600 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:outline-none"
             >
-              SUBMIT
+              Get in Touch
             </button>
           </div>
         </div>
