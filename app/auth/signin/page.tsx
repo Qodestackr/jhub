@@ -19,7 +19,7 @@ const SignIn: React.FC = () => {
   const handleSignIn = (e: any) => {
     e.preventDefault();
     // alert("TODO: Handle Sign In Handler")
-    router.push('/dashboard');
+    // router.push('/dashboard');
   };
 
   const handleSignInWithGoogle = async (e: any) => {
