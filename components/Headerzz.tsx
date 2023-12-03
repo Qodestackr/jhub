@@ -78,16 +78,16 @@ export default function Headerzz() {
     setShowUpperDropdown((prevUpperDropdownState) => !prevUpperDropdownState);
   };
 
-  // close on click outside
-  useEffect(() => {
-    const clickHandler = ({ target }: MouseEvent) => {
-      if (!_dropdown.current) return;
-      if (!showDropdown || _dropdown.current.contains(target)) return;
-      setShowDropdown(false);
-    };
-    document.addEventListener('click', clickHandler);
-    return () => document.removeEventListener('click', clickHandler);
-  });
+  // // close on click outside
+  // useEffect(() => {
+  //   const clickHandler = ({ target }: MouseEvent) => {
+  //     if (!_dropdown.current) return;
+  //     if (!showDropdown || _dropdown.current.contains(target)) return;
+  //     setShowDropdown(false);
+  //   };
+  //   document.addEventListener('click', clickHandler);
+  //   return () => document.removeEventListener('click', clickHandler);
+  // });
 
   // close if the esc key is pressed
   useEffect(() => {
