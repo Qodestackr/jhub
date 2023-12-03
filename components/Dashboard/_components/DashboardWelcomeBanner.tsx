@@ -1,7 +1,8 @@
+'use client';
 import React from 'react';
 
 function DashboardWelcomeBanner({
-  accountName = 'Wilson',
+  accountName = localStorage.getItem('userDisplayName'),
   bannerText = 'Here is Your Crop Management & Analytics Portal'
 }: any) {
   // TODO, Pass down Account Name From Auth Instance
