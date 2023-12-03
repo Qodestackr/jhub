@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
@@ -7,6 +7,8 @@ import { useRouter } from 'next/navigation';
 
 import Breadcrumb from '../../../components/Breadcrumbs/Breadcrumb';
 import { useAuthContext } from '../../../context/AuthContext';
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import { auth } from '../../../firebase';
 
 const SignIn: React.FC = () => {
   const { user, signInWithGoogleHandler, signOutHandler } = useAuthContext();
@@ -20,16 +22,28 @@ const SignIn: React.FC = () => {
     router.push('/dashboard');
   };
 
-  // const handleSignInWithGoogle = async (e: React.MouseEvent<HTMLButtonElement>) => {
-  //   e.preventDefault();
-  //   try {
-  //     await signInWithGoogleHandler();
-  //     router.push('/dashboard');
-  //     alert(1)
-  //   } catch (error) {
-  //     console.error('Error signing in with Google:', error);
-  //   }
-  // };
+  const handleSignInWithGoogle = async (e: any) => {
+    e.preventDefault();
+    try {
+      const provider = new GoogleAuthProvider();
+      const result = await signInWithPopup(auth, provider);
+
+      if (result && result.user) {
+        // Extract user information
+        const { displayName, email, photoURL } = result.user;
+
+        // Save user information to local storage
+        localStorage.setItem('userDisplayName', displayName);
+        localStorage.setItem('userEmail', email);
+        localStorage.setItem('userPhotoURL', photoURL);
+
+        // Redirect to the dashboard
+        router.push('/dashboard');
+      }
+    } catch (error) {
+      console.error('Error signing in with Google:', error);
+    }
+  };
 
   return (
     <>
@@ -149,7 +163,8 @@ const SignIn: React.FC = () => {
                 </div>
 
                 <button
-                  onClick={signInWithGoogleHandler}
+                  onClick={handleSignInWithGoogle}
+                  // onClick={signInWithGoogleHandler}
                   className="flex w-full items-center justify-center gap-3.5 rounded-lg border border-stroke bg-gray p-4 hover:bg-opacity-50 dark:border-strokedark dark:bg-meta-4 dark:hover:bg-opacity-50"
                 >
                   <span>
@@ -202,7 +217,7 @@ const SignIn: React.FC = () => {
 
                   <h3>OR</h3>
                   <p>
-                    Don’t have any account?{' '}
+                    Don&apos;t have any account?{' '}
                     <Link href="/auth/signup" className="text-[#357c20]">
                       Sign Up
                     </Link>

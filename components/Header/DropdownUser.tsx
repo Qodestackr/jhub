@@ -12,6 +12,8 @@ const DropdownUser = () => {
   const trigger = useRef<any>(null);
   const dropdown = useRef<any>(null);
 
+  const userPhotoURL = localStorage.getItem('userPhotoURL');
+  const defaultImageSrc = '/images/default-user-image.png';
   // const router = useRouter();
 
   const handleLogout = (e: any) => {
@@ -54,17 +56,18 @@ const DropdownUser = () => {
       >
         <span className="hidden text-right lg:block">
           <span className="block text-sm font-medium text-black dark:text-white">
-            Wilson Gichuhi
+            {localStorage.getItem('userDisplayName')}
           </span>
-          <span className="block text-xs">JHUB Super Admin</span>
+          <span className="block text-xs">You are an Admin</span>
         </span>
 
-        <span className="h-12 w-12 rounded-full">
+        <span className="h-12 w-12 rounded-full overflow-hidden border-2 border-white">
           <Image
             width={112}
             height={112}
-            src={'/images/user/user-06.png'}
+            src={userPhotoURL || defaultImageSrc}
             alt="User"
+            className="object-cover w-full h-full"
           />
         </span>
 

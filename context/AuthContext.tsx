@@ -53,13 +53,6 @@ export function AuthContextProvider({ children }: AuthContextProviderProps) {
     signOutHandler
   };
 
-  //   useEffect(() => {
-  //     const unsubscribe = auth.onAuthStateChanged((authUser) => {
-  //       setUser(authUser);
-  //     });
-
-  //     return () => unsubscribe();
-  //   }, []);
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
       setUser(authUser as UserType | null);
@@ -75,10 +68,18 @@ export function AuthContextProvider({ children }: AuthContextProviderProps) {
   );
 }
 
-export function useAuthContext() {
-  return useContext(AuthContext) as {
-    user: UserType | null;
-    signInWithGoogleHandler: () => Promise<void>;
-    signOutHandler: () => Promise<void>;
-  };
-}
+// export function useAuthContext() {
+//   return useContext(AuthContext) as {
+//     user: UserType | null;
+//     signInWithGoogleHandler: () => Promise<void>;
+//     signOutHandler: () => Promise<void>;
+//   };
+// }
+
+export const useAuthContext = () => {
+  const context = useContext(AuthContext);
+  if (!context) {
+    throw new Error('useAuthContext must be used within an AuthProvider');
+  }
+  return context;
+};
