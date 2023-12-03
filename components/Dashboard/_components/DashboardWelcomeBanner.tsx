@@ -10,7 +10,7 @@ function DashboardWelcomeBanner({
     <div className="relative bg-indigo-200 dark:bg-indigo-500 p-4 sm:p-6 rounded-sm overflow-hidden mb-8">
       <div className="relative">
         <h1 className="text-2xl md:text-3xl text-slate-800 dark:text-slate-100 font-bold mb-1">
-          Good afternoon, <span className="text-success">{accountName}</span>
+          Welcom back, <span className="text-success">{accountName}</span>
         </h1>
         <p className="dark:text-indigo-200">{bannerText}</p>
       </div>
