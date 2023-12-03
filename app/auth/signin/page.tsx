@@ -87,6 +87,7 @@ const SignIn: React.FC = () => {
                   </label>
                   <div className="relative">
                     <input
+                      disabled
                       type="email"
                       placeholder="Enter your email"
                       className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
@@ -120,6 +121,7 @@ const SignIn: React.FC = () => {
                     <input
                       type="password"
                       placeholder="6+ Characters, 1 Capital letter"
+                      disabled
                       className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
                     />
 
@@ -203,8 +205,7 @@ const SignIn: React.FC = () => {
                   Sign in with Google
                 </button>
 
-                <div className="mt-6 text-center">
-                  {/*  */}
+                {/* <div className="mt-6 text-center">
                   <p>
                     Forgot Password?{' '}
                     <Link
@@ -222,8 +223,7 @@ const SignIn: React.FC = () => {
                       Sign Up
                     </Link>
                   </p>
-                  {/*  */}
-                </div>
+                </div> */}
               </form>
             </div>
           </div>
