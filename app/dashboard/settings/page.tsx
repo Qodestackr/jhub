@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import Breadcrumb from '../../../components/Breadcrumbs/Breadcrumb';
@@ -222,7 +223,10 @@ const Settings = () => {
                   <div className="mb-4 flex items-center gap-3">
                     <div className="h-14 w-14 rounded-full">
                       <Image
-                        src={'/images/user/user-06.png'}
+                        src={
+                          localStorage.getItem('userPhotoURL') ||
+                          '/images/user/user-06.png'
+                        }
                         width={55}
                         height={55}
                         alt="User"
