@@ -75,11 +75,11 @@ function PartnershipLogos() {
                   className="h-full object-contain object-center"
                   src={'/images/logo/AEDIBNET-Logos/main-logo.jpg'}
                   alt={'partner?.name'}
-                  width={100}
-                  height={100}
+                  width={200}
+                  height={200}
                 />
               </span>
-              <span>
+              {/* <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="177"
@@ -92,7 +92,7 @@ function PartnershipLogos() {
                     fill="#1B2559"
                   />
                 </svg>
-              </span>
+              </span> */}
               <span>
                 <Image
                   className="w-full h-full object-contain object-center"
