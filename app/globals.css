@@ -183,11 +183,8 @@ span.flatpickr-weekday,
 /***********************************/
 /**CUSTOMIZING SCROLL BAR**/
 
-body::-webkit-scrollbar {
-  width: 8px;
-  /* background-color: ; */
-}
-
-body::-webkit-scrollbar-thumb {
-  width: 8px;
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }

@@ -13,10 +13,10 @@ function Team() {
       <div className="container flex justify-center mx-auto pt-16">
         <div>
           <p className="text-gray-500 text-lg dark:bg-boxdark-2 dark:text-bodydark text-center font-normal pb-3">
-            BUILDING TEAM | JHUB
+            Beyond the Ordinary | Meet the team
           </p>
           <h1 className="xl:text-4xl text-3xl text-center text-gray-800 font-extrabold pb-6 sm:w-4/6 w-5/6 mx-auto">
-            The Talented People Behind the Scenes of the Organization
+            Our people are the heart and soul of our success
           </h1>
         </div>
       </div>
@@ -68,11 +68,11 @@ function Team() {
                         <IconBrandLinkedin />
                       </div>
                     </a>
-                    <a href="javascript:void(0)" className="mx-5">
+                    {/* <a href="javascript:void(0)" className="mx-5">
                       <div>
                         <IconBrandInstagram />
                       </div>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -122,11 +122,11 @@ function Team() {
                         <IconBrandLinkedin />
                       </div>
                     </a>
-                    <a href="javascript:void(0)" className="mx-5">
+                    {/* <a href="javascript:void(0)" className="mx-5">
                       <div>
                         <IconBrandInstagram />
                       </div>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -175,11 +175,11 @@ function Team() {
                         <IconBrandLinkedin />
                       </div>
                     </a>
-                    <a href="javascript:void(0)" className="mx-5">
+                    {/* <a href="javascript:void(0)" className="mx-5">
                       <div>
                         <IconBrandInstagram />
                       </div>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -229,11 +229,11 @@ function Team() {
                         <IconBrandLinkedin />
                       </div>
                     </a>
-                    <a href="javascript:void(0)" className="mx-5">
+                    {/* <a href="javascript:void(0)" className="mx-5">
                       <div>
                         <IconBrandInstagram />
                       </div>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -284,11 +284,11 @@ function Team() {
                         <IconBrandLinkedin />
                       </div>
                     </a>
-                    <a href="javascript:void(0)" className="mx-5">
+                    {/* <a href="javascript:void(0)" className="mx-5">
                       <div>
                         <IconBrandInstagram />
                       </div>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -339,11 +339,11 @@ function Team() {
                         <IconBrandLinkedin />
                       </div>
                     </a>
-                    <a href="javascript:void(0)" className="mx-5">
+                    {/* <a href="javascript:void(0)" className="mx-5">
                       <div>
                         <IconBrandInstagram />
                       </div>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>

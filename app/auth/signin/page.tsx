@@ -12,11 +12,11 @@ import { auth } from '../../../firebase';
 
 const SignIn: React.FC = () => {
   const { user, signInWithGoogleHandler, signOutHandler } = useAuthContext();
-  console.log(user);
+  // console.log(user);
 
   const router = useRouter();
 
-  const handleSignIn = (e: any) => {
+  const handleSignInWithEmailAndPassword = (e: any) => {
     e.preventDefault();
     // alert("TODO: Handle Sign In Handler")
     // router.push('/dashboard');
@@ -157,7 +157,7 @@ const SignIn: React.FC = () => {
                     className="w-full cursor-pointer rounded-lg border border-white bg-[#357c20] p-4 text-white transition hover:bg-opacity-90"
                   /> */}
                   <button
-                    onClick={handleSignIn}
+                    onClick={handleSignInWithEmailAndPassword}
                     className="w-full cursor-pointer rounded-lg border border-white bg-[#357c20] p-4 text-white transition hover:bg-opacity-90"
                   >
                     Sign In

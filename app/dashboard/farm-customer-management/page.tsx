@@ -1,4 +1,5 @@
 import React from 'react';
+import { UnderConstruction } from '../../../components/underMaintenance/underMaintenance';
 
 export default function JHUBCustomerManagement() {
   return (
@@ -9,6 +10,7 @@ export default function JHUBCustomerManagement() {
         Or else, Tap into Open Source Management Tools 
         
         */}
+      <UnderConstruction />
     </div>
   );
 }

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import SidebarLinkGroup from './SidebarLinkGroup';
 import Image from 'next/image';
+import { IconMessage2Bolt } from '@tabler/icons-react';
 
 import {
   ShoppingBagIcon,
@@ -309,6 +310,19 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                     />
                   </svg>
                   Events & Calendar
+                </Link>
+              </li>
+
+              <li className="events-calender">
+                <Link
+                  href="/dashboard/jhub-channels"
+                  className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
+                    pathname.includes('calendar') &&
+                    'bg-graydark dark:bg-meta-4'
+                  }`}
+                >
+                  <IconMessage2Bolt />
+                  Messaging & Channels
                 </Link>
               </li>
               {/* <!-- Menu Item Calendar --> */}

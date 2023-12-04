@@ -1,7 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { auth, googleProvider } from '../firebase';
 import { signInWithPopup, signOut } from 'firebase/auth';
-import { useLocalStorage } from '@mantine/hooks';
 
 export interface UserType {
   uid: string;
@@ -33,7 +32,16 @@ export function AuthContextProvider({ children }: AuthContextProviderProps) {
 
   const signInWithGoogleHandler = async () => {
     try {
-      await signInWithPopup(auth, googleProvider);
+      const result = await signInWithPopup(auth, googleProvider);
+
+      if (result && result.user) {
+        const { uid, displayName, email, photoURL } = result.user;
+        const newUser: UserType = { uid, displayName, email, photoURL };
+        setUser(newUser);
+
+        // Save user information to local storage
+        localStorage.setItem('user', JSON.stringify(newUser));
+      }
     } catch (error) {
       console.error('Error signing in with Google:', error);
     }
@@ -47,11 +55,23 @@ export function AuthContextProvider({ children }: AuthContextProviderProps) {
     }
   };
 
+  const updateLoggedInUser = (newUser: UserType) => {
+    setUser(newUser);
+    localStorage.setItem('user', JSON.stringify(newUser));
+  };
+
   const authContextValue = {
     user,
     signInWithGoogleHandler,
-    signOutHandler
+    signOutHandler,
+    updateLoggedInUser
   };
+
+  // const authContextValue = {
+  //   user,
+  //   signInWithGoogleHandler,
+  //   signOutHandler
+  // };
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
@@ -67,14 +87,6 @@ export function AuthContextProvider({ children }: AuthContextProviderProps) {
     </AuthContext.Provider>
   );
 }
-
-// export function useAuthContext() {
-//   return useContext(AuthContext) as {
-//     user: UserType | null;
-//     signInWithGoogleHandler: () => Promise<void>;
-//     signOutHandler: () => Promise<void>;
-//   };
-// }
 
 export const useAuthContext = () => {
   const context = useContext(AuthContext);

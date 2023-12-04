@@ -10,24 +10,24 @@ import Link from 'next/link';
 const communityHighlights = [
   {
     title: 'Network',
-    content:
-      'Connect with like-minded innovation actors, partners, and investors.',
+    content: `We serve the technology community, by connecting organizations and people, building market-relevant solutions 
+      and being ahead of the curve of innovation. Connect with like-minded innovation actors, partners, and investors.`,
     imageSrc: `/images/community/jhub-team-001.jpg`,
     icon: <IconAffiliate />,
     buttonText: 'Explore Now'
   },
   {
     title: 'Communities',
-    content:
-      'Our communities provide innovators and DIHs with a virtual space where different stakeholders can connect, collaborate digitally, and build a digital ecosystem.',
+    content: `We recognise that the driving force of a space like JHUB is in the inclusivity of the community and in collaboration. We provider
+      a virtual space for innovators and stakeholders to connect and build sustainabler digital ecosystems.`,
     imageSrc: `/images/community/jhub-team-002.jpg`,
     icon: <IconUsers />,
     buttonText: 'Join'
   },
   {
     title: 'Events',
-    content:
-      'We offer a variety of online events and in-person for members. Browse our current events and register below.',
+    content: `We offer a variety of online events to nurture the culture of innovation.
+      Discover and attend local tech events organized by JHub that matches your passion`,
     imageSrc: `/images/community/jhub-team-013.jpg`,
     icon: <IconCalendarEvent />,
     buttonText: 'Register'
@@ -64,11 +64,14 @@ const HighlightCard = ({ imageSrc, icon, title, content, buttonText }) => {
           </div>
           <p className="text-gray-600 dark:text-gray-300 mt-2">{content}</p>
         </div>
-        <Link href={'/jhub-events'}>
-          <button className="mt-4 bg-primary hover:bg-blue-600 text-white py-2 px-4 rounded-md">
-            {buttonText}
-          </button>
-        </Link>
+        <div className="flex justify-between items-center">
+          <span></span>
+          <Link href={'/jhub-events'}>
+            <button className="mt-4 bg-primary hover:bg-blue-600 text-white py-2 px-4 md:py-3 md:px-5 rounded-md">
+              {buttonText}
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );

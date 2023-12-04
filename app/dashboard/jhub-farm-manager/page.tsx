@@ -1,4 +1,5 @@
 import React from 'react';
+import { UnderConstruction } from '../../../components/underMaintenance/underMaintenance';
 
 export default function JHUBProjectManager() {
   return (
@@ -7,6 +8,8 @@ export default function JHUBProjectManager() {
         Any Form of Farm Projects, Marketplace, Employees (Tasks etc)
       </h1>
       <p>Manage Farm</p>
+
+      <UnderConstruction />
     </div>
   );
 }
