@@ -1,10 +1,68 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import Breadcrumb from '../../../components/Breadcrumbs/Breadcrumb';
+import { auth, passwordResetHandler } from '../../../firebase';
+
+import { AlertDanger, AlertSuccess } from '../../../components/alerts';
 
 const ResetPassword: React.FC = () => {
+  const [email, setEmail] = useState('');
+  const [alert, setAlert] = useState({ type: '', message: '', show: false });
+
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+  };
+
+  const handleResetPassword = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    try {
+      const resetSuccess = await passwordResetHandler(email);
+
+      if (resetSuccess) {
+        setAlert({
+          type: 'success',
+          message: 'Password reset email sent successfully!',
+          show: true
+        });
+
+        setTimeout(() => {
+          setAlert({
+            type: '',
+            message: '',
+            show: false
+          });
+        }, 3000);
+      } else {
+        setAlert({
+          type: 'danger',
+          message: 'Failed to send password reset email. Please try again.',
+          show: true
+        });
+        setTimeout(() => {
+          setAlert({
+            type: '',
+            message: '',
+            show: false
+          });
+        }, 3000);
+      }
+    } catch (error) {
+      console.error('Error resetting password:', error.message);
+      setAlert({
+        type: 'danger',
+        message: 'An unexpected error occurred.',
+        show: true
+      });
+      setTimeout(() => {
+        setAlert({ type: '', message: '', show: false });
+      }, 3000);
+    }
+  };
+
   return (
     <>
       <Breadcrumb pageName="Reset Password" isDashboard={false} />
@@ -29,9 +87,6 @@ const ResetPassword: React.FC = () => {
                   width={176}
                   height={32}
                 />
-                {/* <h1 className="text-2xl font-bold mb-4">
-                  JHUB Africa
-                </h1> */}
               </Link>
 
               <p className="2xl:px-20">
@@ -48,7 +103,7 @@ const ResetPassword: React.FC = () => {
                 Reset Your Password
               </h2>
 
-              <form>
+              <form onSubmit={handleResetPassword}>
                 <div className="mb-4">
                   <label className="mb-2.5 block font-medium text-black dark:text-white">
                     Email
@@ -57,6 +112,8 @@ const ResetPassword: React.FC = () => {
                     <input
                       type="email"
                       placeholder="Enter your email"
+                      value={email}
+                      onChange={handleEmailChange}
                       className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
                     />
 
@@ -81,11 +138,12 @@ const ResetPassword: React.FC = () => {
                 </div>
 
                 <div className="mb-5">
-                  <input
+                  <button
                     type="submit"
-                    value="Reset Password"
                     className="w-full cursor-pointer rounded-lg border border-white bg-[#357c20] p-4 text-white transition hover:bg-opacity-90"
-                  />
+                  >
+                    Get Reset Email
+                  </button>
                 </div>
 
                 <div className="mt-6 text-center">
@@ -99,6 +157,18 @@ const ResetPassword: React.FC = () => {
                 </div>
               </form>
             </div>
+            {(alert?.type || alert?.show) === 'success' && (
+              <AlertSuccess
+                alertText="Success"
+                moreAlertInfo="Request Successful Check Your Email."
+              />
+            )}
+            {(alert?.type || alert?.show) === 'danger' && (
+              <AlertDanger
+                alertText="Failed, Something went Wrong"
+                moreAlertInfo="Something went wrong."
+              />
+            )}
           </div>
         </div>
       </div>

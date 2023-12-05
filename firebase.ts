@@ -34,3 +34,15 @@ export const auth = getAuth(app);
 export const db = getFirestore(app);
 export const googleProvider = new GoogleAuthProvider();
 // const analytics = getAnalytics(app);
+
+// ... Firebase imports
+
+export const passwordResetHandler = async (email: string): Promise<boolean> => {
+  try {
+    await sendPasswordResetEmail(auth, email);
+    return true; // Password reset email sent successfully
+  } catch (error) {
+    console.error('Error sending password reset email:', error.message);
+    return false; // Failed to send password reset email
+  }
+};
