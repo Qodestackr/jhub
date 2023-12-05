@@ -4,22 +4,44 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { addDoc, collection } from 'firebase/firestore';
 import { db } from '../../firebase';
+import { AlertDanger, AlertSuccess } from '../alerts';
 
 export default function SubscribeNewsletter() {
   const [email, setEmail] = useState('');
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
 
   const handleSubscribe = async (e) => {
     e.preventDefault();
+
+    // Regular expression for a simple email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // Check if the email follows a valid format
+    if (!emailRegex.test(email)) {
+      // If not, display an error message and return
+      setSubmitError(true);
+      setTimeout(() => {
+        setSubmitError(false);
+      }, 3500);
+      return;
+    }
 
     try {
       // Add the email to Firestore
       await addDoc(collection(db, 'subscribers'), { email });
 
       console.log('Subscription successful!');
-      // You can reset the email field after successful subscription if needed
+
+      // You can reset the email field after a successful subscription if needed
       setEmail('');
+
+      setSubmitSuccess(true);
+      setTimeout(() => setSubmitSuccess(false), 3500);
     } catch (error) {
       console.error('Error subscribing user:', error.message);
+      setSubmitError(true);
+      setTimeout(() => setSubmitError(false), 3500);
     }
   };
 
@@ -60,7 +82,7 @@ export default function SubscribeNewsletter() {
                     </svg>
                   </div>
                   <input
-                    className="block p-3 pl-10 w-full text-sm text-black bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                    className="block p-3 pl-10 w-full text-sm text-black bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-primary-500 dark:focus:border-primary-500"
                     placeholder="Enter your email"
                     type="email"
                     id="email"
@@ -91,6 +113,11 @@ export default function SubscribeNewsletter() {
                 </Link>
                 .
               </div>
+
+              {submitSuccess && <AlertSuccess />}
+              {submitError && (
+                <AlertDanger moreAlertInfo="Either wrong email format or Our backend systems are down" />
+              )}
             </form>
           </div>
         </div>
