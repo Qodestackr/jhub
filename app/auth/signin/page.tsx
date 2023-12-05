@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
@@ -7,19 +7,41 @@ import { useRouter } from 'next/navigation';
 
 import Breadcrumb from '../../../components/Breadcrumbs/Breadcrumb';
 import { useAuthContext } from '../../../context/AuthContext';
-import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import {
+  GoogleAuthProvider,
+  signInWithEmailAndPassword,
+  signInWithPopup
+} from 'firebase/auth';
 import { auth } from '../../../firebase';
+import { AlertDanger, AlertSuccess } from '../../../components/alerts';
 
 const SignIn: React.FC = () => {
   const { user, signInWithGoogleHandler, signOutHandler } = useAuthContext();
-  // console.log(user);
+
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const [signInSuccess, setSignInSuccess] = useState(false);
 
   const router = useRouter();
 
-  const handleSignInWithEmailAndPassword = (e: any) => {
+  const handleSignInWithEmailAndPassword = async (e: any) => {
     e.preventDefault();
-    // alert("TODO: Handle Sign In Handler")
-    // router.push('/dashboard');
+
+    try {
+      // Add your sign-in logic here using signInWithEmailAndPassword
+      const result = await signInWithEmailAndPassword(auth, email, password);
+      // If successful, you can redirect or handle user data as needed
+
+      setSignInSuccess(true);
+      router.push('/dashboard');
+      setTimeout(() => setSignInSuccess(true), 2000);
+    } catch (error) {
+      // Handle sign-in errors
+      setError('Invalid email or password'); // Update with specific error handling
+      console.error('Error signing in:', error);
+      setTimeout(() => setError('Invalid email or password'), 3000);
+    }
   };
 
   const handleSignInWithGoogle = async (e: any) => {
@@ -43,6 +65,17 @@ const SignIn: React.FC = () => {
     } catch (error) {
       console.error('Error signing in with Google:', error);
     }
+  };
+
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+    setError(''); // Clear error when email changes
+  };
+
+  // Add a handler for password change
+  const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setPassword(e.target.value);
+    setError(''); // Clear error when password changes
   };
 
   return (
@@ -87,9 +120,10 @@ const SignIn: React.FC = () => {
                   </label>
                   <div className="relative">
                     <input
-                      disabled
                       type="email"
                       placeholder="Enter your email"
+                      value={email}
+                      onChange={handleEmailChange}
                       className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
                     />
 
@@ -115,13 +149,13 @@ const SignIn: React.FC = () => {
 
                 <div className="mb-6">
                   <label className="mb-2.5 block font-medium text-black dark:text-white">
-                    Re-type Password
+                    Password
                   </label>
                   <div className="relative">
                     <input
                       type="password"
                       placeholder="6+ Characters, 1 Capital letter"
-                      disabled
+                      onChange={handlePasswordChange}
                       className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
                     />
 
@@ -150,12 +184,6 @@ const SignIn: React.FC = () => {
                 </div>
 
                 <div className="mb-4">
-                  {/* <input
-                  onSubmit={handleSignIn}
-                    type="submit"
-                    value="Sign In"
-                    className="w-full cursor-pointer rounded-lg border border-white bg-[#357c20] p-4 text-white transition hover:bg-opacity-90"
-                  /> */}
                   <button
                     onClick={handleSignInWithEmailAndPassword}
                     className="w-full cursor-pointer rounded-lg border border-white bg-[#357c20] p-4 text-white transition hover:bg-opacity-90"
@@ -205,7 +233,7 @@ const SignIn: React.FC = () => {
                   Sign in with Google
                 </button>
 
-                {/* <div className="mt-6 text-center">
+                <div className="mt-6 text-center flex flex-col justify-center items-center">
                   <p>
                     Forgot Password?{' '}
                     <Link
@@ -215,17 +243,18 @@ const SignIn: React.FC = () => {
                       Reset Password
                     </Link>
                   </p>
-
-                  <h3>OR</h3>
+                  <h3 className="my-2">OR</h3>
                   <p>
                     Don&apos;t have any account?{' '}
                     <Link href="/auth/signup" className="text-[#357c20]">
                       Sign Up
                     </Link>
                   </p>
-                </div> */}
+                </div>
               </form>
             </div>
+            {error && <AlertDanger />}
+            {signInSuccess && <AlertSuccess />}
           </div>
         </div>
       </div>

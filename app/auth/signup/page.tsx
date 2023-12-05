@@ -1,19 +1,105 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import Breadcrumb from '../../../components/Breadcrumbs/Breadcrumb';
 import { useRouter } from 'next/router';
 
+import { auth } from '../../../firebase';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { AlertDanger, AlertSuccess } from '../../../components/alerts';
+
 const SignUp: React.FC = () => {
+  const [displayName, setDisplayName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+
+  const [passwordError, setPasswordError] = useState(false);
+  const [passwordNotEqual, setPasswordNotEqual] = useState(false);
+  const [error, setError] = useState('');
+  const [signUpSuccess, setSignUpSuccess] = useState(false);
+  const [signUpError, setSignUpError] = useState(false);
+
   // const router = useRouter();
 
-  const handleSignUp = (e: any) => {
-    e.preventDefault();
-    // alert("TODO: Handle Sign In Handler")
-    // router.push('/dashboard');
+  // ...
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
   };
+
+  const handlePasswordChange = (e) => {
+    const newPassword = e.target.value;
+    setPassword(newPassword);
+
+    // Validate password rules
+    const hasUpperCase = /[A-Z]/.test(newPassword);
+    const hasNumber = /\d/.test(newPassword);
+    const isLengthValid = newPassword.length >= 6;
+
+    if (!hasUpperCase || !hasNumber || !isLengthValid) {
+      setPasswordError(true);
+      setTimeout(() => {
+        setPasswordError(false);
+      }, 3000);
+    } else {
+      setPasswordError(false);
+    }
+  };
+
+  const handleDisplayNameChange = (e) => {
+    setDisplayName(e.target.value);
+  };
+
+  const handleConfirmPasswordChange = (e) => {
+    // if (password !== e.target.value) {
+    //   setError('Passwords do not match');
+    //   setPasswordNotEqual(true);
+    //   return;
+    // }
+    setConfirmPassword(e.target.value);
+  };
+
+  const handleSignUp = async (e) => {
+    e.preventDefault();
+
+    if (password !== confirmPassword) {
+      setError('Passwords do not match');
+      setPasswordNotEqual(true);
+
+      return false;
+    }
+
+    try {
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      const user = userCredential.user;
+      // You can set additional user details here if needed
+      // await user.updateProfile({
+      //   displayName: displayName,
+      // });
+      // Handle successful sign-up
+      console.log('User signed up:', user);
+
+      setSignUpSuccess(true);
+      setTimeout(() => setSignUpSuccess(true), 4000);
+    } catch (error) {
+      setError(error.message);
+      setSignUpError(true);
+
+      console.error('Error signing up:', error);
+      setTimeout(() => {
+        setSignUpError(false);
+      }, 4000);
+    }
+  };
+
+  // ...
 
   return (
     <>
@@ -51,6 +137,9 @@ const SignUp: React.FC = () => {
                     <input
                       type="text"
                       placeholder="Enter your full name"
+                      value={displayName}
+                      required
+                      onChange={handleDisplayNameChange}
                       className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
                     />
 
@@ -86,6 +175,9 @@ const SignUp: React.FC = () => {
                     <input
                       type="email"
                       placeholder="Enter your email"
+                      value={email}
+                      required
+                      onChange={handleEmailChange}
                       className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
                     />
 
@@ -116,9 +208,18 @@ const SignUp: React.FC = () => {
                   <div className="relative">
                     <input
                       type="password"
+                      value={password}
+                      onChange={handlePasswordChange}
                       placeholder="Enter your password"
+                      required
                       className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
                     />
+                    {passwordError && (
+                      <p className="text-red-500 my-1">
+                        Password must be at least 6 characters long, contain at
+                        least one uppercase letter, and one number.
+                      </p>
+                    )}
 
                     <span className="absolute right-4 top-4">
                       <svg
@@ -152,8 +253,13 @@ const SignUp: React.FC = () => {
                     <input
                       type="password"
                       placeholder="Re-enter your password"
+                      value={confirmPassword}
+                      required
+                      onChange={handleConfirmPasswordChange}
                       className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
                     />
+                    {/* {passwordNotEqual ||
+                      (error && <p className="text-red-500">passwords do not macth yet.</p>)} */}
 
                     <span className="absolute right-4 top-4">
                       <svg
@@ -234,6 +340,12 @@ const SignUp: React.FC = () => {
                   </p>
                 </div>
               </form>
+              {signUpError && (
+                <AlertDanger moreAlertInfo={error} alertText="Signup Failed" />
+              )}
+              {signUpSuccess && (
+                <AlertSuccess alertText="Your SignUp is Success!" />
+              )}
             </div>
           </div>
         </div>

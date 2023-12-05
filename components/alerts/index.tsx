@@ -55,7 +55,7 @@ export function AlertInfo() {
 }
 
 export function AlertDanger({
-  alertText = 'Operation Failed Successful',
+  alertText = 'Operation Failed',
   moreAlertInfo = 'Try again later or Contact us for Support'
 }) {
   return (
