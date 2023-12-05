@@ -45,7 +45,7 @@ export const partnershipLogos = [
 function PartnershipLogos() {
   return (
     <div className="w-full container mx-auto">
-      <div className="flex flex-col mx-3 bg-white bg-opacity-60 rounded-lg p-4 w-full shadow-md">
+      <div className="flex flex-col mx-3 bg-opacity-60 rounded-lg p-4 w-full shadow-md">
         <div className="w-full draggable">
           <div className="container flex flex-col items-center gap-8 mx-auto my-32">
             <p className="text-base font-medium leading-7 text-center text-dark-grey-600">

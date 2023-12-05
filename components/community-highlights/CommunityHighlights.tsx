@@ -79,7 +79,7 @@ const HighlightCard = ({ imageSrc, icon, title, content, buttonText }) => {
 
 const CommunityHighlights = () => {
   return (
-    <div className="my-8">
+    <div className="my-8 w-full">
       <h2 className="text-3xl font-semibold text-gray-800 dark:text-white mb-4 ml-8">
         Community Highlights
       </h2>
