@@ -11,11 +11,87 @@ import {
 
 import Team from '../../components/Team/Team';
 import Link from 'next/link';
-function ContactUs() {
-  const [show, setShow] = useState(false);
+import { db } from '../../firebase';
+import { addDoc, collection } from 'firebase/firestore';
+import { AlertDanger, AlertSuccess } from '../../components/alerts';
 
-  const handleContactJHUB = (e: any) => {
-    alert('TODO: Contact Us Submission successful');
+function ContactUs() {
+  const [contactSubmitted, setContactSubmitted] = useState(false);
+  const [contactFailed, setContactFailed] = useState(false);
+
+  /********** FORM STATES ********/
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [companyName, setCompanyName] = useState('');
+  const [country, setCountry] = useState('');
+  const [message, setMessage] = useState('');
+
+  const [formData, setFormData] = useState({
+    FullName: fullName,
+    email: email,
+    companyName: companyName,
+    country: country,
+    message: message
+  });
+
+  const handleContactJHUB = async (e) => {
+    e.preventDefault();
+
+    try {
+      // Save the form data to Firestore
+      const docRef = await addDoc(
+        collection(db, 'contactFormSubmissions'),
+        formData
+      );
+
+      // TODO: Handle success (show a success message, redirect, etc.)
+      setContactSubmitted(true);
+      console.log('successful');
+
+      // Clear the form after successful submission
+      setFormData({
+        FullName: '',
+        email: '',
+        companyName: '',
+        country: '',
+        message: ''
+      });
+
+      // RESET THE ALERT
+      setTimeout(() => {
+        setContactSubmitted(false);
+      }, 5000);
+    } catch (error) {
+      console.error('Error adding document: ', error);
+
+      // TODO: Handle error (show an error message, log, etc.)
+      setContactFailed(true);
+
+      // RESET THE ALERT
+      setTimeout(() => {
+        setContactFailed(false);
+      }, 5000);
+    }
+  };
+
+  const handleFullNameChange = (e) => {
+    setFullName(e.target.value);
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleCompanyNameChange = (e) => {
+    setCompanyName(e.target.value);
+  };
+
+  const handleCountryChange = (e) => {
+    setCountry(e.target.value);
+  };
+
+  const handleMessageChange = (e) => {
+    setMessage(e.target.value);
   };
 
   return (
@@ -80,14 +156,17 @@ function ContactUs() {
             <div className="md:flex items-center mt-12 w-full">
               <div className="w-full flex flex-col">
                 <label className="text-base font-semibold leading-none text-gray-800">
-                  Name
+                  Full Name
                 </label>
                 <input
                   tabIndex={0}
-                  aria-label="Please input name"
-                  type="name"
+                  aria-label="Please input First & Last Name"
+                  type="text"
+                  name="name"
+                  value={fullName}
+                  onChange={handleFullNameChange}
                   className="text-base leading-none text-gray-900 p-3 focus:outline-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
-                  placeholder="Please input  name"
+                  placeholder="Please input Your First & Last name"
                 />
               </div>
               <div className="w-full flex flex-col md:ml-6 md:mt-0 mt-4">
@@ -97,7 +176,10 @@ function ContactUs() {
                 <input
                   tabIndex={0}
                   aria-label="Please input email address"
-                  type="name"
+                  type="email"
+                  name="Email"
+                  value={email}
+                  onChange={handleEmailChange}
                   className="text-base leading-none text-gray-900 p-3 focus:outline-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
                   placeholder="Please input email address"
                 />
@@ -112,7 +194,10 @@ function ContactUs() {
                   tabIndex={0}
                   role="input"
                   aria-label="Please input company name"
-                  type="name"
+                  type="text"
+                  name="Company Name"
+                  value={companyName}
+                  onChange={handleCompanyNameChange}
                   className="text-base leading-none text-gray-900 p-3 focus:outline-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 "
                   placeholder="Please input company name"
                 />
@@ -124,7 +209,10 @@ function ContactUs() {
                 <input
                   tabIndex={0}
                   aria-label="Please input country name"
-                  type="name"
+                  type="text"
+                  name="Country"
+                  value={country}
+                  onChange={handleCountryChange}
                   className="text-base leading-none text-gray-900 p-3 focus:outline-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
                   placeholder="Please input country name"
                 />
@@ -139,8 +227,9 @@ function ContactUs() {
                   tabIndex={0}
                   aria-label="leave a message"
                   role="textbox"
+                  value={message}
+                  onChange={handleMessageChange}
                   className="h-36 text-base leading-none text-gray-900 p-3 focus:outline-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 resize-none"
-                  defaultValue={''}
                   placeholder="Write Your Message Here..."
                 />
               </div>
@@ -157,6 +246,9 @@ function ContactUs() {
               </button>
             </div>
           </div>
+          {contactSubmitted && <AlertSuccess />}
+
+          {contactFailed && <AlertDanger />}
         </div>
       </div>
     </div>

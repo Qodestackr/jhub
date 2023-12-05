@@ -1,8 +1,32 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { addDoc, collection } from 'firebase/firestore';
+import { db } from '../../firebase';
 
 export default function SubscribeNewsletter() {
+  const [email, setEmail] = useState('');
+
+  const handleSubscribe = async (e) => {
+    e.preventDefault();
+
+    try {
+      // Add the email to Firestore
+      await addDoc(collection(db, 'subscribers'), { email });
+
+      console.log('Subscription successful!');
+      // You can reset the email field after successful subscription if needed
+      setEmail('');
+    } catch (error) {
+      console.error('Error subscribing user:', error.message);
+    }
+  };
+
+  const handleChangeEmail = (e) => {
+    setEmail(e.target.value);
+  };
+
   return (
     <>
       <section className="bg-main text-white dark:bg-gray-900">
@@ -40,12 +64,15 @@ export default function SubscribeNewsletter() {
                     placeholder="Enter your email"
                     type="email"
                     id="email"
+                    value={email}
+                    onChange={handleChangeEmail}
                     required
                   />
                 </div>
                 <div>
                   <button
                     type="submit"
+                    onClick={handleSubscribe}
                     className="bg-success py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                   >
                     Subscribe

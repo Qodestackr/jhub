@@ -52,7 +52,30 @@ module.exports = {
                primary: {"50":"#eff6ff","100":"#dbeafe","200":"#bfdbfe","300":"#93c5fd","400":"#60a5fa","500":"#3b82f6","600":"#2563eb","700":"#1d4ed8","800":"#1e40af","900":"#1e3a8a","950":"#172554"}
 
        */
-      main: "#0E2557",
+
+      /********************************************************************************************************** */
+      // Red Background Colors
+      'red-800': '#b91c1c',
+      'red-900': '#981b1b',
+
+      // Green Background Colors
+      'green-800': '#047857',
+      'green-900': '#065f46',
+
+      // Blue Text Colors
+      'blue-800': '#1d4ed8',
+      'blue-900': '#1e3a8a',
+
+      // Alert Colors
+      'blue-500': '#3b82f6', // Info Alert Background
+      white: '#ffffff', // Text Color for Alerts
+
+      'red-500': '#dc2626', // Danger Alert Background
+      'green-500': '#22c55e', // Success Alert Background
+      'gray-800': '#374151', // Dark Alert Background
+
+      /********************************************************************************************************* */
+      main: '#0E2557',
       primary: {
         50: '#eff6ff',
         100: '#dbeafe',

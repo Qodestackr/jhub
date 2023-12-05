@@ -337,7 +337,7 @@ export default function Headerzz() {
               {navBottomLinks.map((link, i) => (
                 <Link
                   key={i}
-                  className="text-sm font-medium text-gray-800 hover:text-blue-600 sm:border-b-2 border-b-transparent py-2 sm:py-3.5 dark:text-gray-400 "
+                  className="text-sm font-medium text-white hover:text-blue-600 sm:border-b-2 border-b-transparent py-2 sm:py-3.5 dark:text-gray-400 "
                   href={link?.href}
                 >
                   {link?.name}
