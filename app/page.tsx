@@ -17,13 +17,6 @@ import BlogSection from '../components/blog';
 import CommunityHighlights from '../components/community-highlights/CommunityHighlights';
 import FAQ from '../components/FAQ/FAQ';
 import Team from '../components/Team/Team';
-import {
-  AlertDanger,
-  AlertDarkMode,
-  AlertInfo,
-  AlertSuccess,
-  AlertWarning
-} from '../components/alerts';
 
 export default function Home() {
   return (
@@ -36,11 +29,6 @@ export default function Home() {
       <BlogSection />
       <FAQ />
       <SubscribeNewsletter />
-      <AlertDanger />
-      <AlertDarkMode />
-      <AlertInfo />
-      <AlertSuccess />
-      <AlertWarning />
     </>
   );
 }
