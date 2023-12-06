@@ -288,7 +288,7 @@ const SignUp: React.FC = () => {
                 <div className="mb-5">
                   <button
                     onClick={handleSignUp}
-                    className="w-full cursor-pointer rounded-lg border border-white bg-[#357c20] p-4 text-white transition hover:bg-opacity-90"
+                    className="w-full cursor-pointer rounded-lg bg-success p-4 text-white transition hover:bg-opacity-90"
                   >
                     Sign Up
                   </button>
@@ -334,7 +334,7 @@ const SignUp: React.FC = () => {
                 <div className="mt-6 text-center">
                   <p>
                     Already have an account?{' '}
-                    <Link href="/auth/signin" className="text-[#357c20]">
+                    <Link href="/auth/signin" className="text-success">
                       Sign in
                     </Link>
                   </p>

@@ -186,7 +186,7 @@ const SignIn: React.FC = () => {
                 <div className="mb-4">
                   <button
                     onClick={handleSignInWithEmailAndPassword}
-                    className="w-full cursor-pointer rounded-lg border border-white bg-[#357c20] p-4 text-white transition hover:bg-opacity-90"
+                    className="w-full cursor-pointer rounded-lg bg-success p-4 text-white transition hover:bg-opacity-90"
                   >
                     Sign In
                   </button>
@@ -236,17 +236,14 @@ const SignIn: React.FC = () => {
                 <div className="mt-6 text-center flex flex-col justify-center items-center">
                   <p>
                     Forgot Password?{' '}
-                    <Link
-                      href="/auth/reset-password"
-                      className="text-[#357c20]"
-                    >
+                    <Link href="/auth/reset-password" className="text-success">
                       Reset Password
                     </Link>
                   </p>
                   <h3 className="my-2">OR</h3>
                   <p>
                     Don&apos;t have any account?{' '}
-                    <Link href="/auth/signup" className="text-[#357c20]">
+                    <Link href="/auth/signup" className="text-success">
                       Sign Up
                     </Link>
                   </p>

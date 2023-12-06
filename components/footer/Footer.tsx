@@ -25,7 +25,7 @@ export default function Footer() {
             aria-label="Brand"
           >
             JHUB -{' '}
-            <span className="uppercase text-main font-medium text-sm">
+            <span className="uppercase text-main dark:text-success font-medium text-sm">
               INVESTING IN THE DIGITAL FUTURE.
             </span>
           </Link>

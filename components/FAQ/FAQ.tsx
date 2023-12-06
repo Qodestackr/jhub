@@ -84,7 +84,7 @@ export default function FAQ() {
                   onClick={() =>
                     setOpenAccordion(openAccordion === faq.id ? null : faq.id)
                   }
-                  className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="hs-accordion-toggle dark:text-bodydark group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   aria-controls={`hs-basic-with-title-and-arrow-stretched-collapse-${faq.id}`}
                 >
                   {faq.question}
@@ -126,7 +126,7 @@ export default function FAQ() {
                   } w-full overflow-hidden transition-height duration-300`} // Use transition-height instead of transition-[height]
                   aria-labelledby={`hs-basic-with-title-and-arrow-stretched-heading-${faq.id}`}
                 >
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <p className="text-gray-600 dark:text-bodydark">
                     {faq.answer}
                   </p>
                 </div>
