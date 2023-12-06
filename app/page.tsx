@@ -17,6 +17,7 @@ import BlogSection from '../components/blog';
 import CommunityHighlights from '../components/community-highlights/CommunityHighlights';
 import FAQ from '../components/FAQ/FAQ';
 import Team from '../components/Team/Team';
+import Buttons from './ui/buttons/page';
 
 export default function Home() {
   return (
