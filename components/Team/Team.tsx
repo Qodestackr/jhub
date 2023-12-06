@@ -85,6 +85,18 @@ function Team() {
   let [categories] = useState({
     EXECUTIVE: [
       {
+        memberImageUrl: `/images/team/dr-lawrence-nderu.png`,
+        memberName: `Dr. Lawrence Nderu(PhD)`,
+        memberRole: `Project Lead`,
+        description: `Project Lead with extensive experience as Chairman,
+        Lecturer, and Researcher in AI/ML and Software Engineering.
+        A Digital Ecosystem Builder and Founder of JKIAN Hub,
+        serving as a Digital Africa Connector.`,
+        twitterLink: ``,
+        facebookLink: ``,
+        linkedInLink: `https://www.linkedin.com/in/dr-lawrence-nderu/?originalSubdomain=ke`
+      },
+      {
         memberImageUrl: `/images/team/rehema-ndenda.jpeg`,
         memberName: `Dr Rehema Ndeda`,
         memberRole: `Climate Smart Agriculture/ Automation Lead/JKUAT`,
