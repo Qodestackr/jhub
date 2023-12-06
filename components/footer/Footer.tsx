@@ -113,9 +113,7 @@ export default function Footer() {
               >
                 Innovations admission
               </Link>{' '}
-              <span className="inline text-blue-600 dark:text-blue-500">
-                — join us.
-              </span>
+              <span className="inline text-meta-3">— join us.</span>
             </p>
             <p>
               <Link
