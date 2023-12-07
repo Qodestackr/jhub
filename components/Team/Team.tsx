@@ -9,74 +9,6 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import { Tab } from '@headlessui/react';
 
-const teams = [
-  {
-    memberImageUrl: `/images/team/dr-lawrence-nderu.png`,
-    memberName: `Dr. Lawrence Nderu(PhD)`,
-    memberRole: `Project Lead`,
-    description: `Project Lead with extensive experience as Chairman,
-    Lecturer, and Researcher in AI/ML and Software Engineering.
-    A Digital Ecosystem Builder and Founder of JKIAN Hub,
-    serving as a Digital Africa Connector.`,
-    twitterLink: ``,
-    facebookLink: ``,
-    linkedInLink: `https://www.linkedin.com/in/dr-lawrence-nderu/?originalSubdomain=ke`
-  },
-  {
-    memberImageUrl: `/images/team/cate.jpg`,
-    memberName: `Catherine Muraga`,
-    memberRole: `Managing Director, Microsoft ADC`,
-    description: `Catherine is a purpose-driven tech executive, currently the Managing Director at Microsoft ADC. 
-    She leads a team creating impactful products and services globally, with a focus on STEM education in Africa.`,
-    twitterLink: ``,
-    facebookLink: ``,
-    linkedInLink: `https://www.linkedin.com/in/dr-lawrence-nderu/?originalSubdomain=ke`
-  },
-  {
-    memberImageUrl: `/images/team/rehema-ndenda.jpeg`,
-    memberName: `Dr Rehema Ndeda`,
-    memberRole: `Climate Smart Agriculture/ Automation Lead/JKUAT`,
-    description: `Mechatronics Engineer with a specialization on automation, currently focusing on development and 
-    testing of technologies related to precision agriculture`,
-    twitterLink: ``,
-    facebookLink: ``,
-    linkedInLink: ``
-  },
-  {
-    memberImageUrl: `/images/team/dr-mwangi-karanja.jpeg`,
-    memberName: `Dr Mwangi Karanja`,
-    memberRole: `Innovative Technology and Data Science Lead`,
-    description: `An Innovative technology diffusion expert with a background in computing, research and innovation management. 
-    Have trained Small scale entrepreneurs on data management and research-driven approaches to growth`,
-    twitterLink: ``,
-    facebookLink: ``,
-    linkedInLink: ``
-  },
-  {
-    memberImageUrl: `/images/team/william-muriithi.jpeg`,
-    memberName: `Dr William Murithi`,
-    memberRole: `DIH Business Development/ Strategy Lead`,
-    description: `An expert in business model innovation, digital entrepreneurship & innovation and design thinking. 
-    Founder and Lead consultant at EMBC, a premier management consulting firm that offers bespoke and integrated solutions 
-    for enterprises.`,
-    twitterLink: ``,
-    facebookLink: ``,
-    linkedInLink: ``
-  },
-  {
-    memberImageUrl: ``,
-    memberName: `Ms. Daisy Ondwari`,
-    memberRole: `Product Development Fellow`,
-    description: `Ms. Daisy Ondwari, as a Product Development Fellow, serves
-    as the voice of the customer. Her role extends beyond user
-    interface experience, questioning and shaping products to
-    align with user needs.`,
-    twitterLink: ``,
-    facebookLink: ``,
-    linkedInLink: ``
-  }
-];
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
@@ -92,7 +24,7 @@ function Team() {
         Lecturer, and Researcher in AI/ML and Software Engineering.
         A Digital Ecosystem Builder and Founder of JKIAN Hub,
         serving as a Digital Africa Connector.`,
-        twitterLink: ``,
+        twitterLink: `https://twitter.com/LawrenceNM`,
         facebookLink: ``,
         linkedInLink: `https://www.linkedin.com/in/dr-lawrence-nderu/?originalSubdomain=ke`
       },
@@ -104,7 +36,7 @@ function Team() {
         testing of technologies related to precision agriculture`,
         twitterLink: ``,
         facebookLink: ``,
-        linkedInLink: ``
+        linkedInLink: `https://www.linkedin.com/in/r-ndeda/?originalSubdomain=ke`
       },
       {
         memberImageUrl: `/images/team/dr-mwangi-karanja.jpeg`,
@@ -114,7 +46,7 @@ function Team() {
         Have trained Small scale entrepreneurs on data management and research-driven approaches to growth`,
         twitterLink: ``,
         facebookLink: ``,
-        linkedInLink: ``
+        linkedInLink: `https://ke.linkedin.com/in/drmwangi-karanja`
       },
       {
         memberImageUrl: `/images/team/william-muriithi.jpeg`,
@@ -125,7 +57,7 @@ function Team() {
         for enterprises.`,
         twitterLink: ``,
         facebookLink: ``,
-        linkedInLink: ``
+        linkedInLink: `https://www.linkedin.com/in/william-murithi-ph-d-fhea-cmbe-8a169425`
       },
       {
         memberImageUrl: ``,
@@ -137,7 +69,7 @@ function Team() {
         align with user needs.`,
         twitterLink: ``,
         facebookLink: ``,
-        linkedInLink: ``
+        linkedInLink: `https://www.linkedin.com/in/daisy-ondwari/`
       }
     ],
     'ADVISORY BOARD': [
@@ -149,9 +81,9 @@ function Team() {
         at Microsoft ADC. In this role, she spearheads a team dedicated to crafting impactful products and services on a 
         global scale. Catherine's particular focus lies in advancing STEM education in Africa, reflecting her commitment 
         to driving positive change through technology.`,
-        twitterLink: ``,
+        twitterLink: `https://twitter.com/CMuraga`,
         facebookLink: ``,
-        linkedInLink: `https://www.linkedin.com/in/dr-lawrence-nderu/?originalSubdomain=ke`
+        linkedInLink: `https://www.linkedin.com/in/cmuraga/`
       }
     ],
     SECRETARIAT: [
@@ -170,7 +102,7 @@ function Team() {
       },
       {
         memberImageUrl: `/images/team/george-comm.jpeg`,
-        memberName: `George Gichuhi Gathoni`,
+        memberName: `George Gathoni`,
         memberRole: `Communications, Secretariat Team`,
         description: `George is a seasoned member of the communications, media, and secretariat department, boasting a 
         wealth of experience. His expertise lies in the art of storytelling, particularly through multimedia and visual narratives. 
@@ -178,7 +110,7 @@ function Team() {
         and flourish in the constantly changing landscape of today's media industry.`,
         twitterLink: ``,
         facebookLink: ``,
-        linkedInLink: `https://www.linkedin.com/in/dr-lawrence-nderu/?originalSubdomain=ke`
+        linkedInLink: `https://www.linkedin.com/in/george-gichuhi-gathoni-56aa4215b/`
       }
     ],
     'DEV TEAM': [
@@ -198,7 +130,7 @@ function Team() {
   });
 
   return (
-    <div className="mt-14 md:mt-18">
+    <div className="w-full mt-14 md:mt-18 mx-auto max-w-7xl">
       <div>
         <p className="text-gray-500 text-lg dark:bg-boxdark-2 dark:text-bodydark text-center font-normal pb-3">
           Beyond the Ordinary | Meet the team
@@ -208,7 +140,7 @@ function Team() {
         </h1>
       </div>
 
-      <div className="container flex justify-center items-center mx-auto">
+      <div className="mx-auto max-w-7xl flex justify-center items-center">
         <Tab.Group
           as="div"
           style={{
@@ -244,12 +176,15 @@ function Team() {
                   'ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2'
                 )}
               >
-                <div className="lg:flex md:flex sm:flex items-start justify-start gap-1 flex-wrap md:justify-start sm:justify-start lg:justify-start">
+                <div
+                  // className="lg:flex md:flex sm:flex items-start justify-start gap-1 flex-wrap md:justify-start sm:justify-start lg:justify-start"
+                  className="w-full grid grid-cols-1 md:grid-cols-3 gap-4"
+                >
                   {teamMembers.map((teamMember, i) => (
                     <div
                       key={i}
                       className={classNames(
-                        'xl:w-1/3 h-full sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5',
+                        'xl:w-full h-full sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5',
                         { 'sm:w-full': teamMembers.length === 2 }
                       )}
                     >
@@ -276,11 +211,18 @@ function Team() {
                             {teamMember?.description}
                           </p>
                           <div className="w-full flex justify-center pt-5 pb-5">
-                            <a href={teamMember?.twitterLink} className="mx-5">
-                              <div>
-                                <IconBrandTwitter />
-                              </div>
-                            </a>
+                            <span className="text-success">Socials: </span>
+                            {teamMember?.twitterLink !== '' && (
+                              <a
+                                href={teamMember?.twitterLink}
+                                className="mx-5"
+                              >
+                                <div>
+                                  <IconBrandTwitter />
+                                </div>
+                              </a>
+                            )}
+
                             {teamMember?.facebookLink !== '' && (
                               <a
                                 href={teamMember?.facebookLink}

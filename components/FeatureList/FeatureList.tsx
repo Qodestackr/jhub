@@ -33,7 +33,12 @@ const Icon = () => (
 const featureList = [
   {
     title: 'Support To Find Investment',
-    icon: <IconBusinessplan size={'40px'} />,
+    icon: (
+      <IconBusinessplan
+        size={'40px'}
+        className="text-success dark:text-gray-400"
+      />
+    ),
     description: `
     Navigating the landscape of investments can be daunting. At JHUB, we provide dedicated support to 
     help you find the right investments for your digital initiatives. Our team of financial experts and 
@@ -44,7 +49,12 @@ const featureList = [
   },
   {
     title: 'Digital Innovation Hub',
-    icon: <IconBuildingLighthouse size={'40px'} />,
+    icon: (
+      <IconBuildingLighthouse
+        size={'40px'}
+        className="text-success dark:text-gray-400"
+      />
+    ),
     description: `
     JHUB is your ultimate Digital Innovation Hub, where ideas flourish and innovation thrives. 
     Our platform provides a collaborative space for visionaries, entrepreneurs, and businesses to ideate, 
@@ -54,7 +64,12 @@ const featureList = [
   },
   {
     title: 'Skills and Training',
-    icon: <IconStarsFilled size={'40px'} />,
+    icon: (
+      <IconStarsFilled
+        size={'40px'}
+        className="text-success dark:text-gray-400"
+      />
+    ),
     description: `
     Empowering individuals with the right skills is at the core of what we do. JHUB offers comprehensive skills 
     development and training programs designed to enhance digital literacy and proficiency. From farmers looking 
@@ -64,7 +79,9 @@ const featureList = [
   },
   {
     title: 'Facilitating Technology Transfer',
-    icon: <IconRocket size={'40px'} />,
+    icon: (
+      <IconRocket size={'40px'} className="text-success dark:text-gray-400" />
+    ),
     description: `
     JHUB serves as a catalyst for technology transfer, facilitating the seamless exchange of knowledge and innovation. 
     Our platform connects innovators, industry experts, and businesses, fostering collaborations that lead to the swift 
@@ -74,7 +91,12 @@ const featureList = [
   },
   {
     title: 'Test Before Invest',
-    icon: <IconDiscountCheckFilled size={'40px'} />,
+    icon: (
+      <IconDiscountCheckFilled
+        size={'40px'}
+        className="text-success dark:text-gray-400"
+      />
+    ),
     description: `
     At JHUB, we believe in the principle of "Test Before Invest," a guiding philosophy that underscores our commitment to your 
     success. Before you make significant investments, we offer a comprehensive testing framework to evaluate the viability and 
@@ -87,7 +109,12 @@ const featureList = [
   },
   {
     title: 'Diffusion of new Technologies',
-    icon: <IconChessKnightFilled size={'40px'} />,
+    icon: (
+      <IconChessKnightFilled
+        size={'40px'}
+        className="text-success dark:text-gray-400"
+      />
+    ),
     description: `
     At JHUB, we specialize in the seamless diffusion of cutting-edge technologies. Our experts work tirelessly to 
     bridge the gap between innovation and implementation, ensuring that the latest technologies become accessible 
@@ -98,8 +125,7 @@ const featureList = [
 
 export default function FeatureList() {
   return (
-    <section className=" mt-20 dark:bg-gray-900 ">
-      {/* bg-[#219653] text-white*/}
+    <section className=" mt-20 dark:bg-gray-900">
       <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div className="max-w-screen-md mb-8 lg:mb-16">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
