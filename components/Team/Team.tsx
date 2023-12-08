@@ -59,7 +59,7 @@ function Team() {
         linkedInLink: `https://www.linkedin.com/in/william-murithi-ph-d-fhea-cmbe-8a169425`
       },
       {
-        memberImageUrl: ``,
+        memberImageUrl: `/images/team/image1.jpg`,
         memberName: `Ms. Daisy Ondwari`,
         memberRole: `Product Development Fellow`,
         description: `Ms. Daisy Ondwari, as a Product Development Fellow, serves
