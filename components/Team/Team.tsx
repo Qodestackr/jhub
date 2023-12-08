@@ -117,10 +117,8 @@ function Team() {
         memberImageUrl: `/images/team/dev-winchy.jpg`,
         memberName: `Wilson Gichuhi`,
         memberRole: `Fullstack Software Engineer`,
-        description: `Wilson Gichuhi, in his role as a Fullstack Software Engineer, is a dedicated web developer with a focus on 
-        constructing Web, Mobile, and cross-platform cloud-first applications. Known for his consistent contributions to open-source 
-        development, Wilson possesses a profound passion for tinkering with various tools and technologies. His commitment to pushing 
-        the boundaries of innovation makes him a valuable asset in the world of software engineering.`,
+        description: `Wilson Gichuhi, a Fullstack Software Engineer, dedicated to web, cross-platform mobile solution,cloud-first 
+        development, and open-source contribution. He often finds joy in tinkering with various tools and technologies.`,
         twitterLink: `https://twitter.com/wilsonjugia/`,
         facebookLink: ``,
         linkedInLink: `https://www.linkedin.com/in/wilson-gichuhi`
