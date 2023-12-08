@@ -1,7 +1,6 @@
 'use client';
 import {
   IconBrandFacebook,
-  IconBrandInstagram,
   IconBrandLinkedin,
   IconBrandTwitter
 } from '@tabler/icons-react';
@@ -176,69 +175,53 @@ function Team() {
                   'ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2'
                 )}
               >
-                <div
-                  // className="lg:flex md:flex sm:flex items-start justify-start gap-1 flex-wrap md:justify-start sm:justify-start lg:justify-start"
-                  className="w-full grid grid-cols-1 md:grid-cols-3 gap-4"
-                >
+                <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4">
+                  {/*  */}
                   {teamMembers.map((teamMember, i) => (
                     <div
                       key={i}
-                      className={classNames(
-                        'xl:w-full h-full sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5',
-                        { 'sm:w-full': teamMembers.length === 2 }
-                      )}
+                      className="rounded my-4 overflow-hidden shadow-md dark:bg-boxdark-2 dark:text-bodydark bg-white"
                     >
-                      <div className="rounded my-4 overflow-hidden shadow-md  dark:bg-boxdark-2 dark:text-bodydark bg-white">
-                        <div className="absolute -mt-20 w-full h-full flex justify-center">
-                          <div className="h-32 w-32">
-                            <Image
-                              src={teamMember?.memberImageUrl}
-                              alt=""
-                              className="rounded-full object-cover h-full w-full shadow-md"
-                              width={200}
-                              height={300}
-                            />
-                          </div>
+                      <div className="mx-auto h-32 w-32 mt-4">
+                        <Image
+                          src={teamMember?.memberImageUrl}
+                          alt=""
+                          className="rounded-full object-cover h-full w-full shadow-md"
+                          width={200}
+                          height={300}
+                        />
+                      </div>
+                      <div className="px-6 mt-16">
+                        <div className="font-bold text-3xl text-center pb-1">
+                          {teamMember?.memberName}
                         </div>
-                        <div className="px-6 mt-16">
-                          <div className="font-bold text-3xl text-center pb-1">
-                            {teamMember?.memberName}
-                          </div>
-                          <p className="text-gray-800 dark:text-bodydark text-sm text-center">
-                            {teamMember?.memberRole}
-                          </p>
-                          <p className="text-center text-gray-600 text-base pt-3 font-normal">
-                            {teamMember?.description}
-                          </p>
-                          <div className="w-full flex justify-center pt-5 pb-5">
-                            <span className="text-success">Socials: </span>
-                            {teamMember?.twitterLink !== '' && (
-                              <a
-                                href={teamMember?.twitterLink}
-                                className="mx-5"
-                              >
-                                <div>
-                                  <IconBrandTwitter />
-                                </div>
-                              </a>
-                            )}
-
-                            {teamMember?.facebookLink !== '' && (
-                              <a
-                                href={teamMember?.facebookLink}
-                                className="mx-5"
-                              >
-                                <div>
-                                  <IconBrandFacebook />
-                                </div>
-                              </a>
-                            )}
-                            <a href={teamMember?.linkedInLink} className="mx-5">
+                        <p className="text-gray-800 dark:text-bodydark text-sm text-center">
+                          {teamMember?.memberRole}
+                        </p>
+                        <p className="text-center text-gray-600 text-base pt-3 font-normal">
+                          {teamMember?.description}
+                        </p>
+                        <div className="w-full flex justify-center pt-5 pb-5">
+                          <span className="text-success">Socials: </span>
+                          {teamMember?.twitterLink !== '' && (
+                            <a href={teamMember?.twitterLink} className="mx-5">
                               <div>
-                                <IconBrandLinkedin />
+                                <IconBrandTwitter />
                               </div>
                             </a>
-                          </div>
+                          )}
+                          {teamMember?.facebookLink !== '' && (
+                            <a href={teamMember?.facebookLink} className="mx-5">
+                              <div>
+                                <IconBrandFacebook />
+                              </div>
+                            </a>
+                          )}
+                          <a href={teamMember?.linkedInLink} className="mx-5">
+                            <div>
+                              <IconBrandLinkedin />
+                            </div>
+                          </a>
                         </div>
                       </div>
                     </div>
