@@ -83,6 +83,20 @@ function Team() {
         twitterLink: `https://twitter.com/CMuraga`,
         facebookLink: ``,
         linkedInLink: `https://www.linkedin.com/in/cmuraga/`
+      },
+      {
+        memberImageUrl: `/images/team/Noumbessy.jpeg`,
+        memberName: `Noumbessy Ghislain`,
+        memberRole: `Innovation Hub Leader, Bosch EA`,
+        description: `Ghislain Noumbessy is a visionary professional who has been with BOSCH, working in different capacities. 
+        His rich experience working across different regions in Africa make him one of the most knowledgeable individuals on the 
+        problems  the continent encounters. Noumbessy believes that Africa can move beyond being a consumer of technologies to 
+        being creators of it. Currently the Innovation Hub Leader at Bosch EA, he is passionate about nurturing innovations across 
+        the region as a way to find suitable solutions to the unique problems we face.`,
+        twitterLink: ``,
+        facebookLink: ``,
+        githubLink: ``,
+        linkedInLink: `https://www.linkedin.com/in/noumbessyghislain`
       }
     ],
     SECRETARIAT: [
