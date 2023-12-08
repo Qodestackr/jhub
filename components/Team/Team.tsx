@@ -1,7 +1,6 @@
 'use client';
 import {
   IconBrandFacebook,
-  IconBrandGithub,
   IconBrandInstagram,
   IconBrandLinkedin,
   IconBrandTwitter
@@ -27,7 +26,6 @@ function Team() {
         serving as a Digital Africa Connector.`,
         twitterLink: `https://twitter.com/LawrenceNM`,
         facebookLink: ``,
-        githubLink: ``,
         linkedInLink: `https://www.linkedin.com/in/dr-lawrence-nderu/?originalSubdomain=ke`
       },
       {
@@ -38,7 +36,6 @@ function Team() {
         testing of technologies related to precision agriculture`,
         twitterLink: ``,
         facebookLink: ``,
-        githubLink: ``,
         linkedInLink: `https://www.linkedin.com/in/r-ndeda/?originalSubdomain=ke`
       },
       {
@@ -49,7 +46,6 @@ function Team() {
         Have trained Small scale entrepreneurs on data management and research-driven approaches to growth`,
         twitterLink: ``,
         facebookLink: ``,
-        githubLink: ``,
         linkedInLink: `https://ke.linkedin.com/in/drmwangi-karanja`
       },
       {
@@ -61,7 +57,6 @@ function Team() {
         for enterprises.`,
         twitterLink: ``,
         facebookLink: ``,
-        githubLink: ``,
         linkedInLink: `https://www.linkedin.com/in/william-murithi-ph-d-fhea-cmbe-8a169425`
       },
       {
@@ -74,7 +69,6 @@ function Team() {
         align with user needs.`,
         twitterLink: ``,
         facebookLink: ``,
-        githubLink: ``,
         linkedInLink: `https://www.linkedin.com/in/daisy-ondwari/`
       }
     ],
@@ -82,29 +76,14 @@ function Team() {
       {
         memberImageUrl: `/images/team/cate.jpg`,
         memberName: `Catherine Muraga`,
-        memberRole: `Advisory Board, Lead`,
+        memberRole: `Managing Director, Microsoft ADC`,
         description: `Catherine is a purpose-driven tech executive, presently holding the position of Managing Director 
         at Microsoft ADC. In this role, she spearheads a team dedicated to crafting impactful products and services on a 
         global scale. Catherine's particular focus lies in advancing STEM education in Africa, reflecting her commitment 
         to driving positive change through technology.`,
         twitterLink: `https://twitter.com/CMuraga`,
         facebookLink: ``,
-        githubLink: ``,
         linkedInLink: `https://www.linkedin.com/in/cmuraga/`
-      },
-      {
-        memberImageUrl: `/images/team/Noumbessy.jpeg`,
-        memberName: `Noumbessy Ghislain`,
-        memberRole: `Innovation Hub Leader, Bosch EA`,
-        description: `Ghislain Noumbessy is a visionary professional who has been with BOSCH, working in different capacities. 
-        His rich experience working across different regions in Africa make him one of the most knowledgeable individuals on the 
-        problems  the continent encounters. Noumbessy believes that Africa can move beyond being a consumer of technologies to 
-        being creators of it. Currently the Innovation Hub Leader at Bosch EA, he is passionate about nurturing innovations across 
-        the region as a way to find suitable solutions to the unique problems we face.`,
-        twitterLink: ``,
-        facebookLink: ``,
-        githubLink: ``,
-        linkedInLink: `https://www.linkedin.com/in/noumbessyghislain`
       }
     ],
     SECRETARIAT: [
@@ -119,7 +98,6 @@ function Team() {
         make her a valuable asset in the field.`,
         twitterLink: ``,
         facebookLink: ``,
-        githubLink: ``,
         linkedInLink: `https://www.linkedin.com/in/dr-lawrence-nderu/?originalSubdomain=ke`
       },
       {
@@ -132,7 +110,6 @@ function Team() {
         and flourish in the constantly changing landscape of today's media industry.`,
         twitterLink: ``,
         facebookLink: ``,
-        githubLink: ``,
         linkedInLink: `https://www.linkedin.com/in/george-gichuhi-gathoni-56aa4215b/`
       }
     ],
@@ -147,7 +124,6 @@ function Team() {
         the boundaries of innovation makes him a valuable asset in the world of software engineering.`,
         twitterLink: `https://twitter.com/wilsonjugia/`,
         facebookLink: ``,
-        githubLink: `https://github.com/Qodestackr`,
         linkedInLink: `https://www.linkedin.com/in/wilson-gichuhi`
       }
     ]
@@ -241,17 +217,9 @@ function Team() {
                                 href={teamMember?.twitterLink}
                                 className="mx-5"
                               >
-                                <IconBrandTwitter />
-                              </a>
-                            )}
-
-                            {(teamMember?.githubLink !== '' ||
-                              teamMember?.githubLink === undefined) && (
-                              <a
-                                href={teamMember?.twitterLink}
-                                className="mx-5"
-                              >
-                                <IconBrandGithub />
+                                <div>
+                                  <IconBrandTwitter />
+                                </div>
                               </a>
                             )}
 
@@ -260,11 +228,15 @@ function Team() {
                                 href={teamMember?.facebookLink}
                                 className="mx-5"
                               >
-                                <IconBrandFacebook />
+                                <div>
+                                  <IconBrandFacebook />
+                                </div>
                               </a>
                             )}
                             <a href={teamMember?.linkedInLink} className="mx-5">
-                              <IconBrandLinkedin />
+                              <div>
+                                <IconBrandLinkedin />
+                              </div>
                             </a>
                           </div>
                         </div>
