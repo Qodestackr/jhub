@@ -129,7 +129,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
             alt="Logo"
           /> */}
           <h1 className="text-white text-2xl font-bold">
-            {/* <Image src={'/images/logo/jhub-logo1.png'} alt={''}  
+            {/* <Image src={'/images/logo/jhub-logo-new.svg'} alt={''}  
             width={276}
             height={320}          
             /> */}

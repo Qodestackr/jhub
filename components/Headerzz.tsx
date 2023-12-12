@@ -103,12 +103,12 @@ export default function Headerzz() {
         >
           <div className="flex items-center justify-between">
             <a
-              className="flex-none text-3xl bg-white font-semibold dark:text-white"
+              className="flex-none text-3xl font-semibold "
               href="/"
               aria-label="jhub Suite Brand"
             >
               <Image
-                src={'/images/logo/jhub-logo1.png'}
+                src={'/images/logo/jhub-logo-new.svg'}
                 width={100}
                 height={100}
                 alt={''}

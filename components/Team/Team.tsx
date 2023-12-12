@@ -69,6 +69,24 @@ function Team() {
         twitterLink: ``,
         facebookLink: ``,
         linkedInLink: `https://www.linkedin.com/in/daisy-ondwari/`
+      },
+      {
+        memberImageUrl: ``,
+        memberName: `Irene Kimani`,
+        memberRole: `Automation Lead`,
+        description: `DESCRIPTION`,
+        twitterLink: `_`,
+        facebookLink: `_`,
+        linkedInLink: `+`
+      },
+      {
+        memberImageUrl: ``,
+        memberName: `Dr John Kinyuru`,
+        memberRole: `Research, and Innovation
+        Development Lead`,
+        twitterLink: `_`,
+        facebookLink: `_`,
+        linkedInLink: `_`
       }
     ],
     'ADVISORY BOARD': [

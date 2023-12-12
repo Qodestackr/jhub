@@ -113,7 +113,7 @@ const SignUp: React.FC = () => {
                 <h1 className="text-2xl font-bold mb-4">Sign Up | JHUB</h1>
                 <Image
                   // className="hidden dark:block"
-                  src={'/images/logo/jhub-logo1.png'}
+                  src={'/images/logo/jhub-logo-new.svg'}
                   alt="Logo"
                   width={176}
                   height={32}
