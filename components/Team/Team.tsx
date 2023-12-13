@@ -73,20 +73,23 @@ function Team() {
       {
         memberImageUrl: ``,
         memberName: `Irene Kimani`,
-        memberRole: `Automation Lead`,
-        description: `DESCRIPTION`,
-        twitterLink: `_`,
-        facebookLink: `_`,
-        linkedInLink: `+`
+        memberRole: `ICT Specialist & Data Manager, KALRO`,
+        description: `Irene Kimani is an ICT Specialist abd Data Manager at the Kenya Agriculture and Livestock Research Organization(KALRO).
+        She has expertise in the ICT field, Data Science, Big Data, Artificial Intelligence, and research informatics. She is passionate about innovations and development, especially in the agricultural sector. Irene's proficiency in agricultural extension services and weather intel has
+        been vital for for digitization of the food, and her role in the JHUB Africa team is valuable.`,
+        twitterLink: `https://twitter.com/irenekimani14`,
+        facebookLink: ``,
+        linkedInLink: `https://ke.linkedin.com/in/irene-kimani-6a5b71b9`
       },
       {
         memberImageUrl: ``,
         memberName: `Dr John Kinyuru`,
         memberRole: `Research, and Innovation
-        Development Lead`,
-        twitterLink: `_`,
-        facebookLink: `_`,
-        linkedInLink: `_`
+        Development Lead, JKUAT`,
+        description: `Dr John Kinyuru is an esteemed Food and Nutrition Scientist with great leadership and project management capabilities. Director of research and innovation at Jomo Kenyatta University of Agriculture and Technology(JKUAT), and researcher in Agriculture, food, and nutrition. A food systems and nutrition-sensitive agriculture expert, he is typically the insect hunter(specialist of edible insects), passionate about food security through research and implementation. Dr John Kinyuru is a key member of the JHUB Africa project whose role will transform the food and nutrition ecosystem.`,
+        twitterLink: `https://twitter.com/jkinyuru`,
+        facebookLink: ``,
+        linkedInLink: `https://ke.linkedin.com/in/dr-john-n-kinyuru-phd-rns-7a797120`
       }
     ],
     'ADVISORY BOARD': [
