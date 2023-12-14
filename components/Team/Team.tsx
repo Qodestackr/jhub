@@ -74,7 +74,7 @@ function Team() {
         memberImageUrl: `/images/team/irene-kimani.jpg`,
         memberName: `Irene Kimani`,
         memberRole: `ICT Specialist & Data Manager, KALRO`,
-        description: `Irene Kimani is an ICT Specialist abd Data Manager at the Kenya Agriculture and Livestock Research Organization(KALRO).
+        description: `Irene Kimani is an ICT Specialist and Data Manager at the Kenya Agriculture and Livestock Research Organization(KALRO).
         She has expertise in the ICT field, Data Science, Big Data, Artificial Intelligence, and research informatics. She is passionate about innovations and development, especially in the agricultural sector. Irene's proficiency in agricultural extension services and weather intel has
         been vital for for digitization of the food, and her role in the JHUB Africa team is valuable.`,
         twitterLink: `https://twitter.com/irenekimani14`,
