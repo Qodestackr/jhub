@@ -59,7 +59,7 @@ function Team() {
         linkedInLink: `https://www.linkedin.com/in/william-murithi-ph-d-fhea-cmbe-8a169425`
       },
       {
-        memberImageUrl: `/images/team/image1.jpg`,
+        memberImageUrl: `/images/team/daisy-ondwari.jpg`,
         memberName: `Ms. Daisy Ondwari`,
         memberRole: `Product Development Fellow`,
         description: `Ms. Daisy Ondwari, as a Product Development Fellow, serves
@@ -71,7 +71,7 @@ function Team() {
         linkedInLink: `https://www.linkedin.com/in/daisy-ondwari/`
       },
       {
-        memberImageUrl: ``,
+        memberImageUrl: `/images/team/irene-kimani.jpg`,
         memberName: `Irene Kimani`,
         memberRole: `ICT Specialist & Data Manager, KALRO`,
         description: `Irene Kimani is an ICT Specialist abd Data Manager at the Kenya Agriculture and Livestock Research Organization(KALRO).
@@ -82,7 +82,7 @@ function Team() {
         linkedInLink: `https://ke.linkedin.com/in/irene-kimani-6a5b71b9`
       },
       {
-        memberImageUrl: ``,
+        memberImageUrl: `/images/team/john-kinyuru.jpg`,
         memberName: `Dr John Kinyuru`,
         memberRole: `Research, and Innovation
         Development Lead, JKUAT`,
