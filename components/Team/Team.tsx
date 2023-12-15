@@ -190,6 +190,7 @@ function Team() {
         });
 
         setCategories(updatedCategories);
+        console.log(categories);
       } catch (error) {
         console.error('Error querying TeamMembers collection: ', error);
       }
@@ -255,7 +256,7 @@ function Team() {
                     >
                       <div className="mx-auto h-32 w-32 mt-4">
                         <Image
-                          src={teamMember?.memberImageUrl}
+                          src={teamMember?.imageUrl}
                           alt=""
                           className="rounded-full object-cover h-full w-full shadow-md"
                           width={200}
