@@ -1,5 +1,7 @@
 import { initializeApp } from 'firebase/app';
-// import { getAnalytics } from 'firebase/analytics';
+import { getAnalytics } from 'firebase/analytics';
+import { getStorage, ref } from 'firebase/storage';
+
 import {
   GoogleAuthProvider,
   getAuth,
@@ -33,9 +35,9 @@ const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const db = getFirestore(app);
 export const googleProvider = new GoogleAuthProvider();
-// const analytics = getAnalytics(app);
-
-// ... Firebase imports
+export const storage = getStorage(app);
+export const storageRef = ref(storage, 'some-child');
+export const analytics = getAnalytics(app);
 
 export const passwordResetHandler = async (email: string): Promise<boolean> => {
   try {
