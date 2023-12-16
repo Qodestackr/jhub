@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { addDoc, collection, doc, updateDoc } from 'firebase/firestore';
 import { db, storage } from '../../../firebase';
 import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
+import { AlertDanger, AlertSuccess } from '../../../components/alerts';
+import { formatBytes } from '../../../utils';
 
 const TeamMemberForm = () => {
   const [category, setCategory] = useState('EXECUTIVE');
@@ -14,13 +16,11 @@ const TeamMemberForm = () => {
   const [facebookLink, setFacebookLink] = useState('');
   const [linkedInLink, setLinkedInLink] = useState('');
 
-  // Init categories state
-  const [categories, setCategories] = useState({
-    EXECUTIVE: [],
-    'ADVISORY BOARD': [],
-    SECRETARIAT: [],
-    'DEV TEAM': []
-  });
+  const [addMemberSuccess, setAddMemberSuccess] = useState(false);
+  const [addMemberError, setAddMemberError] = useState(false);
+
+  const [uploadProgress, setUploadProgress] = useState<number>(0);
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
 
   const handleCategoryChange = (e: any) => {
     setCategory(e.target.value);
@@ -30,7 +30,8 @@ const TeamMemberForm = () => {
     const file = e.target.files && e.target.files[0];
 
     if (file) {
-      setImage(file);
+      setImage(file); // For file to send to storage
+      setSelectedFile(file); // For preview
     }
   };
 
@@ -45,6 +46,8 @@ const TeamMemberForm = () => {
     try {
       if (!memberName || !memberRole || !image) {
         console.error('Please fill out all required fields.');
+        setAddMemberError(true);
+        setTimeout(() => setAddMemberError(false), 3000);
         return;
       }
 
@@ -69,6 +72,7 @@ const TeamMemberForm = () => {
           const progress =
             (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
           console.log(`Upload is ${progress}% done`);
+          setUploadProgress(progress);
 
           // You can update your progress bar here
           // For example, if you have an HTML progress element with ID 'uploader':
@@ -88,16 +92,19 @@ const TeamMemberForm = () => {
             imageUrl: downloadURL
           });
 
-          // Log the image URL
-          console.log('File available at', downloadURL);
+          setUploadProgress(0);
 
           // You might want to do something after a successful upload, like enabling a button
-          //
         }
       );
-      // You might want to do something after a successful addition, like updating the UI.
+
+      setAddMemberSuccess(true);
+
+      setTimeout(() => setAddMemberSuccess(false), 3000);
     } catch (e) {
       console.error('Error adding document: ', e);
+      setAddMemberError(true);
+      setTimeout(() => setAddMemberError(false), 3000);
     }
   };
 
@@ -198,6 +205,35 @@ const TeamMemberForm = () => {
           </label>
         </div>
 
+        {selectedFile && (
+          <div className="flex items-center justify-center flex-col w-full my-3 border-gray-200 bg-graydark py-3 rounded-md">
+            <div className="w-40 h-30 overflow-hidden bg-gray-200 rounded-lg dark:bg-gray-700">
+              <img
+                className="object-cover w-full h-full"
+                src={URL.createObjectURL(selectedFile)}
+                alt="Preview"
+              />
+            </div>
+            <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 flex font-normal text-gray-500 dark:text-gray-400 gap-2">
+              <p className="font-medium underline">{selectedFile.name}</p>
+              {'-'}
+              <p className="font-medium underline text-success">
+                {formatBytes(selectedFile.size)}
+              </p>
+            </div>
+          </div>
+        )}
+
+        {uploadProgress > 0 && (
+          <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+            <div
+              className="bg-[#2ecc71] text-xs font-medium text-white text-center p-0.5 leading-none rounded-full"
+              style={{ width: uploadProgress ? `${uploadProgress}%` : '0%' }}
+            >{`${uploadProgress}%`}</div>
+            Uploaded successfully...
+          </div>
+        )}
+
         <div className="w-full flex flex-col mt-8">
           <label className="text-base font-semibold leading-none text-gray-800">
             Description
@@ -265,6 +301,12 @@ const TeamMemberForm = () => {
           >
             Add Team Member
           </button>
+        </div>
+        <div className="mt-4">
+          {addMemberError && <AlertDanger />}
+          {addMemberSuccess && <AlertSuccess />}
+          {/* <AlertDanger />
+          <AlertSuccess /> */}
         </div>
       </div>
     </div>
