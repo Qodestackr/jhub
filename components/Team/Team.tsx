@@ -120,7 +120,7 @@ function Team() {
         linkedInLink: `https://www.linkedin.com/in/noumbessyghislain`
       },
       {
-        memberImageUrl: `/images/team/dominique.png`,
+        memberImageUrl: `/images/team/dominique.jpeg`,
         memberName: `Dominique Kavuisya`,
         memberRole: `CEO & Co-founder, Taimba Limited`,
         description: `An accomplished IT practitioner with over 15 years of experience across US and sub-Saharan Africa, deploying transformational digital solutions. Interested in supply chains, route to market models, fintech & eCommerce.`,
