@@ -193,8 +193,8 @@ function Team() {
   });
 
   return (
-    <div className="w-full mt-14 md:mt-18 mx-auto max-w-7xl">
-      <div>
+    <div className="w-full">
+      <div className="w-full">
         <p className="text-gray-500 text-lg dark:bg-boxdark-2 dark:text-bodydark text-center font-normal pb-3">
           Beyond the Ordinary | Meet the team
         </p>
@@ -203,16 +203,9 @@ function Team() {
         </h1>
       </div>
 
-      <div className="mx-auto max-w-7xl flex justify-center items-center">
-        <Tab.Group
-          as="div"
-          style={{
-            width: '90vw',
-            margin: '0 auto'
-          }}
-          className="p-6 container"
-        >
-          <Tab.List className="flex space-x-1 rounded-xl bg-main p-1 w-full ">
+      <div className="w-full flex justify-center items-center">
+        <Tab.Group as="div" className="p-2 w-full">
+          <Tab.List className="flex space-x-1 rounded-xl p-1 w-full bg-body">
             {Object.keys(categories).map((category) => (
               <Tab
                 key={category}
@@ -235,7 +228,7 @@ function Team() {
               <Tab.Panel
                 key={idx}
                 className={classNames(
-                  'rounded-xl p-3',
+                  'rounded-xl p-3 w-full',
                   'ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2'
                 )}
               >
