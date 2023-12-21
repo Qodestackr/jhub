@@ -23,6 +23,16 @@ export const partnershipLogos = [
     // with accessible funding opportunities, exclusive partnerships with global brands.`
   },
   {
+    name: 'Impact Africa Network',
+    logo: '/images/logo/AfricaImpactNetwork.jpeg',
+    link: 'https://impactafrica.network/',
+    description: ''
+    // description: `At FundingBox, we're not just fostering growth; We are #FundingChampions in every corner of our dynamic ecosystem.
+    // Join the ranks of #FundingChampions with FundingBox, where growth meets opportunity. Elevate your trajectory and redefine your future
+    // with accessible funding opportunities, exclusive partnerships with global brands.`
+  },
+  // ian-logo.png
+  {
     name: 'AEDIB | NET',
     logo: '/images/logo/AEDIBNET-Logos/main-logo.jpg',
     link: 'https://aedibnet.eu/',
