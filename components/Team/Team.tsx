@@ -118,6 +118,37 @@ function Team() {
         facebookLink: ``,
         githubLink: ``,
         linkedInLink: `https://www.linkedin.com/in/noumbessyghislain`
+      },
+      {
+        memberImageUrl: `/images/team/dominique.jpeg`,
+        memberName: `Dominique Kavuisya`,
+        memberRole: `CEO & Co-founder, Taimba Limited`,
+        description: `An accomplished IT practitioner with over 15 years of experience across US and sub-Saharan Africa, deploying transformational digital solutions. Interested in supply chains, route to market models, fintech & eCommerce.`,
+        twitterLink: ``,
+        facebookLink: ``,
+        githubLink: ``,
+        linkedInLink: `https://www.linkedin.com/in/dominiquekavuisya/?originalSubdomain=ke`
+      },
+      {
+        memberImageUrl: `/images/team/kamochu.png`,
+        memberName: `Samuel Kamochu`,
+        memberRole: `CEO & Co-founder, Meliora Technologies Limited`,
+        description: `Passionate about Africa and the mission is to empower the next generation of software engineers in Kenya and in the continent of Africa.
+        Shares about personal and professional experiences and opinions. Recently recognised by Business Daily Africa as Top 40 under 40 Men in Kenya in 2022. Happy to continue bringing hope to many!`,
+        twitterLink: ``,
+        facebookLink: ``,
+        githubLink: ``,
+        linkedInLink: `https://www.linkedin.com/in/kamochu?originalSubdomain=ke`
+      },
+      {
+        memberImageUrl: `/images/team/priscilla.png`,
+        memberName: `Priscilla Muiruri`,
+        memberRole: `Technical Advisor, Ministry of Agriculture & Livestock Development`,
+        description: `Priscilla is a professional Technical Advisor, Ministry of Agriculture & Livestock Development, a Technical Advisor in the Cabinet Secretary's Office and coordinates the National Food Systems Transformation Working with innovative solutions.`,
+        twitterLink: ``,
+        facebookLink: ``,
+        githubLink: ``,
+        linkedInLink: `https://www.linkedin.com/in/priscilla-muiruri-32825a44/?originalSubdomain=ke`
       }
     ],
     SECRETARIAT: [
