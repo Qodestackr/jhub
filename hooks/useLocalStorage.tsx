@@ -7,7 +7,8 @@ function useLocalStorage<T>(
   key: string,
   initialValue: T
 ): [T, (value: SetValue<T>) => void] {
-  // Pass init state function to useState so logic is only executed once
+  // State to store our value
+  // Pass  initial state function to useState so logic is only executed once
   const [storedValue, setStoredValue] = useState(() => {
     try {
       if (typeof window !== 'undefined') {
