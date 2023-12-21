@@ -6,6 +6,7 @@ import BlogSection from '../components/blog';
 import CommunityHighlights from '../components/community-highlights/CommunityHighlights';
 import FAQ from '../components/FAQ/FAQ';
 import Team from '../components/Team/Team';
+import Modal from '../components/modal/Modal';
 
 export default function Home() {
   return (
@@ -18,6 +19,8 @@ export default function Home() {
       <BlogSection />
       <FAQ />
       <SubscribeNewsletter />
+
+      {/* <Modal showModal={true} /> */}
     </>
   );
 }

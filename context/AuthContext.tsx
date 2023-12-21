@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { auth, googleProvider } from '../firebase';
 import { signInWithPopup, signOut } from 'firebase/auth';
+import useLocalStorage from '../hooks/useLocalStorage';
 
 export interface UserType {
   uid: string;
@@ -24,11 +25,7 @@ interface AuthContextProviderProps {
 }
 
 export function AuthContextProvider({ children }: AuthContextProviderProps) {
-  //   const [user, setUser] = useLocalStorage<UserType | null>('user', null);
-  const storedUser = localStorage.getItem('user');
-  const [user, setUser] = useState<UserType | null>(
-    storedUser ? JSON.parse(storedUser) : null
-  );
+  const [user, setUser] = useLocalStorage<UserType | null>('user', null);
 
   const signInWithGoogleHandler = async () => {
     try {
@@ -79,7 +76,7 @@ export function AuthContextProvider({ children }: AuthContextProviderProps) {
     });
 
     return () => unsubscribe();
-  }, []);
+  }, [user, setUser]);
 
   return (
     <AuthContext.Provider value={authContextValue}>
