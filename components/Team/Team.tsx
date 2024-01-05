@@ -46,7 +46,7 @@ function Team() {
         linkedInLink: `https://ke.linkedin.com/in/drmwangi-karanja`
       },
       {
-        memberImageUrl: `/images/team/william-muriithi.jpeg`,
+        memberImageUrl: `/images/team/will-muriithi_.jpeg`,
         memberName: `Dr. William Murithi`,
         memberRole: `DIH Business Development/ Strategy Lead`,
         description: `An expert in business model innovation, digital entrepreneurship & innovation and design thinking. 
@@ -57,7 +57,7 @@ function Team() {
         linkedInLink: `https://www.linkedin.com/in/william-murithi-ph-d-fhea-cmbe-8a169425`
       },
       {
-        memberImageUrl: `/images/team/daisy-ondwari.jpg`,
+        memberImageUrl: `/images/team/ondwaridaisy.jpg`,
         memberName: `Ms. Daisy Ondwari`,
         memberRole: `Product Development Fellow`,
         description: `Ms. Daisy Ondwari, as a Product Development Fellow, serves
