@@ -80,22 +80,19 @@ export default function JHUBProjects() {
     {
       title: 'Data Protection Companion',
       projectUrl: 'https://datalawcompanion.org',
-      // projectImageUrl: '',
       description: `
         Welcome to the Data Protection Companion! Learn about the Data Protection Act and how it safeguards your personal information. Explore key features, understand your rights, and take control of your data. Delve deeper into the world of data protection and empower yourself with knowledge.
       `
     },
     {
-      title: 'Cultivating a Dynamic Innovation Ecosystem',
-      projectUrl: '/',
-      // projectImageUrl: '',
+      title: 'Solar Jiji',
+      projectUrl: 'https://www.solarjiji.com',
       description:
-        'Creating an environment where ideas thrive, fostering collaboration and creativity among our community.'
+        'The Ultimate Solar Energy Predictor'
     },
     {
       title: 'Developing Impactful Tech Solutions and Spin-offs',
-      projectUrl: '/',
-      // projectImageUrl: '',
+      projectUrl: 'https://farmex-suite.vercel.app/',
       description:
         'Bringing cutting-edge technology solutions to life and exploring spin-off opportunities for broader impact.'
     },
@@ -104,21 +101,11 @@ export default function JHUBProjects() {
   return (
     <div className="container mx-auto py-8 px-4">
       <h1 className="text-4xl font-bold mb-3">
-        We Incubate Projects with Impact and Sustainability.
+        We Incubate Projects with Sustainabile Impacts.
       </h1>
 
       <div className="flex flex-col md:flex-row items-center justify-between mb-6 gap-3">
         <div className="flex-shrink-0 mb-4 md:mb-0 md:order-2">
-          {/* <Image
-            width={300}
-            height={200}
-            className="md:w-[90%]"
-            src={`/images/product/star_ihub.svg`}
-            alt="star-image-for projects"
-            style={{
-              filter: 'invert(100%) sepia(0%) saturate(7500%) hue-rotate(30deg)'
-            }}
-          /> */}
           <ProjectStar />
         </div>
         <div className="md:ml-6 md:order-1">
@@ -142,6 +129,20 @@ export default function JHUBProjects() {
       </div>
 
       <div className="md:flex-row justify-between items-center grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div className="col-span-1">
+          <Image
+            src={'/images/hero-img-innovation-hub-02.jpg'}
+            height={500}
+            width={1200}
+            alt="incubation project sections"
+            className=""
+          />
+          <span className="text-secondary text-sm dark:text-white">
+            JHUB main incubation studio
+          </span>
+        </div>
+
+
         <div className="col-span-1 flex flex-col gap-4">
           <h1 className="text-secondary font-semibold text-center text-3xl mb-4 flex-1">
             Visit Our Incubation Studio
@@ -160,18 +161,7 @@ export default function JHUBProjects() {
           </div>
         </div>
 
-        <div className="col-span-1">
-          <Image
-            src={'/images/hero-img-innovation-hub-02.jpg'}
-            height={500}
-            width={1200}
-            alt="incubation project sections"
-            className=""
-          />
-          <span className="text-secondary text-sm dark:text-white">
-            JHUB main incubation studio
-          </span>
-        </div>
+
       </div>
 
       <div className="text-center my-5 md:my-6">
@@ -182,13 +172,21 @@ export default function JHUBProjects() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {projects.map((project, index) => (
-          <ProjectCard
-            // projectImageUrl: '',
-            projectUrl={project?.projectUrl}
-            key={index}
-            title={project.title}
-            description={project.description}
-          />
+          <div className="mobile-phone" key={index}>
+            <div className="status-bar">
+            </div>
+            <div className="screen">
+              <iframe
+                src={project?.projectUrl}
+                style={{
+                  width: '100%',
+                  border: 'none',
+                  height: '100%',
+                }}
+              />
+            </div>
+            <div className="home-button"></div>
+          </div>
         ))}
       </div>
     </div>

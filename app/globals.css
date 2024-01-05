@@ -202,11 +202,20 @@ body {
   width: 375px; /* Adjust the width to your preferred mobile size */
   height: 667px; /* Adjust the height accordingly */
   margin: auto;
-  border: 16px black solid;
+  border: 9px #616364 solid;
   border-top-width: 60px;
   border-bottom-width: 60px;
   border-radius: 36px;
   overflow: hidden;
+}
+
+.status-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #999999;
 }
 
 .screen {
@@ -216,20 +225,17 @@ body {
   right: 0;
   bottom: 60px;
   overflow: hidden;
+  height: 100%; /*Added*/
+  width: 100%; /*Added*/
 }
 
-/* Optional: Add a button or any other interactive elements */
-.mobile-phone::after {
-  content: '';
-  display: block;
+.home-button {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  background: #333;
+  width: 36px;
+  height: 36px;
+  background: #383838;
   border-radius: 50%;
-  top: 50%;
+  bottom: 10px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 }
-
-/* Optional: You can add more styling to simulate buttons, speaker, etc. */

@@ -3,6 +3,7 @@ import React from 'react';
 export default function Page() {
   return (
     <div className="mobile-phone">
+      <div className="status-bar"></div>
       <div className="screen">
         <iframe
           src="https://datalawcompanion.org/"
@@ -13,6 +14,7 @@ export default function Page() {
           }}
         />
       </div>
+      <div className="home-button"></div>
     </div>
   );
 }
