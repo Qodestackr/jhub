@@ -133,7 +133,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
             width={276}
             height={320}          
             /> */}
-            JHUB
+            JHUB Africa
           </h1>
         </Link>
 

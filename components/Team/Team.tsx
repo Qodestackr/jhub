@@ -7,17 +7,15 @@ import {
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { Tab } from '@headlessui/react';
+import { classNames } from '../../utils/classes';
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
-}
 
 function Team() {
   let [categories] = useState({
     EXECUTIVE: [
       {
-        memberImageUrl: `/images/team/dr-lawrence-nderu.png`,
-        memberName: `Dr. Lawrence Nderu(PhD)`,
+        memberImageUrl: `/images/team/lawrence-nderu.png`,
+        memberName: `Dr. Lawrence Nderu`,
         memberRole: `Project Lead`,
         description: `Project Lead with extensive experience as Chairman,
         Lecturer, and Researcher in AI/ML and Software Engineering.
@@ -29,7 +27,7 @@ function Team() {
       },
       {
         memberImageUrl: `/images/team/rehema-ndenda.jpeg`,
-        memberName: `Dr Rehema Ndeda`,
+        memberName: `Dr. Rehema Ndeda`,
         memberRole: `Climate Smart Agriculture/ Automation Lead/JKUAT`,
         description: `Mechatronics Engineer with a specialization on automation, currently focusing on development and 
         testing of technologies related to precision agriculture`,
@@ -38,8 +36,8 @@ function Team() {
         linkedInLink: `https://www.linkedin.com/in/r-ndeda/?originalSubdomain=ke`
       },
       {
-        memberImageUrl: `/images/team/dr-mwangi-karanja.jpeg`,
-        memberName: `Dr Mwangi Karanja`,
+        memberImageUrl: `/images/team/mwangi-karanja.jpeg`,
+        memberName: `Dr. Mwangi Karanja`,
         memberRole: `Innovative Technology and Data Science Lead`,
         description: `An Innovative technology diffusion expert with a background in computing, research and innovation management. 
         Have trained Small scale entrepreneurs on data management and research-driven approaches to growth`,
@@ -49,7 +47,7 @@ function Team() {
       },
       {
         memberImageUrl: `/images/team/william-muriithi.jpeg`,
-        memberName: `Dr William Murithi`,
+        memberName: `Dr. William Murithi`,
         memberRole: `DIH Business Development/ Strategy Lead`,
         description: `An expert in business model innovation, digital entrepreneurship & innovation and design thinking. 
         Founder and Lead consultant at EMBC, a premier management consulting firm that offers bespoke and integrated solutions 
@@ -83,7 +81,7 @@ function Team() {
       },
       {
         memberImageUrl: `/images/team/john-kinyuru.jpg`,
-        memberName: `Dr John Kinyuru`,
+        memberName: `Dr. John Kinyuru`,
         memberRole: `Research, and Innovation
         Development Lead, JKUAT`,
         description: `Dr John Kinyuru is an esteemed Food and Nutrition Scientist with great leadership and project management capabilities. Director of research and innovation at Jomo Kenyatta University of Agriculture and Technology(JKUAT), and researcher in Agriculture, food, and nutrition. A food systems and nutrition-sensitive agriculture expert, he is typically the insect hunter(specialist of edible insects), passionate about food security through research and implementation. Dr John Kinyuru is a key member of the JHUB Africa project whose role will transform the food and nutrition ecosystem.`,
@@ -94,7 +92,7 @@ function Team() {
     ],
     'ADVISORY BOARD': [
       {
-        memberImageUrl: `/images/team/cate.jpg`,
+        memberImageUrl: `/images/team/cate-muraga.jpg`,
         memberName: `Catherine Muraga`,
         memberRole: `Managing Director, Microsoft ADC`,
         description: `Catherine is a purpose-driven tech executive, presently holding the position of Managing Director 
@@ -120,7 +118,7 @@ function Team() {
         linkedInLink: `https://www.linkedin.com/in/noumbessyghislain`
       },
       {
-        memberImageUrl: `/images/team/dominique.jpeg`,
+        memberImageUrl: `/images/team/kavuisyadominique.png`,
         memberName: `Dominique Kavuisya`,
         memberRole: `CEO & Co-founder, Taimba Limited`,
         description: `An accomplished IT practitioner with over 15 years of experience across US and sub-Saharan Africa, deploying transformational digital solutions. Interested in supply chains, route to market models, fintech & eCommerce.`,
@@ -153,7 +151,7 @@ function Team() {
     ],
     SECRETARIAT: [
       {
-        memberImageUrl: `/images/team/rose.enc`,
+        memberImageUrl: `/images/team/rose-nganga.enc`,
         memberName: `Rose Ng'ang'a`,
         memberRole: `Communications, Secretariat Team`,
         description: `Rose is a seasoned professional in the realm of communications, media, and secretariat. 
@@ -166,7 +164,7 @@ function Team() {
         linkedInLink: `https://www.linkedin.com/in/dr-lawrence-nderu/?originalSubdomain=ke`
       },
       {
-        memberImageUrl: `/images/team/george-comm.jpeg`,
+        memberImageUrl: `/images/team/gathoni-george.jpeg`,
         memberName: `George Gathoni`,
         memberRole: `Communications, Secretariat Team`,
         description: `George is a seasoned member of the communications, media, and secretariat department, boasting a 
@@ -180,7 +178,7 @@ function Team() {
     ],
     'DEV TEAM': [
       {
-        memberImageUrl: `/images/team/dev-winchy.jpg`,
+        memberImageUrl: `/images/team/wilson-gichuhi.jpg`,
         memberName: `Wilson Gichuhi`,
         memberRole: `Fullstack Software Engineer`,
         description: `Wilson Gichuhi, a Fullstack Software Engineer, dedicated to web, cross-platform mobile solution,cloud-first 
@@ -193,9 +191,9 @@ function Team() {
   });
 
   return (
-    <div className="w-full">
+    <div className="w-full mt-8 md:mt-10">
       <div className="w-full">
-        <p className="text-gray-500 text-lg dark:bg-boxdark-2 dark:text-bodydark text-center font-normal pb-3">
+        <p className="text-gray-500 text-lg dark:bg-boxdark-2 dark:text-bodydark text-center font-normal pb-3 text-success">
           Beyond the Ordinary | Meet the team
         </p>
         <h1 className="xl:text-4xl text-3xl text-center text-gray-900 dark:text-bodydark font-extrabold pb-6 sm:w-4/6 w-5/6 mx-auto">

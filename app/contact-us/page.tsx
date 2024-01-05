@@ -160,13 +160,13 @@ function ContactUs() {
                 </label>
                 <input
                   tabIndex={0}
-                  aria-label="Please input First & Last Name"
+                  aria-label="Enter first & last name"
                   type="text"
                   name="name"
                   value={fullName}
                   onChange={handleFullNameChange}
                   className="text-base leading-none text-gray-900 p-3 focus:outline-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
-                  placeholder="Please input Your First & Last name"
+                  placeholder="Enter four First & last name"
                 />
               </div>
               <div className="w-full flex flex-col md:ml-6 md:mt-0 mt-4">

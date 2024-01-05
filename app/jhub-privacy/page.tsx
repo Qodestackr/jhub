@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const PrivacyPage = () => {
@@ -30,6 +31,8 @@ const PrivacyPage = () => {
         to outside parties unless we provide you with advance notice or as
         required by law.
       </p>
+
+      <Link href={'/data-protection-details'} className='text-3xl text-success underline'>Learn More About Our Data Protection Details</Link>
     </div>
   );
 };

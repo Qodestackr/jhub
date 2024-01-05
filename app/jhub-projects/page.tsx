@@ -85,7 +85,7 @@ export default function JHUBProjects() {
   const projects = [
     {
       title: 'Data Protection Companion',
-      projectUrl: 'https://data-protection-act.vercel.app/',
+      projectUrl: 'https://datalawcompanion.org',
       // projectImageUrl: '',
       description: `
         Welcome to the Data Protection Companion! Learn about the Data Protection Act and how it safeguards your personal information. Explore key features, understand your rights, and take control of your data. Delve deeper into the world of data protection and empower yourself with knowledge.
@@ -105,41 +105,6 @@ export default function JHUBProjects() {
       description:
         'Bringing cutting-edge technology solutions to life and exploring spin-off opportunities for broader impact.'
     },
-    {
-      title: 'Empowering Digital Entrepreneurs',
-      projectUrl: '/',
-      // projectImageUrl: '',
-      description:
-        'Supporting and empowering entrepreneurs with resources, mentorship, and a conducive ecosystem for growth.'
-    },
-    {
-      title: 'Bridging Academia-Industry Divide',
-      projectUrl: '/',
-      // projectImageUrl: '',
-      description:
-        'Facilitating collaboration between academia and industry, ensuring knowledge transfer and real-world application.'
-    },
-    {
-      title: 'Driving Market Adoption',
-      projectUrl: '/',
-      // projectImageUrl: '',
-      description:
-        'Strategizing and executing plans to drive the market adoption of innovative digital solutions developed within JHUB.'
-    },
-    {
-      title: 'Promoting Diversity and Inclusion',
-      projectUrl: '/',
-      // projectImageUrl: '',
-      description:
-        'Fostering an inclusive environment where diverse voices and perspectives contribute to the success of our projects.'
-    },
-    {
-      title: 'Sustaining Technological Excellence',
-      projectUrl: '/',
-      // projectImageUrl: '',
-      description:
-        'Continuously striving for excellence in technology, staying at the forefront of advancements and innovation.'
-    }
   ];
 
   return (
@@ -217,7 +182,7 @@ export default function JHUBProjects() {
 
       <div className="text-center my-5 md:my-6">
         <h1 className="text-success text-3xl md:text-4xl font-semibold md:font-extrabold">
-          Projects that are Part of JHUB&apos;s Vision for Innovation
+          Projects that are Part of Our Innovation
         </h1>
       </div>
 

@@ -23,7 +23,7 @@ function LandingHeroSection() {
               className="w-full bg-success sm:w-auto py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
               href="/about-jhub"
             >
-              About JHUB
+              About JHUB Africa
             </Link>
             <Link
               className="w-full bg-success sm:w-auto py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
@@ -39,7 +39,7 @@ function LandingHeroSection() {
             </span>
 
             <div className="mt-4 flex gap-x-8">
-              JHUB develops climate smart agricultural solutions and digital
+              JHUB Africa develops climate smart agricultural solutions and digital
               trade.
             </div>
           </div>

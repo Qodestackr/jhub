@@ -44,7 +44,7 @@ const communityHighlights = [
 
 const HighlightCard = ({ imageSrc, icon, title, content, buttonText }) => {
   return (
-    <div className="max-w-md mx-auto border border-gray-200 dark:bg-boxdark-2 dark:text-bodydark bg-white 00 shadow-lg rounded-lg overflow-hidden mb-8 flex flex-col h-full">
+    <div className="w-full mx-auto border border-gray-200 dark:bg-boxdark-2 dark:text-bodydark bg-white 00 shadow-lg rounded-lg overflow-hidden mb-8 flex flex-col h-full">
       <div className="relative h-48 w-full dark:bg-slate-900">
         <Image
           src={imageSrc}
@@ -54,7 +54,7 @@ const HighlightCard = ({ imageSrc, icon, title, content, buttonText }) => {
           className="rounded-t-lg"
         />
       </div>
-      <div className="flex-grow p-6 flex flex-col justify-between">
+      <div className="w-full flex-grow p-6 flex flex-col justify-between">
         <div>
           <div className="flex flex-col gap-4 justify-start items-start mb-2">
             {icon}
@@ -83,7 +83,7 @@ const CommunityHighlights = () => {
       <h2 className="text-3xl font-semibold text-gray-800 dark:text-white mb-4 ml-8">
         Community Highlights
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-8 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-8 w-full">
         {communityHighlights.map((highlight, index) => (
           <HighlightCard
             key={index}

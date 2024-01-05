@@ -31,8 +31,8 @@ export const navBottomLinks = [
     href: '/jhub-forums'
   },
   {
-    name: 'Innovation Hub',
-    href: '/' // Todo, Move into new subdomain
+    name: 'Team Members',
+    href: '/',
   },
   {
     name: 'Training Programs',
@@ -43,23 +43,8 @@ export const navBottomLinks = [
     href: '/technology-sustainability'
   },
   {
-    name: 'Objectives',
-    href: '/jhub-objectives'
-  }
-];
-
-export const navProductsList = [
-  {
-    name: 'About',
-    href: '/'
-  },
-  {
-    name: 'About',
-    href: '/'
-  },
-  {
-    name: 'About',
-    href: '/'
+    name: 'Data Protection',
+    href: '/data-protection-details'
   }
 ];
 
@@ -244,7 +229,7 @@ export default function Headerzz() {
                             'block px-4 py-2 text-sm'
                           )}
                         >
-                          All
+                          Propose a Service 
                         </a>
                       )}
                     </Menu.Item>
