@@ -20,17 +20,11 @@ const ProjectCard = ({
     </div>
 
     <div className="flex justify-end items-center my-6">
-      {/* <a href={projectUrl} target="_blank" className="text-primary">
-        <button className="text-white bg-main p-2">VISIT PROJECT</button>
-      </a> */}
-
       <a href={projectUrl} target="_blank" className="text-primary">
         <button className="text-white bg-main p-2">VISIT PROJECT</button>
       </a>
     </div>
-    {/* PROJECTS SHOULD HAVE TAGS :: TODO - Upto 5 tags*/}
     <div className="mt-2 md:mt-4">
-      {/* <h2 className="text-secondary">PROJECT's Impact</h2> */}
       <div className="flex gap-2 flex-wrap md:mt-6 text-success underline">
         <span>AI innovation</span>
         <span>Data Democratization</span>

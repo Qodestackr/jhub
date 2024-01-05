@@ -193,3 +193,43 @@ body {
   pointer-events: none;
   cursor: default;
 }
+
+
+/************************************************************************/
+/************** IFRAME SECTION STYLING *************/
+.mobile-phone {
+  position: relative;
+  width: 375px; /* Adjust the width to your preferred mobile size */
+  height: 667px; /* Adjust the height accordingly */
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+  overflow: hidden;
+}
+
+.screen {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 60px;
+  overflow: hidden;
+}
+
+/* Optional: Add a button or any other interactive elements */
+.mobile-phone::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #333;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Optional: You can add more styling to simulate buttons, speaker, etc. */
