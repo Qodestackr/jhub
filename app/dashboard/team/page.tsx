@@ -210,8 +210,8 @@ const TeamMemberForm = () => {
           <div className="flex items-center justify-center flex-col w-full my-3 border-gray-200 bg-graydark py-3 rounded-md">
             <div className="w-40 h-30 overflow-hidden bg-gray-200 rounded-lg dark:bg-gray-700">
               <Image
-              width={100}
-              height={200}
+                width={100}
+                height={200}
                 className="object-cover w-full h-full"
                 src={URL.createObjectURL(selectedFile)}
                 alt="Preview"

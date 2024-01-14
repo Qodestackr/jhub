@@ -9,7 +9,6 @@ import React, { useState } from 'react';
 import { Tab } from '@headlessui/react';
 import { classNames } from '../../utils/classes';
 
-
 function Team() {
   let [categories] = useState({
     EXECUTIVE: [

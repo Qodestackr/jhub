@@ -39,8 +39,8 @@ function LandingHeroSection() {
             </span>
 
             <div className="mt-4 flex gap-x-8">
-              JHUB Africa develops climate smart agricultural solutions and digital
-              trade.
+              JHUB Africa develops climate smart agricultural solutions and
+              digital trade.
             </div>
           </div>
         </div>

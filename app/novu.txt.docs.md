@@ -27,11 +27,11 @@ function Novu() {
   );
 } -->
 
-<!-- Go to this react app browser tab, there will be a bell icon. On clicking that bell icon, you will see a 
+<!-- Go to this react app browser tab, there will be a bell icon. On clicking that bell icon, you will see a
 notification component popover
 -->
 
-API KEY: 7a34c070e32422ea5202cab5e8cc2760   
+API KEY: 7a34c070e32422ea5202cab5e8cc2760
 
 APP ID: mplt33Vw1efd
 

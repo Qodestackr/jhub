@@ -87,15 +87,14 @@ export default function JHUBProjects() {
     {
       title: 'Solar Jiji',
       projectUrl: 'https://www.solarjiji.com',
-      description:
-        'The Ultimate Solar Energy Predictor'
+      description: 'The Ultimate Solar Energy Predictor'
     },
     {
       title: 'Developing Impactful Tech Solutions and Spin-offs',
       projectUrl: 'https://farmex-suite.vercel.app/',
       description:
         'Bringing cutting-edge technology solutions to life and exploring spin-off opportunities for broader impact.'
-    },
+    }
   ];
 
   return (
@@ -142,7 +141,6 @@ export default function JHUBProjects() {
           </span>
         </div>
 
-
         <div className="col-span-1 flex flex-col gap-4">
           <h1 className="text-secondary font-semibold text-center text-3xl mb-4 flex-1">
             Visit Our Incubation Studio
@@ -160,8 +158,6 @@ export default function JHUBProjects() {
             groundbreaking ideas.
           </div>
         </div>
-
-
       </div>
 
       <div className="text-center my-5 md:my-6">
@@ -173,15 +169,14 @@ export default function JHUBProjects() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {projects.map((project, index) => (
           <div className="mobile-phone" key={index}>
-            <div className="status-bar">
-            </div>
+            <div className="status-bar"></div>
             <div className="screen">
               <iframe
                 src={project?.projectUrl}
                 style={{
                   width: '100%',
                   border: 'none',
-                  height: '100%',
+                  height: '100%'
                 }}
               />
             </div>

@@ -32,7 +32,12 @@ const PrivacyPage = () => {
         required by law.
       </p>
 
-      <Link href={'/data-protection-details'} className='text-3xl text-success underline'>Learn More About Our Data Protection Details</Link>
+      <Link
+        href={'/data-protection-details'}
+        className="text-3xl text-success underline"
+      >
+        Learn More About Our Data Protection Details
+      </Link>
     </div>
   );
 };

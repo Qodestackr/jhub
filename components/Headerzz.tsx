@@ -32,7 +32,7 @@ export const navBottomLinks = [
   },
   {
     name: 'Team Members',
-    href: '/',
+    href: '/'
   },
   {
     name: 'Training Programs',
@@ -229,7 +229,7 @@ export default function Headerzz() {
                             'block px-4 py-2 text-sm'
                           )}
                         >
-                          Propose a Service 
+                          Propose a Service
                         </a>
                       )}
                     </Menu.Item>
