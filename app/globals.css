@@ -180,9 +180,6 @@ span.flatpickr-weekday,
   right: 45px;
 }
 
-/***********************************/
-/**CUSTOMIZING SCROLL BAR**/
-
 body {
   overflow: hidden;
   margin: 0;
@@ -193,7 +190,6 @@ body {
   pointer-events: none;
   cursor: default;
 }
-
 
 /************************************************************************/
 /************** IFRAME SECTION STYLING *************/
@@ -238,4 +234,21 @@ body {
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+/***********************************/
+/**CUSTOMIZING SCROLL BAR**/
+
+body::-webkit-scrollbar {
+  width: 1em;
+  background-color: red;
+}
+body::-webkit-scrollbar-track {
+  width: 8px;
+  box-shadow: inset 0 0 6px rgb(0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }

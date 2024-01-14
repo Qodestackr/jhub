@@ -189,6 +189,17 @@ export default function JHUBProjects() {
           </div>
         ))}
       </div>
+      {/* 
+
+      CATEGORIES
+      
+      - Sustainable Agriculture
+      - Sustainable Energy Solutions
+      - Fintech solutions
+      - Data & Compliance
+      - 
+      
+      */}
     </div>
   );
 }
