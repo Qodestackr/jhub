@@ -77,7 +77,7 @@ export default function AboutJHUB() {
 
 
       Drive Market Adoption:
-      Strategically position JHUB's innovations for market adoption by fostering industry  partnerships and conducting market-oriented research. Actively engage with end-users and  stakeholders to refine and enhance solutions based on market feedback.
+      Strategically position JHUB&apos;s innovations for market adoption by fostering industry  partnerships and conducting market-oriented research. Actively engage with end-users and  stakeholders to refine and enhance solutions based on market feedback.
 
       Promote Diversity and Inclusion:
       Embrace diversity in thought, background, and expertise to create a rich tapestry of perspectives  within our community. Foster an inclusive environment where all individuals feel empowered to contribute and succeed.
