@@ -3,19 +3,23 @@ import React from 'react';
 export default function AboutJHUB() {
   return (
     <div>
-      <h1 className="text-4xl font-bold mb-6">About JHUB</h1>
+      <h1 className="text-4xl font-bold mb-6">FROM JKIAN TO JHUB AFRICA</h1>
+
+      <h2>Who Are We?</h2>
       <p className="text-lg mb-4">
-        Welcome to JHUB, the heart of innovation and digital transformation. At
-        JHUB, we believe in the power of technology to drive positive change and
-        shape a sustainable future.
+        JHUB is the shortened form of the complete name Jomo Kenyatta Innovations and Accelerator Network (JKIAN) Digital Innovation Hub.
+        A  meeting between the Board  and expects felt that the short form JHUB follows very well with the the culture of hubs in Kenya and is very easy to remember. - NaiLab, DHUB
+        Adding JHUB AFRICA was even a better characterization of the hub.  The acceptance of the name will be very easy considering the association J- HUB in J- KUAT.
       </p>
 
-      <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
+      <h2 className="text-2xl font-bold mb-4">Our Mission: </h2>
       <p className="text-lg mb-4">
-        JHUB is on a mission to cultivate a dynamic innovation ecosystem where
-        ideas flourish, entrepreneurs thrive, and technology solutions create a
-        positive societal impact. We are committed to fostering a community that
-        embraces diversity, inclusivity, and continuous learning.
+        To drive sustainable digital transformation, providing accessible and impactful  solutions for small and medium-scale farmers, traders, and enterprises.
+      </p>
+
+      <h2>Our Vision: </h2>
+      <p>
+        A one-stop hub offering comprehensive array of digital solutions for societal needs
       </p>
 
       <h2 className="text-2xl font-bold mb-4">What Sets Us Apart</h2>
@@ -57,6 +61,30 @@ export default function AboutJHUB() {
         you. Join us on this exciting journey where technology, innovation, and
         sustainability converge to shape a better tomorrow.
       </p>
+      Objectives:
+      Objectives:
+      Develop climate smart agricultural solutions and digital trade
+
+      Cultivate a Dynamic Innovation Ecosystem
+      Foster an environment that stimulates creativity, collaboration, and cross-disciplinary  innovation. Encourage a culture of continuous learning and experimentation to adapt to the  ever-evolving tech landscape.
+      Develop Impactful Tech Solutions and spin-offs:
+      Ideate, design, and implement technological solutions that address real-world challenges.  Prioritize solutions with the potential to create spin-offs that have a positive social and economic impact.
+
+      Empower Digital Entrepreneurs:
+      Provide comprehensive support, mentorship, and resources to digital entrepreneurs, startups,  and tech experts within our ecosystem. Facilitate networking opportunities to connect  innovators with industry leaders and potential collaborators.
+      Bridge Academia-Industry Divide:
+      Establish strong collaborations with universities, particularly focusing on nurturing digital  innovators and providing them with pathways to industry integration. Facilitate industry partnerships to ensure that academic knowledge is translated into practical and scalable  solutions.
+
+
+      Drive Market Adoption:
+      Strategically position JHUB's innovations for market adoption by fostering industry  partnerships and conducting market-oriented research. Actively engage with end-users and  stakeholders to refine and enhance solutions based on market feedback.
+
+      Promote Diversity and Inclusion:
+      Embrace diversity in thought, background, and expertise to create a rich tapestry of perspectives  within our community. Foster an inclusive environment where all individuals feel empowered to contribute and succeed.
+
+
+      Sustain Technological Excellence:
+      Stay at the forefront of technological advancements by investing in research, training, and  development programs. Ensure that our team is equipped with the latest skills and knowledge to lead in a rapidly changing tech landscape.
     </div>
   );
 }

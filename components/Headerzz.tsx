@@ -20,7 +20,7 @@ export const navTopLinks = [
     href: '/consulatation-request'
   },
   {
-    name: 'JHUB Portal',
+    name: 'Innovator Portal',
     href: '/dashboard'
   }
 ];

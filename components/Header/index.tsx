@@ -157,7 +157,7 @@ const Header = (props: {
             <DropdownUser />
           ) : (
             <div className="flex gap-2 items-center">
-              <Link href="/consulatation-request">Talk to a Consultant</Link>
+              <Link href="/consulatation-request">Consultancy</Link>
 
               <Link
                 href="/auth/signin"

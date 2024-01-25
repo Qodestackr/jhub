@@ -150,7 +150,7 @@ function Team() {
     ],
     SECRETARIAT: [
       {
-        memberImageUrl: `/images/team/rose-nganga.enc`,
+        memberImageUrl: `/images/team/rose-nganga.png`,
         memberName: `Rose Ng'ang'a`,
         memberRole: `Communications, Secretariat Team`,
         description: `Rose is a seasoned professional in the realm of communications, media, and secretariat. 
