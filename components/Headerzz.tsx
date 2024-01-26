@@ -100,7 +100,7 @@ export default function Headerzz() {
               />
             </a>
 
-            <Menu as="div" className="relative inline-block text-left ml-18">
+            {/* <Menu as="div" className="relative inline-block text-left ml-18">
               <div>
                 <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md  px-3 py-2 text-sm font-semibold text-success shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
                   Services
@@ -236,7 +236,7 @@ export default function Headerzz() {
                   </div>
                 </Menu.Items>
               </Transition>
-            </Menu>
+            </Menu> */}
 
             <div className="sm:hidden">
               <button
