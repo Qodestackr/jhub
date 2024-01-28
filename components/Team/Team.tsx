@@ -175,18 +175,18 @@ function Team() {
         linkedInLink: `https://www.linkedin.com/in/george-gichuhi-gathoni-56aa4215b/`
       }
     ],
-    'DEV TEAM': [
-      {
-        memberImageUrl: `/images/team/wilson-gichuhi.jpg`,
-        memberName: `Wilson Gichuhi`,
-        memberRole: `Fullstack Software Engineer`,
-        description: `Wilson Gichuhi, a Fullstack Software Engineer, dedicated to web, cross-platform mobile solution,cloud-first 
-        development, and open-source contribution. He often finds joy in tinkering with various tools and technologies.`,
-        twitterLink: `https://twitter.com/wilsonjugia/`,
-        facebookLink: ``,
-        linkedInLink: `https://www.linkedin.com/in/wilson-gichuhi`
-      }
-    ]
+    // 'DEV TEAM': [
+    //   {
+    //     memberImageUrl: `/images/team/wilson-gichuhi.jpg`,
+    //     memberName: `Wilson Gichuhi`,
+    //     memberRole: `Fullstack Software Engineer`,
+    //     description: `Wilson Gichuhi, a Fullstack Software Engineer, dedicated to web, cross-platform mobile solution,cloud-first 
+    //     development, and open-source contribution. He often finds joy in tinkering with various tools and technologies.`,
+    //     twitterLink: `https://twitter.com/wilsonjugia/`,
+    //     facebookLink: ``,
+    //     linkedInLink: `https://www.linkedin.com/in/wilson-gichuhi`
+    //   }
+    // ]
   });
 
   return (

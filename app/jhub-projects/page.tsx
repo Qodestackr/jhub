@@ -89,12 +89,12 @@ export default function JHUBProjects() {
       projectUrl: 'https://www.solarjiji.com',
       description: 'The Ultimate Solar Energy Predictor'
     },
-    {
-      title: 'Developing Impactful Tech Solutions and Spin-offs',
-      projectUrl: 'https://farmex-suite.vercel.app/',
-      description:
-        'Bringing cutting-edge technology solutions to life and exploring spin-off opportunities for broader impact.'
-    }
+    // {
+    //   title: 'Developing Impactful Tech Solutions and Spin-offs',
+    //   projectUrl: 'https://farmex-suite.vercel.app/',
+    //   description:
+    //     'Bringing cutting-edge technology solutions to life and exploring spin-off opportunities for broader impact.'
+    // }
   ];
 
   return (
