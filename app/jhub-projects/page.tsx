@@ -87,7 +87,7 @@ export default function JHUBProjects() {
     {
       title: 'Solar Jiji',
       projectUrl: 'https://www.solarjiji.com',
-      description: 'The Ultimate Solar Energy Predictor'
+      description: 'The Ultimate Solar Energy Predictor.'
     },
     // {
     //   title: 'Developing Impactful Tech Solutions and Spin-offs',
