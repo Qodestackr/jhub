@@ -68,7 +68,7 @@ function Team() {
         linkedInLink: `https://www.linkedin.com/in/daisy-ondwari/`
       },
       {
-        memberImageUrl: `/images/team/irene-kimani.jpg`,
+        memberImageUrl: `/images/team/irene-kimani222.jpg`,
         memberName: `Irene Kimani`,
         memberRole: `ICT Specialist & Data Manager, KALRO`,
         description: `Irene Kimani is an ICT Specialist and Data Manager at the Kenya Agriculture and Livestock Research Organization(KALRO).
