@@ -45,14 +45,15 @@ export default function EventDetailsCard() {
               unique vision: to harness the power of exponentially growing
               technologies not just to decarbonize the global economy, but also
               to initiate a new era of prosperity that operates within the
-              confines of our planet's boundaries.{' '}
+              confines of our planet&apos;s boundaries.{' '}
             </p>
             <p className="font-medium">
               Dr. Bozesan will be the speaker for an online webinar moderated by
               Dr. Lawrence Nderu. <br />
               Title of the lecture: “Unlocking a Thrivable Future for Humanity”{' '}
               <br />
-              Time: 3PM FAT (5PM CET (Munich time)) - 4:30PM on February 22nd, 2024.
+              Time: 3PM FAT (5PM CET (Munich time)) - 4:30PM on February 22nd,
+              2024.
               <br /> Presenter: Dr. Mariana Bozesan, Member Club of Rome.
               Founder AQAL Capital
             </p>
@@ -75,13 +76,13 @@ export default function EventDetailsCard() {
               of the UN SDGs within Planetary Boundaries. She studied Computer
               Science and AI at Stanford University and the Karlsruhe Institute
               of Technology of which she is a Prominent Alumna. She is also the
-              recipient of the Golden Angelina Award, as Europe’s Female Angel
-              Investor of 2019 and became the Best European Early stage Investor
-              of the Year 2016 awarded by EBAN, the European Business Angel
-              Network. She is also full member of the prominent international
-              Club of Rome, Fellow of the World Academy of Art and Science, and
-              authored several books including Integral Investing: From Profit
-              to Prosperity, a report to the Club of Rome
+              recipient of the Golden Angelina Award, as Europe&apos;s Female
+              Angel Investor of 2019 and became the Best European Early stage
+              Investor of the Year 2016 awarded by EBAN, the European Business
+              Angel Network. She is also full member of the prominent
+              international Club of Rome, Fellow of the World Academy of Art and
+              Science, and authored several books including Integral Investing:
+              From Profit to Prosperity, a report to the Club of Rome
             </p>
           </div>
           {/* <div className="-my-4 divide-y divide-gray-200 dark:divide-gray-700">
