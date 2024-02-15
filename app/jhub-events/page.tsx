@@ -8,30 +8,11 @@ type UpcomingEvent = {
   location: string;
   description: string;
   isOnLeft?: boolean;
+  register?: string;
+  registerAsSpeaker?: boolean;
 };
 
 const pastEvents: any[] = [
-  {
-    id: '001',
-    eventName: 'Past Event 1',
-    date: '1st Dec 2023',
-    location: 'JKUAT, SCC 101',
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ex turpis.`,
-    galleryList: [],
-    isOnLeft: true
-  },
-  {
-    id: '001',
-    eventName: 'Past Event 2',
-    date: '2nd Dec 2023',
-    location: 'JKUAT, SCC 102',
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ex turpis.`,
-    galleryList: [],
-    isOnLeft: false
-  }
-];
-
-const upcomingEvents: UpcomingEvent[] = [
   {
     eventName: 'JHUB Board Meeting',
     date: '11th Dec 2023',
@@ -94,6 +75,36 @@ const upcomingEvents: UpcomingEvent[] = [
     change.`,
     isOnLeft: false
   }
+  // {
+  //   id: '001',
+  //   eventName: 'Past Event 1',
+  //   date: '1st Dec 2023',
+  //   location: 'JKUAT, SCC 101',
+  //   description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ex turpis.`,
+  //   galleryList: [],
+  //   isOnLeft: true
+  // },
+  // {
+  //   id: '001',
+  //   eventName: 'Past Event 2',
+  //   date: '2nd Dec 2023',
+  //   location: 'JKUAT, SCC 102',
+  //   description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ex turpis.`,
+  //   galleryList: [],
+  //   isOnLeft: false
+  // }
+];
+
+const upcomingEvents: UpcomingEvent[] = [
+  {
+    eventName: 'Unlocking a Thrivable Future for Humanity',
+    date: '22nd Feb 2024',
+    location: 'Online',
+    description: `We are thrilled to welcome Dr. Mariana Bozesan to our JHUB speaker series. As a distinguished integral investor, pioneering AI expert, and serial tech entrepreneur, Dr. Bozesan possesses a unique vision: to harness the power of exponentially growing technologies not just to decarbonize the global economy, but also to initiate a new era of prosperity that operates within the confines of our planet's boundaries. Dr. Bozesan will be the speaker for an online webinar moderated by Dr. Lawrence Nderu.`,
+    isOnLeft: true,
+    register: 'https://forms.gle/RTznUPLxCjqnnKgp8',
+    registerAsSpeaker: false
+  }
 ];
 
 const JHUBEvents = () => {
@@ -125,9 +136,7 @@ const JHUBEvents = () => {
 
         <button
           className={`py-2 px-4 rounded border text-success ${
-            currentView === 'past'
-              ? 'bg-white text-black'
-              : 'bg-gray-600 text-white'
+            currentView === 'past' ? 'bg-main text-white' : 'bg-white text-main'
           }`}
           onClick={toggleView}
         >
@@ -135,14 +144,14 @@ const JHUBEvents = () => {
         </button>
       </div>
 
-      <div className="flex flex-col grid-cols-9 p-2 mx-auto md:grid">
+      <div className="relative flex flex-col grid-cols-9 p-2 mx-auto md:grid">
         {events.map((event, index) => (
           <EventItem key={index} event={event} />
         ))}
       </div>
 
       {/* ************************************************************************* */}
-      <div className="container bg-gray-200 mx-auto w-full h-full">
+      {/* <div className="container bg-gray-200 mx-auto w-full h-full">
         <div className="relative wrap overflow-hidden p-10 h-full">
           <div
             className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border"
@@ -216,7 +225,7 @@ const JHUBEvents = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* ************************************************************************* */}
     </div>
   );
