@@ -27,8 +27,8 @@ export const navTopLinks = [
 
 export const navBottomLinks = [
   {
-    name: 'Forums',
-    href: '/jhub-forums'
+    name: 'Events',
+    href: '/jhub-events'
   },
   {
     name: 'Team Members',
