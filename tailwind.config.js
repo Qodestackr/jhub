@@ -44,9 +44,15 @@ module.exports = {
         'Segoe UI Symbol',
         'Noto Color Emoji'
       ],
-      satoshi: ['Satoshi', 'sans-serif']
+      satoshi: ['Satoshi', 'sans-serif'],
+      montserrat: ['Montserrat Alternates', 'sans-serif']
     },
     colors: {
+      // New Colors form redesign
+      'neutral-blue': '#0F172A',
+      'secondary-blue': '#475569',
+      'secondary-background':'#F6F9FF',
+
       /********
        *TODO, Importing a new primary , this will probably break the theming and so on...
                primary: {"50":"#eff6ff","100":"#dbeafe","200":"#bfdbfe","300":"#93c5fd","400":"#60a5fa","500":"#3b82f6","600":"#2563eb","700":"#1d4ed8","800":"#1e40af","900":"#1e3a8a","950":"#172554"}
